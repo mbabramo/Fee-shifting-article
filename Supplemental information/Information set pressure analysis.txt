@@ -1,0 +1,368 @@
+Using SequenceForm
+Game: LitigationGame:
+InvertChanceDecisions True
+NumOffers 10
+NumPotentialBargainingRounds 1  BargainingRoundsSimultaneous True SimultaneousOffersUltimatelyRevealed True
+NumLiabilityStrengthPoints 10 NumLiabilitySignals 10 PLiabilityNoiseStdev 0.2 DLiabilityNoiseStdev 0.2 CourtLiabilityNoiseStdev 0.2
+NumDamagesStrengthPoints 1 NumDamagesSignals 1 PDamagesNoiseStdev 0.1 DDamagesNoiseStdev 0.1 CourtDamagesNoiseStdev 0.15
+SkipFileAndAnswerDecisions False AllowAbandonAndDefaults True PredeterminedAbandonAndDefaults True IncludeAgreementToBargainDecisions False DeltaOffersOptions N/A
+CostsMultiplier 1 PTrialCosts 0.15 DTrialCosts 0.15 PFilingCost 0.15 DAnswerCost 0.15 PerPartyCostsLeadingUpToBargainingRound 0
+LoserPays True Multiple 0 AfterAbandonment False Rule68 False Margin False (0.8)
+PInitialWealth 10 DInitialWealth 10
+DamagesMin 0 DamagesMax 1
+RegretAversion 0
+PUtilityCalculator Risk neutral DUtilityCalculator Risk neutral
+WarmStartOptions NoWarmStart for  iterations
+Initializing all game paths...
+...  Total information sets: 80 chance nodes: 111 final nodes: 40200 Initialization milliseconds 3379
+Prepping accelerated best response...
+... 402 milliseconds. Total information sets: 80
+Calculating min-max...
+... complete 368 milliseconds
+Option set Single
+Using exact arithmetic for initial prior
+
+Game tree has 45211 nodes, of which 40200 are terminal nodes.
+    Player 0 has 111 information sets, 210 moves in total
+    Player 1 has  40 information sets, 240 moves in total
+    Player 2 has  40 information sets, 240 moves in total
+Sequence form LCP dimension is 564
+    Player 1 has 241 sequences, subject to  41 constraints
+    Player 2 has 241 sequences, subject to  41 constraints
+Prior 1 of 1
+... 100 steps (63078 ms) ...... 200 steps (260447 ms) ...Complete after 207 pivoting steps
+Equilibrium 1
+Equilibrium behavior strategies player 1, 2:
+0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,7686146/13380759,5694613/13380759,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Elapsed milliseconds prior 1: 285733
+Perfect equilibrium confirmed 485 ms
+Trying inexact arithmetic for up to 0 random priors
+
+Game tree has 45211 nodes, of which 40200 are terminal nodes.
+    Player 0 has 111 information sets, 210 moves in total
+    Player 1 has  40 information sets, 240 moves in total
+    Player 2 has  40 information sets, 240 moves in total
+Sequence form LCP dimension is 564
+    Player 1 has 241 sequences, subject to  41 constraints
+    Player 2 has 241 sequences, subject to  41 constraints
+
+Switching to alternative options:
+--> move to action (2, 0.04390097121762082) at rate 0.04390097121762082 in Information set 171 D Answers (DA): DecisionByteCode 10 (index 3) PlayerIndex 1 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (1, 6);(2, 1)
+--> move to action (2, 0.06433768982080679) at rate 0.06433768982080679 in Information set 123 P Files (PF): DecisionByteCode 9 (index 2) PlayerIndex 0 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (0, 4)
+--> move to action (1, 0.11616549359839112) at rate 0.11616549359839112 in Information set 124 P Abandons (PAB1): DecisionByteCode 20 (index 5) PlayerIndex 0 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (0, 4);(2, 1);(3, 1)
+--> move to action (1, 0.16705184011236085) at rate 0.16705184011236085 in Information set 126 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 BestResponse 1 Average 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 1.00, 0.00, 0.00 InformationSetContents (0, 4);(2, 1);(3, 1);(5, 2)
+--> move to action (1, 0.01872811688424747) at rate 0.01872811688424747 in Information set 130 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 BestResponse 1 Average 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 1.00, 0.00, 0.00 InformationSetContents (0, 5);(2, 1);(3, 1);(5, 2)
+
+Effect of changing information set Information set 171 D Answers (DA): DecisionByteCode 10 (index 3) PlayerIndex 1 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (1, 6);(2, 1) to probabilities 0.9560990287823792,0.04390097121762082
+Effect of changing information set Information set 123 P Files (PF): DecisionByteCode 9 (index 2) PlayerIndex 0 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (0, 4) to probabilities 0.9356623101791932,0.06433768982080679
+Effect of changing information set Information set 124 P Abandons (PAB1): DecisionByteCode 20 (index 5) PlayerIndex 0 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (0, 4);(2, 1);(3, 1) to probabilities 0.11616549359839112,0.8838345064016089
+--> move to action (1, 0.001687121296452655) at rate 0.001687121296452655 in Information set 170 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.574, 0.426, 0, 0, 0, 0, 0, 0, 0, 0 BestResponse 1 Average 0.574, 0.426, 0, 0, 0, 0, 0, 0, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.57, 0.43, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 InformationSetContents (1, 5);(2, 1);(3, 1);(6, 2)
+--> move to action (1, 0.0026637233803489205) at rate 0.0026637233803489205 in Information set 174 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 BestResponse 1 Average 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.00, 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 InformationSetContents (1, 6);(2, 1);(3, 1);(6, 2)
+--> move to action (1, 0.4380504480090678) at rate 0.4380504480090678 in Information set 125 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (0, 4);(2, 1);(3, 1);(5, 1)
+Effect of changing information set Information set 126 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 BestResponse 1 Average 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 1.00, 0.00, 0.00 InformationSetContents (0, 4);(2, 1);(3, 1);(5, 2) to probabilities 0.16705184011236085,0,0,0,0,0,0,0.8329481598876392,0,0
+--> move to action (1, 0.0042178032411355785) at rate 0.0042178032411355785 in Information set 170 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.574, 0.426, 0, 0, 0, 0, 0, 0, 0, 0 BestResponse 1 Average 0.574, 0.426, 0, 0, 0, 0, 0, 0, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.57, 0.43, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 InformationSetContents (1, 5);(2, 1);(3, 1);(6, 2)
+--> move to action (1, 0.006659308450846241) at rate 0.006659308450846241 in Information set 174 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 BestResponse 1 Average 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.00, 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 InformationSetContents (1, 6);(2, 1);(3, 1);(6, 2)
+Effect of changing information set Information set 130 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 BestResponse 1 Average 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 1.00, 0.00, 0.00 InformationSetContents (0, 5);(2, 1);(3, 1);(5, 2) to probabilities 0.01872811688424747,0,0,0,0,0,0,0.9812718831157525,0,0
+--> move to action (1, 0.0042379204638337805) at rate 0.0042379204638337805 in Information set 170 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.574, 0.426, 0, 0, 0, 0, 0, 0, 0, 0 BestResponse 1 Average 0.574, 0.426, 0, 0, 0, 0, 0, 0, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.57, 0.43, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 InformationSetContents (1, 5);(2, 1);(3, 1);(6, 2)
+--> move to action (1, 0.00784660042099) at rate 0.00784660042099 in Information set 174 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 BestResponse 1 Average 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.00, 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 InformationSetContents (1, 6);(2, 1);(3, 1);(6, 2)
+
+Single
+Result using all paths playing CurrentProbability
+Best iteration 1000 best exploitability -1.7763568394002505E-15
+Scenario index 0 Name: Option set Single
+Avg BR: -1.7763568394002505E-15 Perturbed refinement: -3.75E-08 Custom: 0.705, 0.325, 0.325, 0
+U(P0): 10.363484340721365 BR vs. False 10.363484340721362 BRimp: -3.5499999999999997E-15
+U(P1): 9.384610325486914 BR vs. False 9.384610325486914 BRimp: 0
+Total best response calculation time: 52 milliseconds
+
+
+Player P (0)
+Root:
+        Branch 2:
+                Branch 1: Information set 111 P Files (PF): DecisionByteCode 9 (index 2) PlayerIndex 0 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (0, 1)
+
+                Branch 2: Information set 115 P Files (PF): DecisionByteCode 9 (index 2) PlayerIndex 0 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (0, 2)
+
+                Branch 3: Information set 119 P Files (PF): DecisionByteCode 9 (index 2) PlayerIndex 0 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (0, 3)
+
+                Branch 4: Information set 123 P Files (PF): DecisionByteCode 9 (index 2) PlayerIndex 0 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (0, 4)
+
+                Branch 5: Information set 127 P Files (PF): DecisionByteCode 9 (index 2) PlayerIndex 0 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (0, 5)
+
+                Branch 6: Information set 131 P Files (PF): DecisionByteCode 9 (index 2) PlayerIndex 0 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (0, 6)
+
+                Branch 7: Information set 135 P Files (PF): DecisionByteCode 9 (index 2) PlayerIndex 0 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (0, 7)
+
+                Branch 8: Information set 139 P Files (PF): DecisionByteCode 9 (index 2) PlayerIndex 0 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (0, 8)
+
+                Branch 9: Information set 143 P Files (PF): DecisionByteCode 9 (index 2) PlayerIndex 0 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (0, 9)
+
+                Branch 10: Information set 147 P Files (PF): DecisionByteCode 9 (index 2) PlayerIndex 0 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (0, 10)
+
+        Branch 5:
+                Branch 1:
+                        Branch 1:
+                                Branch 1: Information set 112 P Abandons (PAB1): DecisionByteCode 20 (index 5) PlayerIndex 0 Probabilities 0.5, 0.5 BestResponse 1 Average 0.5, 0.5 Regrets 0.00, 0.00 Strategies 0.50, 0.50 InformationSetContents (0, 1);(2, 1);(3, 1)
+
+                Branch 2:
+                        Branch 1:
+                                Branch 1: Information set 116 P Abandons (PAB1): DecisionByteCode 20 (index 5) PlayerIndex 0 Probabilities 0.5, 0.5 BestResponse 1 Average 0.5, 0.5 Regrets 0.00, 0.00 Strategies 0.50, 0.50 InformationSetContents (0, 2);(2, 1);(3, 1)
+
+                Branch 3:
+                        Branch 1:
+                                Branch 1: Information set 120 P Abandons (PAB1): DecisionByteCode 20 (index 5) PlayerIndex 0 Probabilities 0.5, 0.5 BestResponse 1 Average 0.5, 0.5 Regrets 0.00, 0.00 Strategies 0.50, 0.50 InformationSetContents (0, 3);(2, 1);(3, 1)
+
+                Branch 4:
+                        Branch 1:
+                                Branch 1: Information set 124 P Abandons (PAB1): DecisionByteCode 20 (index 5) PlayerIndex 0 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (0, 4);(2, 1);(3, 1)
+
+                Branch 5:
+                        Branch 1:
+                                Branch 1: Information set 128 P Abandons (PAB1): DecisionByteCode 20 (index 5) PlayerIndex 0 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (0, 5);(2, 1);(3, 1)
+
+                Branch 6:
+                        Branch 1:
+                                Branch 1: Information set 132 P Abandons (PAB1): DecisionByteCode 20 (index 5) PlayerIndex 0 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (0, 6);(2, 1);(3, 1)
+
+                Branch 7:
+                        Branch 1:
+                                Branch 1: Information set 136 P Abandons (PAB1): DecisionByteCode 20 (index 5) PlayerIndex 0 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (0, 7);(2, 1);(3, 1)
+
+                Branch 8:
+                        Branch 1:
+                                Branch 1: Information set 140 P Abandons (PAB1): DecisionByteCode 20 (index 5) PlayerIndex 0 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (0, 8);(2, 1);(3, 1)
+
+                Branch 9:
+                        Branch 1:
+                                Branch 1: Information set 144 P Abandons (PAB1): DecisionByteCode 20 (index 5) PlayerIndex 0 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (0, 9);(2, 1);(3, 1)
+
+                Branch 10:
+                        Branch 1:
+                                Branch 1: Information set 148 P Abandons (PAB1): DecisionByteCode 20 (index 5) PlayerIndex 0 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (0, 10);(2, 1);(3, 1)
+
+        Branch 7:
+                Branch 1:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 113 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (0, 1);(2, 1);(3, 1);(5, 1)
+
+                                        Branch 2: Information set 114 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (0, 1);(2, 1);(3, 1);(5, 2)
+
+                Branch 2:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 117 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (0, 2);(2, 1);(3, 1);(5, 1)
+
+                                        Branch 2: Information set 118 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (0, 2);(2, 1);(3, 1);(5, 2)
+
+                Branch 3:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 121 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (0, 3);(2, 1);(3, 1);(5, 1)
+
+                                        Branch 2: Information set 122 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (0, 3);(2, 1);(3, 1);(5, 2)
+
+                Branch 4:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 125 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (0, 4);(2, 1);(3, 1);(5, 1)
+
+                                        Branch 2: Information set 126 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 BestResponse 1 Average 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 1.00, 0.00, 0.00 InformationSetContents (0, 4);(2, 1);(3, 1);(5, 2)
+
+                Branch 5:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 129 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (0, 5);(2, 1);(3, 1);(5, 1)
+
+                                        Branch 2: Information set 130 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 BestResponse 1 Average 0, 0, 0, 0, 0, 0, 0, 1, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 1.00, 0.00, 0.00 InformationSetContents (0, 5);(2, 1);(3, 1);(5, 2)
+
+                Branch 6:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 133 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (0, 6);(2, 1);(3, 1);(5, 1)
+
+                                        Branch 2: Information set 134 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0, 0, 0, 0, 0, 0, 0, 0, 1, 0 BestResponse 1 Average 0, 0, 0, 0, 0, 0, 0, 0, 1, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 1.00, 0.00 InformationSetContents (0, 6);(2, 1);(3, 1);(5, 2)
+
+                Branch 7:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 137 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (0, 7);(2, 1);(3, 1);(5, 1)
+
+                                        Branch 2: Information set 138 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0, 0, 0, 0, 0, 0, 0, 0, 1, 0 BestResponse 1 Average 0, 0, 0, 0, 0, 0, 0, 0, 1, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 1.00, 0.00 InformationSetContents (0, 7);(2, 1);(3, 1);(5, 2)
+
+                Branch 8:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 141 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (0, 8);(2, 1);(3, 1);(5, 1)
+
+                                        Branch 2: Information set 142 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 BestResponse 1 Average 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 1.00 InformationSetContents (0, 8);(2, 1);(3, 1);(5, 2)
+
+                Branch 9:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 145 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (0, 9);(2, 1);(3, 1);(5, 1)
+
+                                        Branch 2: Information set 146 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 BestResponse 1 Average 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 1.00 InformationSetContents (0, 9);(2, 1);(3, 1);(5, 2)
+
+                Branch 10:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 149 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (0, 10);(2, 1);(3, 1);(5, 1)
+
+                                        Branch 2: Information set 150 P Offer (PO1): DecisionByteCode 14 (index 7) PlayerIndex 0 Probabilities 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 BestResponse 1 Average 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 1.00 InformationSetContents (0, 10);(2, 1);(3, 1);(5, 2)
+
+
+Player D (1)
+Root:
+        Branch 3:
+                Branch 1:
+                        Branch 1: Information set 151 D Answers (DA): DecisionByteCode 10 (index 3) PlayerIndex 1 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (1, 1);(2, 1)
+
+                Branch 2:
+                        Branch 1: Information set 155 D Answers (DA): DecisionByteCode 10 (index 3) PlayerIndex 1 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (1, 2);(2, 1)
+
+                Branch 3:
+                        Branch 1: Information set 159 D Answers (DA): DecisionByteCode 10 (index 3) PlayerIndex 1 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (1, 3);(2, 1)
+
+                Branch 4:
+                        Branch 1: Information set 163 D Answers (DA): DecisionByteCode 10 (index 3) PlayerIndex 1 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (1, 4);(2, 1)
+
+                Branch 5:
+                        Branch 1: Information set 167 D Answers (DA): DecisionByteCode 10 (index 3) PlayerIndex 1 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (1, 5);(2, 1)
+
+                Branch 6:
+                        Branch 1: Information set 171 D Answers (DA): DecisionByteCode 10 (index 3) PlayerIndex 1 Probabilities 1, 0 BestResponse 1 Average 1, 0 Regrets 0.00, 0.00 Strategies 1.00, 0.00 InformationSetContents (1, 6);(2, 1)
+
+                Branch 7:
+                        Branch 1: Information set 175 D Answers (DA): DecisionByteCode 10 (index 3) PlayerIndex 1 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (1, 7);(2, 1)
+
+                Branch 8:
+                        Branch 1: Information set 179 D Answers (DA): DecisionByteCode 10 (index 3) PlayerIndex 1 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (1, 8);(2, 1)
+
+                Branch 9:
+                        Branch 1: Information set 183 D Answers (DA): DecisionByteCode 10 (index 3) PlayerIndex 1 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (1, 9);(2, 1)
+
+                Branch 10:
+                        Branch 1: Information set 187 D Answers (DA): DecisionByteCode 10 (index 3) PlayerIndex 1 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (1, 10);(2, 1)
+
+        Branch 6:
+                Branch 1:
+                        Branch 1:
+                                Branch 1: Information set 152 D Defaults1 (DD1): DecisionByteCode 21 (index 6) PlayerIndex 1 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (1, 1);(2, 1);(3, 1)
+
+                Branch 2:
+                        Branch 1:
+                                Branch 1: Information set 156 D Defaults1 (DD1): DecisionByteCode 21 (index 6) PlayerIndex 1 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (1, 2);(2, 1);(3, 1)
+
+                Branch 3:
+                        Branch 1:
+                                Branch 1: Information set 160 D Defaults1 (DD1): DecisionByteCode 21 (index 6) PlayerIndex 1 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (1, 3);(2, 1);(3, 1)
+
+                Branch 4:
+                        Branch 1:
+                                Branch 1: Information set 164 D Defaults1 (DD1): DecisionByteCode 21 (index 6) PlayerIndex 1 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (1, 4);(2, 1);(3, 1)
+
+                Branch 5:
+                        Branch 1:
+                                Branch 1: Information set 168 D Defaults1 (DD1): DecisionByteCode 21 (index 6) PlayerIndex 1 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (1, 5);(2, 1);(3, 1)
+
+                Branch 6:
+                        Branch 1:
+                                Branch 1: Information set 172 D Defaults1 (DD1): DecisionByteCode 21 (index 6) PlayerIndex 1 Probabilities 0, 1 BestResponse 1 Average 0, 1 Regrets 0.00, 0.00 Strategies 0.00, 1.00 InformationSetContents (1, 6);(2, 1);(3, 1)
+
+                Branch 7:
+                        Branch 1:
+                                Branch 1: Information set 176 D Defaults1 (DD1): DecisionByteCode 21 (index 6) PlayerIndex 1 Probabilities 0.5, 0.5 BestResponse 1 Average 0.5, 0.5 Regrets 0.00, 0.00 Strategies 0.50, 0.50 InformationSetContents (1, 7);(2, 1);(3, 1)
+
+                Branch 8:
+                        Branch 1:
+                                Branch 1: Information set 180 D Defaults1 (DD1): DecisionByteCode 21 (index 6) PlayerIndex 1 Probabilities 0.5, 0.5 BestResponse 1 Average 0.5, 0.5 Regrets 0.00, 0.00 Strategies 0.50, 0.50 InformationSetContents (1, 8);(2, 1);(3, 1)
+
+                Branch 9:
+                        Branch 1:
+                                Branch 1: Information set 184 D Defaults1 (DD1): DecisionByteCode 21 (index 6) PlayerIndex 1 Probabilities 0.5, 0.5 BestResponse 1 Average 0.5, 0.5 Regrets 0.00, 0.00 Strategies 0.50, 0.50 InformationSetContents (1, 9);(2, 1);(3, 1)
+
+                Branch 10:
+                        Branch 1:
+                                Branch 1: Information set 188 D Defaults1 (DD1): DecisionByteCode 21 (index 6) PlayerIndex 1 Probabilities 0.5, 0.5 BestResponse 1 Average 0.5, 0.5 Regrets 0.00, 0.00 Strategies 0.50, 0.50 InformationSetContents (1, 10);(2, 1);(3, 1)
+
+        Branch 8:
+                Branch 1:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 153 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (1, 1);(2, 1);(3, 1);(6, 1)
+
+                                        Branch 2: Information set 154 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 BestResponse 1 Average 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 InformationSetContents (1, 1);(2, 1);(3, 1);(6, 2)
+
+                Branch 2:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 157 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (1, 2);(2, 1);(3, 1);(6, 1)
+
+                                        Branch 2: Information set 158 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 BestResponse 1 Average 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 InformationSetContents (1, 2);(2, 1);(3, 1);(6, 2)
+
+                Branch 3:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 161 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (1, 3);(2, 1);(3, 1);(6, 1)
+
+                                        Branch 2: Information set 162 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 BestResponse 1 Average 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 InformationSetContents (1, 3);(2, 1);(3, 1);(6, 2)
+
+                Branch 4:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 165 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (1, 4);(2, 1);(3, 1);(6, 1)
+
+                                        Branch 2: Information set 166 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 BestResponse 1 Average 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 InformationSetContents (1, 4);(2, 1);(3, 1);(6, 2)
+
+                Branch 5:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 169 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (1, 5);(2, 1);(3, 1);(6, 1)
+
+                                        Branch 2: Information set 170 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.574, 0.426, 0, 0, 0, 0, 0, 0, 0, 0 BestResponse 1 Average 0.574, 0.426, 0, 0, 0, 0, 0, 0, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.57, 0.43, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 InformationSetContents (1, 5);(2, 1);(3, 1);(6, 2)
+
+                Branch 6:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 173 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (1, 6);(2, 1);(3, 1);(6, 1)
+
+                                        Branch 2: Information set 174 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 BestResponse 1 Average 0, 1, 0, 0, 0, 0, 0, 0, 0, 0 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.00, 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 InformationSetContents (1, 6);(2, 1);(3, 1);(6, 2)
+
+                Branch 7:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 177 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (1, 7);(2, 1);(3, 1);(6, 1)
+
+                                        Branch 2: Information set 178 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (1, 7);(2, 1);(3, 1);(6, 2)
+
+                Branch 8:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 181 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (1, 8);(2, 1);(3, 1);(6, 1)
+
+                                        Branch 2: Information set 182 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (1, 8);(2, 1);(3, 1);(6, 2)
+
+                Branch 9:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 185 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (1, 9);(2, 1);(3, 1);(6, 1)
+
+                                        Branch 2: Information set 186 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (1, 9);(2, 1);(3, 1);(6, 2)
+
+                Branch 10:
+                        Branch 1:
+                                Branch 1:
+                                        Branch 1: Information set 189 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (1, 10);(2, 1);(3, 1);(6, 1)
+
+                                        Branch 2: Information set 190 D Offer (DO1): DecisionByteCode 15 (index 8) PlayerIndex 1 Probabilities 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 BestResponse 1 Average 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 Regrets 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 Strategies 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10 InformationSetContents (1, 10);(2, 1);(3, 1);(6, 2)
+
+
+Elapsed milliseconds report for eq 1 of 1: 2462
+Total runtime 00:05:02.5950366
+
+Press a to copy above text (including scrolled out) to clipboard.
+Press s to copy standard report to clipboard.
+Press c to copy comma-separated report to clipboard.
+Press Enter to end.

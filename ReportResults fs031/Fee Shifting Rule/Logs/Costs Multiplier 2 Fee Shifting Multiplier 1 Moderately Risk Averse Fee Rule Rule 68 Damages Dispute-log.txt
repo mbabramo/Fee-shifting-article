@@ -1,0 +1,57 @@
+
+Percentage Complete 66.34692246203038% of 1251
+Task to do: Optimize 861 0 Started:2/27/2021 7:45:06 PM Complete:False
+Updated status (total 49 milliseconds)
+Using SequenceForm
+Game: LitigationGame: FSA Costs Multiplier 2 Fee Shifting Multiplier 1 Moderately Risk Averse Fee Rule Rule 68 Damages Dispute
+InvertChanceDecisions True
+NumOffers 10   
+NumPotentialBargainingRounds 1  BargainingRoundsSimultaneous True SimultaneousOffersUltimatelyRevealed True 
+NumLiabilityStrengthPoints 1 NumLiabilitySignals 1 PLiabilityNoiseStdev 0.2 DLiabilityNoiseStdev 0.2 CourtLiabilityNoiseStdev 0.2 
+NumDamagesStrengthPoints 10 NumDamagesSignals 10 PDamagesNoiseStdev 0.1 DDamagesNoiseStdev 0.1 CourtDamagesNoiseStdev 0.15 
+SkipFileAndAnswerDecisions False AllowAbandonAndDefaults True PredeterminedAbandonAndDefaults True IncludeAgreementToBargainDecisions False DeltaOffersOptions N/A 
+CostsMultiplier 2 PTrialCosts 0.15 DTrialCosts 0.15 PFilingCost 0.15 DAnswerCost 0.15 PerPartyCostsLeadingUpToBargainingRound 0 
+LoserPays False Multiple 1 AfterAbandonment False Rule68 True Margin False (0.8)
+PInitialWealth 10 DInitialWealth 10 
+DamagesMin 0 DamagesMax 1 
+RegretAversion 0 
+PUtilityCalculator CARA Alpha=2 DUtilityCalculator CARA Alpha=2 
+WarmStartOptions NoWarmStart for  iterations
+Initializing all game paths...
+...  Total information sets: 80 chance nodes: 113 final nodes: 40200 Initialization milliseconds 2832
+Prepping accelerated best response...
+... 236 milliseconds. Total information sets: 80
+Calculating min-max...
+... complete 193 milliseconds
+Option set FSA Costs Multiplier 2 Fee Shifting Multiplier 1 Moderately Risk Averse Fee Rule Rule 68 Damages Dispute
+Using exact arithmetic for initial prior
+
+Game tree has 41145 nodes, of which 36582 are terminal nodes.
+    Player 0 has 104 information sets, 203 moves in total
+    Player 1 has  40 information sets, 240 moves in total
+    Player 2 has  40 information sets, 240 moves in total
+Sequence form LCP dimension is 564
+    Player 1 has 241 sequences, subject to  41 constraints
+    Player 2 has 241 sequences, subject to  41 constraints
+Prior 1 of 1
+... 100 steps (54545 ms) ...... 200 steps (227964 ms) ...... 300 steps (570222 ms) ...... 400 steps (947358 ms) ...... 500 steps (1383960 ms) ...... 600 steps (1795471 ms) ...... 700 steps (2257350 ms) ...... 800 steps (2709849 ms) ...... 900 steps (3128581 ms) ...... 1000 steps (3536980 ms) ...Complete after 1029 pivoting steps
+Equilibrium 1
+Equilibrium behavior strategies player 1, 2:
+0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,7029473897923896695320619/115850655143923113518331472,33473376558554973712412665658339/280784220755292708233428512068128,230273691076660932121881340475583/280784220755292708233428512068128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,36597357942217720769282624418/106914638985098544074716600691,70317281042880823305433976273/106914638985098544074716600691,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2862581309/3835619909,0,0,973038600/3835619909,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,7735003443520741789/17915656628673126040,10180653185152384251/17915656628673126040,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,666030729858560621054/6017421170155586208685,6146335032418953179049/24069684680622344834740,3051845345753829834295/4813936936124468966948,0,0,0,0,0,1,0,67261932779580255332588649923/195278218322537586048659670640,128016285542957330716071020717/195278218322537586048659670640,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Elapsed milliseconds prior 1: 3659596
+Changed to original form:
+0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,7029473897923896695320619/115850655143923113518331472,33473376558554973712412665658339/280784220755292708233428512068128,230273691076660932121881340475583/280784220755292708233428512068128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,36597357942217720769282624418/106914638985098544074716600691,70317281042880823305433976273/106914638985098544074716600691,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2862581309/3835619909,0,0,973038600/3835619909,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,7735003443520741789/17915656628673126040,10180653185152384251/17915656628673126040,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,666030729858560621054/6017421170155586208685,6146335032418953179049/24069684680622344834740,3051845345753829834295/4813936936124468966948,0,0,0,0,0,1,0,67261932779580255332588649923/195278218322537586048659670640,128016285542957330716071020717/195278218322537586048659670640,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Perfect equilibrium confirmed 334 ms
+
+FSA Costs Multiplier 2 Fee Shifting Multiplier 1 Moderately Risk Averse Fee Rule Rule 68 Damages Dispute
+Result using all paths playing CurrentProbability
+Best iteration 1000 best exploitability 1.7053025658242404E-13
+Scenario index 0 Name: Option set FSA Costs Multiplier 2 Fee Shifting Multiplier 1 Moderately Risk Averse Fee Rule Rule 68 Damages Dispute
+Avg BR: 1.7053025658242404E-13 Perturbed refinement: 4.65E-08 Custom: 0.5, 0.306, 0.0133, 0.0133
+U(P0): 1000.0434486814816 BR vs. False 1000.043453664855 BRimp: 2.27E-13
+U(P1): 999.4818741143952 BR vs. False 999.4818788561927 BRimp: 1.14E-13
+Total best response calculation time: 27 milliseconds
+
+
+Elapsed milliseconds report for eq 1 of 1: 3308

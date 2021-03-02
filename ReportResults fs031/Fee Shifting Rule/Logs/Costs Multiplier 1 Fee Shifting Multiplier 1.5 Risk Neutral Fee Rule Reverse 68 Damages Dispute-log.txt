@@ -1,0 +1,57 @@
+
+Percentage Complete 52.1982414068745% of 1251
+Task to do: Optimize 684 0 Started:2/27/2021 7:37:41 PM Complete:False
+Updated status (total 50 milliseconds)
+Using SequenceForm
+Game: LitigationGame: FSA Costs Multiplier 1 Fee Shifting Multiplier 1.5 Risk Neutral Fee Rule Reverse 68 Damages Dispute
+InvertChanceDecisions True
+NumOffers 10   
+NumPotentialBargainingRounds 1  BargainingRoundsSimultaneous True SimultaneousOffersUltimatelyRevealed True 
+NumLiabilityStrengthPoints 1 NumLiabilitySignals 1 PLiabilityNoiseStdev 0.2 DLiabilityNoiseStdev 0.2 CourtLiabilityNoiseStdev 0.2 
+NumDamagesStrengthPoints 10 NumDamagesSignals 10 PDamagesNoiseStdev 0.1 DDamagesNoiseStdev 0.1 CourtDamagesNoiseStdev 0.15 
+SkipFileAndAnswerDecisions False AllowAbandonAndDefaults True PredeterminedAbandonAndDefaults True IncludeAgreementToBargainDecisions False DeltaOffersOptions N/A 
+CostsMultiplier 1 PTrialCosts 0.15 DTrialCosts 0.15 PFilingCost 0.15 DAnswerCost 0.15 PerPartyCostsLeadingUpToBargainingRound 0 
+LoserPays True Multiple 1.5 AfterAbandonment False Rule68 True Margin False (0.8)
+PInitialWealth 10 DInitialWealth 10 
+DamagesMin 0 DamagesMax 1 
+RegretAversion 0 
+PUtilityCalculator Risk neutral DUtilityCalculator Risk neutral 
+WarmStartOptions NoWarmStart for  iterations
+Initializing all game paths...
+...  Total information sets: 80 chance nodes: 113 final nodes: 40200 Initialization milliseconds 5942
+Prepping accelerated best response...
+... 466 milliseconds. Total information sets: 80
+Calculating min-max...
+... complete 195 milliseconds
+Option set FSA Costs Multiplier 1 Fee Shifting Multiplier 1.5 Risk Neutral Fee Rule Reverse 68 Damages Dispute
+Using exact arithmetic for initial prior
+
+Game tree has 41145 nodes, of which 36582 are terminal nodes.
+    Player 0 has 104 information sets, 203 moves in total
+    Player 1 has  40 information sets, 240 moves in total
+    Player 2 has  40 information sets, 240 moves in total
+Sequence form LCP dimension is 564
+    Player 1 has 241 sequences, subject to  41 constraints
+    Player 2 has 241 sequences, subject to  41 constraints
+Prior 1 of 1
+... 100 steps (57965 ms) ...... 200 steps (244969 ms) ...... 300 steps (629718 ms) ...Complete after 305 pivoting steps
+Equilibrium 1
+Equilibrium behavior strategies player 1, 2:
+1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,216566896766169272788/984294133629135717003,767727236862966444215/984294133629135717003,0,0,0,1,0,0,0,0,0,0,0,640763253437447128253/767727236862966444215,0,126963983425519315962/767727236862966444215,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,308115310249113014331669651083596/441814112809432632207218138641167,133698802560319617875548487557571/441814112809432632207218138641167,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,263674339/629380955,365706616/629380955,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,15397809993824704072/17605824997808185937,2208015003983481865/17605824997808185937,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1420418949176192078/20454495059717935197,19034076110541743119/20454495059717935197,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,39349324349/49308857296,9959532947/49308857296,0,0,0,0,0,0,0,24846301920/39349324349,14503022429/39349324349,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Elapsed milliseconds prior 1: 656693
+Changed to original form:
+1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,216566896766169272788/984294133629135717003,767727236862966444215/984294133629135717003,0,0,0,1,0,0,0,0,0,0,0,640763253437447128253/767727236862966444215,0,126963983425519315962/767727236862966444215,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,308115310249113014331669651083596/441814112809432632207218138641167,133698802560319617875548487557571/441814112809432632207218138641167,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,263674339/629380955,365706616/629380955,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,15397809993824704072/17605824997808185937,2208015003983481865/17605824997808185937,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1420418949176192078/20454495059717935197,19034076110541743119/20454495059717935197,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,39349324349/49308857296,9959532947/49308857296,0,0,0,0,0,0,0,24846301920/39349324349,14503022429/39349324349,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Perfect equilibrium confirmed 396 ms
+
+FSA Costs Multiplier 1 Fee Shifting Multiplier 1.5 Risk Neutral Fee Rule Reverse 68 Damages Dispute
+Result using all paths playing CurrentProbability
+Best iteration 1000 best exploitability -3.552713678800501E-15
+Scenario index 0 Name: Option set FSA Costs Multiplier 1 Fee Shifting Multiplier 1.5 Risk Neutral Fee Rule Reverse 68 Damages Dispute
+Avg BR: -3.552713678800501E-15 Perturbed refinement: -4.56E-10 Custom: 1, 0.805, 0.136, 0.136
+U(P0): 10.394228083215552 BR vs. False 10.394239819671927 BRimp: -1.07E-14
+U(P1): 9.294209631201893 BR vs. False 9.294217270417073 BRimp: 3.5499999999999997E-15
+Total best response calculation time: 38 milliseconds
+
+
+Elapsed milliseconds report for eq 1 of 1: 6459

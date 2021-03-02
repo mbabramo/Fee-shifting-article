@@ -1,0 +1,125 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns, positioning}
+
+\begin{document}
+\begin{tikzpicture}
+\draw[black, very thin] (1.5,1.75) -- (1.5,14.5);
+\node[rotate=90, anchor=center] at (0.3, 8.125) {Proportion of Cases};
+\draw[black, very thin] (1.45,1.75) -- (1.55,1.75);
+\node[anchor=east] at (1.45, 1.75) {0\%};
+\draw[black, very thin] (1.45,3.025) -- (1.55,3.025);
+\node[anchor=east] at (1.45, 3.025) {10\%};
+\draw[black, very thin] (1.45,4.3) -- (1.55,4.3);
+\node[anchor=east] at (1.45, 4.3) {20\%};
+\draw[black, very thin] (1.45,5.575) -- (1.55,5.575);
+\node[anchor=east] at (1.45, 5.575) {30\%};
+\draw[black, very thin] (1.45,6.85) -- (1.55,6.85);
+\node[anchor=east] at (1.45, 6.85) {40\%};
+\draw[black, very thin] (1.45,8.125) -- (1.55,8.125);
+\node[anchor=east] at (1.45, 8.125) {50\%};
+\draw[black, very thin] (1.45,9.4) -- (1.55,9.4);
+\node[anchor=east] at (1.45, 9.4) {60\%};
+\draw[black, very thin] (1.45,10.675) -- (1.55,10.675);
+\node[anchor=east] at (1.45, 10.675) {70\%};
+\draw[black, very thin] (1.45,11.95) -- (1.55,11.95);
+\node[anchor=east] at (1.45, 11.95) {80\%};
+\draw[black, very thin] (1.45,13.225) -- (1.55,13.225);
+\node[anchor=east] at (1.45, 13.225) {90\%};
+\draw[black, very thin] (1.45,14.5) -- (1.55,14.5);
+\node[anchor=east] at (1.45, 14.5) {100\%};
+
+\draw[black, very thin] (13.4,1.75) -- (13.4,14.5);
+\draw[black, very thin] (13.35,1.75) -- (13.45,1.75);
+\node[anchor=west] at (13.35, 1.75) {};
+\draw[black, very thin] (13.35,11.472) -- (13.45,11.472);
+\node[anchor=west] at (13.35, 11.472) {};
+\draw[black, very thin] (13.35,11.623) -- (13.45,11.623);
+\node[anchor=west] at (13.35, 11.623) {};
+\draw[black, very thin] (13.35,13.062) -- (13.45,13.062);
+\node[anchor=west] at (13.35, 13.062) {};
+\draw[black, very thin] (13.35,14.5) -- (13.45,14.5);
+\node[anchor=west] at (13.35, 14.5) {};
+
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,1.75) rectangle (4.6184,2.2462);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,2.2462) rectangle (4.0065,2.3705);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,2.3705) rectangle (3.7005,2.371);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,2.371) rectangle (3.3946,2.7038);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,2.7038) rectangle (3.0886,2.7045);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,2.7045) rectangle (2.7826,3.0844);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,3.0844) rectangle (2.4767,3.0851);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,3.0851) rectangle (2.1707,6.673);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (1.75,6.673) rectangle (1.75,11.472);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,11.472) rectangle (4.9244,11.486);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (1.75,11.486) rectangle (1.75,11.623);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,11.623) rectangle (5.3833,11.728);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,11.728) rectangle (5.0391,12.074);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (1.75,12.074) rectangle (1.75,13.062);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,13.062) rectangle (1.9795,13.618);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (1.75,13.618) rectangle (1.75,14.069);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,14.069) rectangle (1.75,14.5);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,1.75) rectangle (8.5018,2.2535);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,2.2535) rectangle (8.1958,2.2547);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,2.2547) rectangle (7.8898,2.389);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,2.389) rectangle (7.5839,2.3903);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,2.3903) rectangle (7.2779,2.7227);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,2.7227) rectangle (6.9719,2.7254);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,2.7254) rectangle (6.666,3.0754);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,3.0754) rectangle (6.054,6.5493);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (5.6333,6.5493) rectangle (5.6333,11.472);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,11.472) rectangle (5.7481,11.61);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (5.6333,11.61) rectangle (5.6333,11.623);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,11.623) rectangle (5.8628,12.18);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,12.18) rectangle (5.6333,12.611);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (5.6333,12.611) rectangle (5.6333,13.062);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,13.062) rectangle (9.2667,13.166);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,13.166) rectangle (8.9225,13.512);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (5.6333,13.512) rectangle (6.207,13.943);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (5.6333,13.943) rectangle (5.8628,14.5);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (9.5167,1.75) rectangle (11.333,5.2239);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (9.5167,5.2239) rectangle (11.333,5.7201);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (9.5167,5.7201) rectangle (11.333,7.0456);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (9.5167,7.0456) rectangle (11.333,11.472);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (9.5167,11.472) rectangle (11.333,11.61);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (9.5167,11.61) rectangle (11.333,11.623);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (9.5167,11.623) rectangle (13.15,12.055);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (9.5167,12.055) rectangle (13.15,12.159);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (9.5167,12.159) rectangle (13.15,12.716);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (9.5167,12.716) rectangle (13.15,13.062);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (9.5167,13.062) rectangle (13.15,13.512);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (9.5167,13.512) rectangle (13.15,14.5);
+\draw[black, dotted] (1.5,11.472) -- (13.4,11.472);
+\draw[black, dotted] (1.5,11.623) -- (13.4,11.623);
+\draw[black, dotted] (1.5,13.062) -- (13.4,13.062);
+\draw[black, very thin] (1.75,1.5) -- (5.3833,1.5);
+\node[anchor=north] at (3.5667, 1.5) {False Negatives};
+\draw[black, very thin] (5.3833,1.45) -- (5.3833,1.55);
+\node[anchor=north] at (5.3833, 1.45) {1.2};
+
+\draw[black, very thin] (5.6333,1.5) -- (9.2667,1.5);
+\node[anchor=north] at (7.45, 1.5) {False Positives};
+\draw[black, very thin] (9.2667,1.45) -- (9.2667,1.55);
+\node[anchor=north] at (9.2667, 1.45) {1.2};
+
+\draw[black, very thin] (9.5167,1.5) -- (13.15,1.5);
+\node[anchor=north] at (11.333, 1.5) {Total Expenditures};
+\draw[black, very thin] (13.15,1.45) -- (13.15,1.55);
+\node[anchor=north] at (13.15, 1.45) {0.15};
+
+\node[black, centered, rotate=90] at (13.72, 6.6111) {Settles};
+
+\node[black, centered, rotate=90] at (13.72, 12.343) {P Loses};
+\node[black, centered, rotate=90] at (13.72, 13.781) {P Wins};
+
+\draw (7.449999999999999,1.5) node[draw=none] (baseCoordinate) {};
+\begin{scope}[align=center]
+        \matrix[scale=0.5, draw=black, below=0.5cm of baseCoordinate, nodes={draw}, column sep=0.1cm]{
+            \node[rectangle, draw, minimum width=0.5cm, minimum height=0.5cm, pattern=north east lines, pattern color=blue] {}; &
+            \node[draw=none, font=\small] (B) {Truly Liable Cases}; &
+            \node[rectangle, draw, minimum width=0.5cm, minimum height=0.5cm, pattern=north west lines, pattern color=orange] {}; &
+            \node[draw=none, font=\small] (B) {Truly Not Liable Cases}; \\
+            };
+\end{scope}
+
+\end{tikzpicture}
+\end{document}
