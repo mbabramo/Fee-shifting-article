@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.2.7)  2 MAR 2021 20:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.2.7)  14 MAR 2021 09:18
 entering extended mode
 **./fee_shift.tex
 (fee_shift.tex
@@ -733,18 +733,25 @@ LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
 LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
 (Font)              scaled to size 5.0pt on input line 67.
  [5]
-<../Figures/game tree 2x2x2.pdf, id=196, 1961.5021pt x 9105.9906pt>
+
+LaTeX Warning: Reference `fig:gametree2x2x2' on page 6 undefined on input line 
+71.
+
+<../Figures/game tree 2x2x2.pdf, id=195, 1961.5021pt x 9105.9906pt>
 File: ../Figures/game tree 2x2x2.pdf Graphic file (type pdf)
 <use ../Figures/game tree 2x2x2.pdf>
 Package pdftex.def Info: ../Figures/game tree 2x2x2.pdf  used on input line 74.
 
 (pdftex.def)             Requested size: 284.51527pt x 284.42256pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: Reference `fig:gametree2x2x2beginning' on page 6 undefined on in
+put line 79.
+
 [6]
-<../Figures/game tree 2x2x2 beginning.pdf, id=211, 728.78174pt x 870.86554pt>
+<../Figures/game tree 2x2x2 beginning.pdf, id=208, 728.78174pt x 870.86554pt>
 File: ../Figures/game tree 2x2x2 beginning.pdf Graphic file (type pdf)
 <use ../Figures/game tree 2x2x2 beginning.pdf>
 Package pdftex.def Info: ../Figures/game tree 2x2x2 beginning.pdf  used on inpu
@@ -754,23 +761,78 @@ t line 85.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7 <../Figures/game tree 2x2x2.pdf>] [8 <../Figures/game tree 2x2x2 beginning.p
-df>]
-<../Figures/liability signals default.pdf, id=246, 765.77898pt x 569.4545pt>
+[7 <../Figures/game tree 2x2x2.pdf>]
+
+LaTeX Warning: Reference `fig:gametree2x2x2beginning' on page 8 undefined on in
+put line 92.
+
+
+LaTeX Warning: Reference `fig:liabilitysignalsdefault' on page 8 undefined on i
+nput line 94.
+
+
+LaTeX Warning: Reference `fig:liabilitysignalsdefault' on page 8 undefined on i
+nput line 94.
+
+[8 <../Figures/game tree 2x2x2 beginning.pdf>]
+<../Figures/liability signals default.pdf, id=241, 765.77898pt x 569.4545pt>
 File: ../Figures/liability signals default.pdf Graphic file (type pdf)
 <use ../Figures/liability signals default.pdf>
 Package pdftex.def Info: ../Figures/liability signals default.pdf  used on inpu
 t line 98.
 (pdftex.def)             Requested size: 306.30617pt x 227.77776pt.
- [9 <../Figures/liability signals default.pdf>] [10]
-<../Figures/game tree 2x2x2 end.pdf, id=514, 1255.87393pt x 570.16713pt>
+
+
+LaTeX Warning: Reference `fig:liabilitysignalsdefault' on page 9 undefined on i
+nput line 104.
+
+
+LaTeX Warning: Reference `fig:liabilitysignalsdefault' on page 9 undefined on i
+nput line 104.
+
+
+LaTeX Warning: Reference `fig:liabilitysignalsdefault' on page 9 undefined on i
+nput line 104.
+
+[9 <../Figures/liability signals default.pdf>]
+
+LaTeX Warning: Reference `fig:gametree2x2x2beginning' on page 10 undefined on i
+nput line 119.
+
+
+LaTeX Warning: Reference `fig:gametree2x2x2end' on page 10 undefined on input l
+ine 121.
+
+
+LaTeX Warning: Reference `fig:gametree2x2x2beginning' on page 10 undefined on i
+nput line 121.
+
+[10]
+<../Figures/game tree 2x2x2 end.pdf, id=503, 1255.87393pt x 570.16713pt>
 File: ../Figures/game tree 2x2x2 end.pdf Graphic file (type pdf)
 <use ../Figures/game tree 2x2x2 end.pdf>
 Package pdftex.def Info: ../Figures/game tree 2x2x2 end.pdf  used on input line
  125.
 (pdftex.def)             Requested size: 313.96771pt x 142.54143pt.
- [11 <../Figures/game tree 2x2x2 end.pdf>] [12]
-<../Figures/game tree 2x2x2 beginning simplified.pdf, id=541, 387.34813pt x 187
+ [11 <../Figures/game tree 2x2x2 end.pdf>]
+
+LaTeX Warning: Reference `fig:gametree2x2x2end' on page 12 undefined on input l
+ine 136.
+
+
+LaTeX Warning: Reference `fig:gametree2x2x2end' on page 12 undefined on input l
+ine 136.
+
+[12]
+
+LaTeX Warning: Reference `fig:gametree2x2x2beginning_reduced' on page 13 undefi
+ned on input line 138.
+
+
+LaTeX Warning: Reference `fig:gametree2x2x2beginning' on page 13 undefined on i
+nput line 138.
+
+<../Figures/game tree 2x2x2 beginning simplified.pdf, id=527, 387.34813pt x 187
 .99936pt>
 File: ../Figures/game tree 2x2x2 beginning simplified.pdf Graphic file (type pd
 f)
@@ -778,27 +840,69 @@ f)
 Package pdftex.def Info: ../Figures/game tree 2x2x2 beginning simplified.pdf  u
 sed on input line 142.
 (pdftex.def)             Requested size: 96.83679pt x 46.99971pt.
-<../Figures/game tree 2x2x2 end simplified.pdf, id=544, 1085.15814pt x 513.2615
+
+LaTeX Warning: Reference `fig:gametree2x2x2end_reduced' on page 13 undefined on
+ input line 147.
+
+<../Figures/game tree 2x2x2 end simplified.pdf, id=529, 1085.15814pt x 513.2615
 4pt>
 File: ../Figures/game tree 2x2x2 end simplified.pdf Graphic file (type pdf)
 <use ../Figures/game tree 2x2x2 end simplified.pdf>
 Package pdftex.def Info: ../Figures/game tree 2x2x2 end simplified.pdf  used on
  input line 151.
 (pdftex.def)             Requested size: 271.28886pt x 128.31506pt.
- [13 <../Figures/game tree 2x2x2 beginning simplified.pdf> <../Figures/game tre
-e 2x2x2 end simplified.pdf>] [14] [15] [16]
-<../Figures/ECTA algorithm complexity.pdf, id=591, 824.84161pt x 196.202pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13 <../Figures/game tree 2x2x2 beginning simplified.pdf>] [14 <../Figures/game
+ tree 2x2x2 end simplified.pdf>] [15]
+
+LaTeX Warning: Reference `fig:offers_american' on page 16 undefined on input li
+ne 190.
+
+[16]
+
+LaTeX Warning: Reference `fig:performance' on page 17 undefined on input line 1
+96.
+
+
+LaTeX Warning: Reference `fig:gametree2x2x2' on page 17 undefined on input line
+ 196.
+
+<../Figures/ECTA algorithm complexity.pdf, id=573, 824.84161pt x 196.202pt>
 File: ../Figures/ECTA algorithm complexity.pdf Graphic file (type pdf)
 <use ../Figures/ECTA algorithm complexity.pdf>
 Package pdftex.def Info: ../Figures/ECTA algorithm complexity.pdf  used on inpu
 t line 200.
 (pdftex.def)             Requested size: 329.9308pt x 78.4794pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[17] [18 <../Figures/ECTA algorithm complexity.pdf>] [19]
-<../Figures/File and answer decisions (American).pdf, id=633, 684.18011pt x 144
+
+LaTeX Warning: Reference `fig:performance' on page 17 undefined on input line 2
+05.
+
+
+LaTeX Warning: Reference `gametree' on page 17 undefined on input line 205.
+
+
+LaTeX Warning: Reference `results' on page 17 undefined on input line 205.
+
+[17] [18 <../Figures/ECTA algorithm complexity.pdf>]
+
+LaTeX Warning: Reference `fig:gametree2x2x2' on page 19 undefined on input line
+ 211.
+
+
+LaTeX Warning: Reference `fig:fileans_american' on page 19 undefined on input l
+ine 215.
+
+
+LaTeX Warning: Reference `fig:fileans_british' on page 19 undefined on input li
+ne 215.
+
+[19]
+<../Figures/File and answer decisions (American).pdf, id=606, 684.18011pt x 144
 .55104pt>
 File: ../Figures/File and answer decisions (American).pdf Graphic file (type pd
 f)
@@ -806,7 +910,7 @@ f)
 Package pdftex.def Info: ../Figures/File and answer decisions (American).pdf  u
 sed on input line 221.
 (pdftex.def)             Requested size: 342.08922pt x 72.27533pt.
-<../Figures/File and answer decisions (British).pdf, id=635, 684.18011pt x 144.
+<../Figures/File and answer decisions (British).pdf, id=608, 684.18011pt x 144.
 55104pt>
 File: ../Figures/File and answer decisions (British).pdf Graphic file (type pdf
 )
@@ -814,20 +918,41 @@ File: ../Figures/File and answer decisions (British).pdf Graphic file (type pdf
 Package pdftex.def Info: ../Figures/File and answer decisions (British).pdf  us
 ed on input line 228.
 (pdftex.def)             Requested size: 342.08922pt x 72.27533pt.
- [20 <../Figures/File and answer decisions (American).pdf> <../Figures/File and
- answer decisions (British).pdf>]
-<../Figures/Offers heatmap (American).pdf, id=663, 684.18011pt x 144.55104pt>
+
+
+LaTeX Warning: Reference `fig:fileans_american' on page 20 undefined on input l
+ine 235.
+
+
+LaTeX Warning: Reference `fig:fileans_british' on page 20 undefined on input li
+ne 235.
+
+[20 <../Figures/File and answer decisions (American).pdf> <../Figures/File and 
+answer decisions (British).pdf>]
+
+LaTeX Warning: Reference `fig:offers_american' on page 21 undefined on input li
+ne 237.
+
+
+LaTeX Warning: Reference `fig:offers_british' on page 21 undefined on input lin
+e 237.
+
+<../Figures/Offers heatmap (American).pdf, id=634, 684.18011pt x 144.55104pt>
 File: ../Figures/Offers heatmap (American).pdf Graphic file (type pdf)
 <use ../Figures/Offers heatmap (American).pdf>
 Package pdftex.def Info: ../Figures/Offers heatmap (American).pdf  used on inpu
 t line 241.
 (pdftex.def)             Requested size: 342.08922pt x 72.27533pt.
-<../Figures/Offers heatmap (British).pdf, id=665, 684.18011pt x 144.55104pt>
+<../Figures/Offers heatmap (British).pdf, id=636, 684.18011pt x 144.55104pt>
 File: ../Figures/Offers heatmap (British).pdf Graphic file (type pdf)
 <use ../Figures/Offers heatmap (British).pdf>
 Package pdftex.def Info: ../Figures/Offers heatmap (British).pdf  used on input
  line 248.
 (pdftex.def)             Requested size: 342.08922pt x 72.27533pt.
+
+LaTeX Warning: Reference `fig:liabilitysignalsdefault' on page 21 undefined on 
+input line 253.
+
 
 Overfull \hbox (0.26451pt too wide) in paragraph at lines 253--254
 \OT1/cmr/m/n/10 man and Wittman (2007) [[]9[]]) rec-og-nize that each party fac
@@ -835,8 +960,16 @@ es a trade-off: Greater
  []
 
 [21 <../Figures/Offers heatmap (American).pdf> <../Figures/Offers heatmap (Brit
-ish).pdf>] [22]
-<../Figures/Source of error costs and expenditures (American).pdf, id=697, 396.
+ish).pdf>]
+
+LaTeX Warning: Reference `fig:errors_american' on page 22 undefined on input li
+ne 257.
+
+
+LaTeX Warning: Reference `fig:errors_british' on page 22 undefined on input lin
+e 257.
+
+<../Figures/Source of error costs and expenditures (American).pdf, id=661, 396.
 41803pt x 502.29558pt>
 File: ../Figures/Source of error costs and expenditures (American).pdf Graphic 
 file (type pdf)
@@ -844,7 +977,7 @@ file (type pdf)
 Package pdftex.def Info: ../Figures/Source of error costs and expenditures (Ame
 rican).pdf  used on input line 263.
 (pdftex.def)             Requested size: 277.49072pt x 351.60449pt.
-<../Figures/Source of error costs and expenditures (British).pdf, id=699, 396.4
+<../Figures/Source of error costs and expenditures (British).pdf, id=663, 396.4
 1803pt x 502.29558pt>
 File: ../Figures/Source of error costs and expenditures (British).pdf Graphic f
 ile (type pdf)
@@ -852,348 +985,500 @@ ile (type pdf)
 Package pdftex.def Info: ../Figures/Source of error costs and expenditures (Bri
 tish).pdf  used on input line 269.
 (pdftex.def)             Requested size: 277.49072pt x 351.60449pt.
- [23 <../Figures/Source of error costs and expenditures (American).pdf> <../Fig
-ures/Source of error costs and expenditures (British).pdf>]
+
+LaTeX Warning: Reference `fig:errors_american' on page 22 undefined on input li
+ne 275.
+
+
+LaTeX Warning: Reference `fig:errors_british' on page 22 undefined on input lin
+e 275.
+
+[22] [23 <../Figures/Source of error costs and expenditures (American).pdf> <..
+/Figures/Source of error costs and expenditures (British).pdf>]
+
+LaTeX Warning: Reference `fig:offers_american' on page 24 undefined on input li
+ne 279.
+
+
+LaTeX Warning: Reference `fig:offers_british' on page 24 undefined on input lin
+e 279.
+
+
+LaTeX Warning: Reference `baseline' on page 24 undefined on input line 283.
+
 [24]
-<../Figures/Disposition Baseline.pdf, id=738, 561.91634pt x 653.38501pt>
+<../Figures/Disposition Baseline.pdf, id=702, 561.91634pt x 653.38501pt>
 File: ../Figures/Disposition Baseline.pdf Graphic file (type pdf)
 <use ../Figures/Disposition Baseline.pdf>
 Package pdftex.def Info: ../Figures/Disposition Baseline.pdf  used on input lin
 e 287.
 (pdftex.def)             Requested size: 280.95747pt x 326.6917pt.
- [25 <../Figures/Disposition Baseline.pdf>]
-<../Figures/Accuracy and Expenditures Baseline.pdf, id=761, 561.91634pt x 655.1
+
+
+LaTeX Warning: Reference `baseline' on page 25 undefined on input line 292.
+
+[25 <../Figures/Disposition Baseline.pdf>]
+
+LaTeX Warning: Reference `fig:accexp_baseline' on page 26 undefined on input li
+ne 300.
+
+[26]
+<../Figures/Accuracy and Expenditures Baseline.pdf, id=728, 561.91634pt x 655.1
 3557pt>
 File: ../Figures/Accuracy and Expenditures Baseline.pdf Graphic file (type pdf)
 
 <use ../Figures/Accuracy and Expenditures Baseline.pdf>
 Package pdftex.def Info: ../Figures/Accuracy and Expenditures Baseline.pdf  use
-d on input line 302.
+d on input line 304.
 (pdftex.def)             Requested size: 280.95747pt x 327.56699pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Reference `fig:accexp_baseline' on page 27 undefined on input li
+ne 309.
 
-[26] [27 <../Figures/Accuracy and Expenditures Baseline.pdf>]
-<../Figures/risk aversion.pdf, id=790, 837.73978pt x 212.30516pt>
+[27 <../Figures/Accuracy and Expenditures Baseline.pdf>]
+
+LaTeX Warning: Reference `fig:riskaversion' on page 28 undefined on input line 
+313.
+
+<../Figures/risk aversion.pdf, id=751, 837.73978pt x 212.30516pt>
 File: ../Figures/risk aversion.pdf Graphic file (type pdf)
 <use ../Figures/risk aversion.pdf>
-Package pdftex.def Info: ../Figures/risk aversion.pdf  used on input line 315.
+Package pdftex.def Info: ../Figures/risk aversion.pdf  used on input line 317.
 (pdftex.def)             Requested size: 335.08997pt x 84.92055pt.
-<../Figures/Disposition Varying Risk Aversion.pdf, id=793, 561.91634pt x 653.38
+
+LaTeX Warning: Reference `fig:disposition_riskaversion' on page 28 undefined on
+ input line 324.
+
+<../Figures/Disposition Varying Risk Aversion.pdf, id=753, 561.91634pt x 653.38
 501pt>
 File: ../Figures/Disposition Varying Risk Aversion.pdf Graphic file (type pdf)
 <use ../Figures/Disposition Varying Risk Aversion.pdf>
 Package pdftex.def Info: ../Figures/Disposition Varying Risk Aversion.pdf  used
- on input line 326.
+ on input line 328.
 (pdftex.def)             Requested size: 280.95747pt x 326.6917pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28 <../Figures/risk aversion.pdf>]
-<../Figures/Accuracy and Expenditures Varying Risk Aversion.pdf, id=814, 561.91
+
+LaTeX Warning: Reference `fig:accexp_riskaversion' on page 28 undefined on inpu
+t line 333.
+
+[28 <../Figures/risk aversion.pdf>] [29 <../Figures/Disposition Varying Risk Av
+ersion.pdf>]
+<../Figures/Accuracy and Expenditures Varying Risk Aversion.pdf, id=786, 561.91
 634pt x 655.13557pt>
 File: ../Figures/Accuracy and Expenditures Varying Risk Aversion.pdf Graphic fi
 le (type pdf)
 <use ../Figures/Accuracy and Expenditures Varying Risk Aversion.pdf>
 Package pdftex.def Info: ../Figures/Accuracy and Expenditures Varying Risk Aver
-sion.pdf  used on input line 335.
+sion.pdf  used on input line 337.
 (pdftex.def)             Requested size: 280.95747pt x 327.56699pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Reference `fig:disposition_riskaversionasymmetry' on page 30 und
+efined on input line 344.
 
-[29 <../Figures/Disposition Varying Risk Aversion.pdf>]
-<../Figures/Disposition Varying Risk Aversion Asymmetry.pdf, id=832, 573.87097p
+<../Figures/Disposition Varying Risk Aversion Asymmetry.pdf, id=788, 573.87097p
 t x 653.38501pt>
 File: ../Figures/Disposition Varying Risk Aversion Asymmetry.pdf Graphic file (
 type pdf)
 <use ../Figures/Disposition Varying Risk Aversion Asymmetry.pdf>
 Package pdftex.def Info: ../Figures/Disposition Varying Risk Aversion Asymmetry
-.pdf  used on input line 346.
+.pdf  used on input line 348.
 (pdftex.def)             Requested size: 286.93478pt x 326.6917pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [30 <../Figures/Accuracy and Expenditures Varying Risk Aversion.pdf>]
+
+LaTeX Warning: Reference `fig:accexp_riskaversionasymmetry' on page 31 undefine
+d on input line 353.
+
+
+LaTeX Warning: Reference `fig:disposition_riskaversionasymmetry' on page 31 und
+efined on input line 353.
+
+[31 <../Figures/Disposition Varying Risk Aversion Asymmetry.pdf>]
 <../Figures/Accuracy and Expenditures Varying Risk Aversion Asymmetry.pdf, id=8
-58, 573.87097pt x 655.13557pt>
+28, 573.87097pt x 655.13557pt>
 File: ../Figures/Accuracy and Expenditures Varying Risk Aversion Asymmetry.pdf 
 Graphic file (type pdf)
 <use ../Figures/Accuracy and Expenditures Varying Risk Aversion Asymmetry.pdf>
 Package pdftex.def Info: ../Figures/Accuracy and Expenditures Varying Risk Aver
-sion Asymmetry.pdf  used on input line 355.
+sion Asymmetry.pdf  used on input line 357.
 (pdftex.def)             Requested size: 286.93478pt x 327.56699pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Reference `fig:liabilitysignalsdefault' on page 32 undefined on 
+input line 364.
 
-[31 <../Figures/Disposition Varying Risk Aversion Asymmetry.pdf>] [32 <../Figur
-es/Accuracy and Expenditures Varying Risk Aversion Asymmetry.pdf>]
-<../Figures/Disposition Varying Noise Multiplier.pdf, id=900, 574.60068pt x 653
+[32 <../Figures/Accuracy and Expenditures Varying Risk Aversion Asymmetry.pdf>]
+
+LaTeX Warning: Reference `fig:dispositions_playernoise' on page 33 undefined on
+ input line 368.
+
+
+LaTeX Warning: Reference `fig:accexp_playernoise' on page 33 undefined on input
+ line 368.
+
+<../Figures/Disposition Varying Noise Multiplier.pdf, id=851, 574.60068pt x 653
 .38501pt>
 File: ../Figures/Disposition Varying Noise Multiplier.pdf Graphic file (type pd
 f)
 <use ../Figures/Disposition Varying Noise Multiplier.pdf>
 Package pdftex.def Info: ../Figures/Disposition Varying Noise Multiplier.pdf  u
-sed on input line 372.
+sed on input line 374.
 (pdftex.def)             Requested size: 402.21771pt x 457.36638pt.
-<../Figures/Accuracy and Expenditures Varying Noise Multiplier.pdf, id=902, 574
+<../Figures/Accuracy and Expenditures Varying Noise Multiplier.pdf, id=853, 574
 .60068pt x 655.13557pt>
 File: ../Figures/Accuracy and Expenditures Varying Noise Multiplier.pdf Graphic
  file (type pdf)
 <use ../Figures/Accuracy and Expenditures Varying Noise Multiplier.pdf>
 Package pdftex.def Info: ../Figures/Accuracy and Expenditures Varying Noise Mul
-tiplier.pdf  used on input line 378.
+tiplier.pdf  used on input line 380.
 (pdftex.def)             Requested size: 402.21771pt x 458.59177pt.
- [33 <../Figures/Disposition Varying Noise Multiplier.pdf> <../Figures/Accuracy
- and Expenditures Varying Noise Multiplier.pdf>] [34]
-<../Figures/Disposition Varying Information Asymmetry.pdf, id=945, 561.91634pt 
+[33 <../Figures/Disposition Varying Noise Multiplier.pdf> <../Figures/Accuracy 
+and Expenditures Varying Noise Multiplier.pdf>]
+
+LaTeX Warning: Reference `fig:dispositions_playernoise' on page 34 undefined on
+ input line 390.
+
+
+LaTeX Warning: Reference `fig:accexp_playernoise' on page 34 undefined on input
+ line 390.
+
+
+LaTeX Warning: Reference `fig:dispositions_playernoise_asymmetry' on page 34 un
+defined on input line 390.
+
+
+LaTeX Warning: Reference `fig:accexp_playernoise_asymmetry' on page 34 undefine
+d on input line 390.
+
+[34]
+<../Figures/Disposition Varying Information Asymmetry.pdf, id=892, 561.91634pt 
 x 653.38501pt>
 File: ../Figures/Disposition Varying Information Asymmetry.pdf Graphic file (ty
 pe pdf)
 <use ../Figures/Disposition Varying Information Asymmetry.pdf>
 Package pdftex.def Info: ../Figures/Disposition Varying Information Asymmetry.p
-df  used on input line 398.
+df  used on input line 400.
 (pdftex.def)             Requested size: 393.33875pt x 457.36638pt.
-<../Figures/Accuracy and Expenditures Varying Information Asymmetry.pdf, id=947
+<../Figures/Accuracy and Expenditures Varying Information Asymmetry.pdf, id=894
 , 561.91634pt x 655.13557pt>
 File: ../Figures/Accuracy and Expenditures Varying Information Asymmetry.pdf Gr
 aphic file (type pdf)
 <use ../Figures/Accuracy and Expenditures Varying Information Asymmetry.pdf>
 Package pdftex.def Info: ../Figures/Accuracy and Expenditures Varying Informati
-on Asymmetry.pdf  used on input line 404.
+on Asymmetry.pdf  used on input line 406.
 (pdftex.def)             Requested size: 393.33875pt x 458.59177pt.
  [35 <../Figures/Disposition Varying Information Asymmetry.pdf> <../Figures/Acc
 uracy and Expenditures Varying Information Asymmetry.pdf>]
+
+LaTeX Warning: Reference `fig:accexp_qualitylegalsystem' on page 36 undefined o
+n input line 416.
+
 <../Figures/Accuracy and Expenditures Varying Case Strength Noise Costs 1.pdf, 
-id=981, 561.91634pt x 199.8918pt>
+id=928, 561.91634pt x 199.8918pt>
 File: ../Figures/Accuracy and Expenditures Varying Case Strength Noise Costs 1.
 pdf Graphic file (type pdf)
 <use ../Figures/Accuracy and Expenditures Varying Case Strength Noise Costs 1.p
 df>
 Package pdftex.def Info: ../Figures/Accuracy and Expenditures Varying Case Stre
-ngth Noise Costs 1.pdf  used on input line 418.
+ngth Noise Costs 1.pdf  used on input line 420.
 (pdftex.def)             Requested size: 280.95747pt x 99.94565pt.
- [36 <../Figures/Accuracy and Expenditures Varying Case Strength Noise Costs 1.
-pdf>]
-<../Figures/Disposition Varying Relative Costs.pdf, id=1006, 561.91634pt x 653.
-38501pt>
+[36 <../Figures/Accuracy and Expenditures Varying Case Strength Noise Costs 1.p
+df>]
+
+LaTeX Warning: Reference `fig:dispositions_costsasymmetry' on page 37 undefined
+ on input line 431.
+
+
+LaTeX Warning: Reference `fig:accexp_costsasymmetry' on page 37 undefined on in
+put line 431.
+
+<../Figures/Disposition Varying Relative Costs.pdf, id=951, 561.91634pt x 653.3
+8501pt>
 File: ../Figures/Disposition Varying Relative Costs.pdf Graphic file (type pdf)
 
 <use ../Figures/Disposition Varying Relative Costs.pdf>
 Package pdftex.def Info: ../Figures/Disposition Varying Relative Costs.pdf  use
-d on input line 435.
+d on input line 437.
 (pdftex.def)             Requested size: 393.33875pt x 457.36638pt.
-<../Figures/Accuracy and Expenditures Varying Relative Costs.pdf, id=1008, 561.
-91634pt x 655.13557pt>
+<../Figures/Accuracy and Expenditures Varying Relative Costs.pdf, id=953, 561.9
+1634pt x 655.13557pt>
 File: ../Figures/Accuracy and Expenditures Varying Relative Costs.pdf Graphic f
 ile (type pdf)
 <use ../Figures/Accuracy and Expenditures Varying Relative Costs.pdf>
 Package pdftex.def Info: ../Figures/Accuracy and Expenditures Varying Relative 
-Costs.pdf  used on input line 441.
+Costs.pdf  used on input line 443.
 (pdftex.def)             Requested size: 393.33875pt x 458.59177pt.
- [37 <../Figures/Disposition Varying Relative Costs.pdf> <../Figures/Accuracy a
-nd Expenditures Varying Relative Costs.pdf>]
-<../Figures/Disposition Varying Proportion of Costs at Beginning.pdf, id=1046, 
-574.60068pt x 653.38501pt>
+
+LaTeX Warning: Reference `fig:accexp_costsasymmetry' on page 37 undefined on in
+put line 449.
+
+[37 <../Figures/Disposition Varying Relative Costs.pdf> <../Figures/Accuracy an
+d Expenditures Varying Relative Costs.pdf>]
+
+LaTeX Warning: Reference `fig:dispositions_timing' on page 38 undefined on inpu
+t line 453.
+
+
+LaTeX Warning: Reference `fig:accexp_timing' on page 38 undefined on input line
+ 453.
+
+<../Figures/Disposition Varying Proportion of Costs at Beginning.pdf, id=988, 5
+74.60068pt x 653.38501pt>
 File: ../Figures/Disposition Varying Proportion of Costs at Beginning.pdf Graph
 ic file (type pdf)
 <use ../Figures/Disposition Varying Proportion of Costs at Beginning.pdf>
 Package pdftex.def Info: ../Figures/Disposition Varying Proportion of Costs at 
-Beginning.pdf  used on input line 459.
+Beginning.pdf  used on input line 461.
 (pdftex.def)             Requested size: 402.21771pt x 457.36638pt.
 <../Figures/Accuracy and Expenditures Varying Proportion of Costs at Beginning.
-pdf, id=1048, 574.60068pt x 655.13557pt>
+pdf, id=990, 574.60068pt x 655.13557pt>
 File: ../Figures/Accuracy and Expenditures Varying Proportion of Costs at Begin
 ning.pdf Graphic file (type pdf)
 <use ../Figures/Accuracy and Expenditures Varying Proportion of Costs at Beginn
 ing.pdf>
 Package pdftex.def Info: ../Figures/Accuracy and Expenditures Varying Proportio
-n of Costs at Beginning.pdf  used on input line 465.
+n of Costs at Beginning.pdf  used on input line 467.
 (pdftex.def)             Requested size: 402.21771pt x 458.59177pt.
- [38]
-<../Figures/damages signals.pdf, id=1057, 435.72687pt x 569.4545pt>
+[38]
+
+LaTeX Warning: Reference `fig:damagessignals' on page 39 undefined on input lin
+e 479.
+
+
+LaTeX Warning: Reference `fig:liabilitysignalsdefault' on page 39 undefined on 
+input line 479.
+
+<../Figures/damages signals.pdf, id=996, 435.72687pt x 569.4545pt>
 File: ../Figures/damages signals.pdf Graphic file (type pdf)
 <use ../Figures/damages signals.pdf>
-Package pdftex.def Info: ../Figures/damages signals.pdf  used on input line 481
+Package pdftex.def Info: ../Figures/damages signals.pdf  used on input line 483
 .
 (pdftex.def)             Requested size: 174.28764pt x 227.77776pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:dispositions_issue' on page 39 undefined on input
+ line 488.
+
+
+LaTeX Warning: Reference `fig:accexp_issue' on page 39 undefined on input line 
+488.
 
 [39 <../Figures/Disposition Varying Proportion of Costs at Beginning.pdf> <../F
 igures/Accuracy and Expenditures Varying Proportion of Costs at Beginning.pdf>]
-<../Figures/Disposition Varying Issue.pdf, id=1094, 561.91634pt x 653.38501pt>
+<../Figures/Disposition Varying Issue.pdf, id=1030, 561.91634pt x 653.38501pt>
 File: ../Figures/Disposition Varying Issue.pdf Graphic file (type pdf)
 <use ../Figures/Disposition Varying Issue.pdf>
 Package pdftex.def Info: ../Figures/Disposition Varying Issue.pdf  used on inpu
-t line 492.
+t line 494.
 (pdftex.def)             Requested size: 393.33875pt x 457.36638pt.
-<../Figures/Accuracy and Expenditures Varying Issue.pdf, id=1096, 561.91634pt x
+<../Figures/Accuracy and Expenditures Varying Issue.pdf, id=1032, 561.91634pt x
  655.13557pt>
 File: ../Figures/Accuracy and Expenditures Varying Issue.pdf Graphic file (type
  pdf)
 <use ../Figures/Accuracy and Expenditures Varying Issue.pdf>
 Package pdftex.def Info: ../Figures/Accuracy and Expenditures Varying Issue.pdf
-  used on input line 498.
+  used on input line 500.
 (pdftex.def)             Requested size: 393.33875pt x 458.59177pt.
-<../Figures/Disposition Varying Fee Shifting Rule (Damages Issue).pdf, id=1100,
+
+LaTeX Warning: Reference `fig:dispositions_damagesrule' on page 40 undefined on
+ input line 508.
+
+
+LaTeX Warning: Reference `fig:accexp_damagesrule' on page 40 undefined on input
+ line 508.
+
+[40 <../Figures/damages signals.pdf>]
+<../Figures/Disposition Varying Fee Shifting Rule (Damages Issue).pdf, id=1244,
  561.91634pt x 653.38501pt>
 File: ../Figures/Disposition Varying Fee Shifting Rule (Damages Issue).pdf Grap
 hic file (type pdf)
 <use ../Figures/Disposition Varying Fee Shifting Rule (Damages Issue).pdf>
 Package pdftex.def Info: ../Figures/Disposition Varying Fee Shifting Rule (Dama
-ges Issue).pdf  used on input line 512.
+ges Issue).pdf  used on input line 514.
 (pdftex.def)             Requested size: 393.33875pt x 457.36638pt.
 <../Figures/Accuracy and Expenditures Varying Fee Shifting Rule (Damages Issue)
-.pdf, id=1102, 561.91634pt x 655.13557pt>
+.pdf, id=1246, 561.91634pt x 655.13557pt>
 File: ../Figures/Accuracy and Expenditures Varying Fee Shifting Rule (Damages I
 ssue).pdf Graphic file (type pdf)
 <use ../Figures/Accuracy and Expenditures Varying Fee Shifting Rule (Damages Is
 sue).pdf>
 Package pdftex.def Info: ../Figures/Accuracy and Expenditures Varying Fee Shift
-ing Rule (Damages Issue).pdf  used on input line 518.
+ing Rule (Damages Issue).pdf  used on input line 520.
 (pdftex.def)             Requested size: 393.33875pt x 458.59177pt.
-[40 <../Figures/damages signals.pdf>] [41 <../Figures/Disposition Varying Issue
-.pdf> <../Figures/Accuracy and Expenditures Varying Issue.pdf> <../Figures/Disp
-osition Varying Fee Shifting Rule (Damages Issue).pdf> <../Figures/Accuracy and
- Expenditures Varying Fee Shifting Rule (Damages Issue).pdf>]
-<../Figures/Disposition Varying Quitting Rules.pdf, id=1377, 561.91634pt x 653.
+ [41 <../Figures/Disposition Varying Issue.pdf> <../Figures/Accuracy and Expend
+itures Varying Issue.pdf>]
+
+LaTeX Warning: Reference `fig:dispositions_quit' on page 42 undefined on input 
+line 534.
+
+
+LaTeX Warning: Reference `fig:accexp_quit' on page 42 undefined on input line 5
+34.
+
+[42 <../Figures/Disposition Varying Fee Shifting Rule (Damages Issue).pdf> <../
+Figures/Accuracy and Expenditures Varying Fee Shifting Rule (Damages Issue).pdf
+>]
+<../Figures/Disposition Varying Quitting Rules.pdf, id=1316, 561.91634pt x 653.
 38501pt>
 File: ../Figures/Disposition Varying Quitting Rules.pdf Graphic file (type pdf)
 
 <use ../Figures/Disposition Varying Quitting Rules.pdf>
 Package pdftex.def Info: ../Figures/Disposition Varying Quitting Rules.pdf  use
-d on input line 538.
+d on input line 540.
 (pdftex.def)             Requested size: 393.33875pt x 457.36638pt.
-<../Figures/Accuracy and Expenditures Varying Quitting Rules.pdf, id=1379, 561.
+<../Figures/Accuracy and Expenditures Varying Quitting Rules.pdf, id=1318, 561.
 91634pt x 655.13557pt>
 File: ../Figures/Accuracy and Expenditures Varying Quitting Rules.pdf Graphic f
 ile (type pdf)
 <use ../Figures/Accuracy and Expenditures Varying Quitting Rules.pdf>
 Package pdftex.def Info: ../Figures/Accuracy and Expenditures Varying Quitting 
-Rules.pdf  used on input line 544.
+Rules.pdf  used on input line 546.
 (pdftex.def)             Requested size: 393.33875pt x 458.59177pt.
- [42] [43 <../Figures/Disposition Varying Quitting Rules.pdf> <../Figures/Accur
-acy and Expenditures Varying Quitting Rules.pdf>]
-<../Figures/Baseline multiple equilibria (American).pdf, id=1421, 325.80121pt x
+ [43 <../Figures/Disposition Varying Quitting Rules.pdf> <../Figures/Accuracy a
+nd Expenditures Varying Quitting Rules.pdf>]
+
+LaTeX Warning: Reference `fig:baseline_multieq_american' on page 44 undefined o
+n input line 560.
+
+
+LaTeX Warning: Reference `fig:baseline_multieq_british' on page 44 undefined on
+ input line 560.
+
+<../Figures/Baseline multiple equilibria (American).pdf, id=1353, 325.80121pt x
  189.31528pt>
 File: ../Figures/Baseline multiple equilibria (American).pdf Graphic file (type
  pdf)
 <use ../Figures/Baseline multiple equilibria (American).pdf>
 Package pdftex.def Info: ../Figures/Baseline multiple equilibria (American).pdf
-  used on input line 564.
+  used on input line 566.
 (pdftex.def)             Requested size: 162.90019pt x 94.6574pt.
-<../Figures/Baseline multiple equilibria (British).pdf, id=1423, 325.80121pt x 
+<../Figures/Baseline multiple equilibria (British).pdf, id=1355, 325.80121pt x 
 189.31929pt>
 File: ../Figures/Baseline multiple equilibria (British).pdf Graphic file (type 
 pdf)
 <use ../Figures/Baseline multiple equilibria (British).pdf>
 Package pdftex.def Info: ../Figures/Baseline multiple equilibria (British).pdf 
- used on input line 570.
+ used on input line 572.
 (pdftex.def)             Requested size: 162.90019pt x 94.65941pt.
- [44 <../Figures/Baseline multiple equilibria (American).pdf> <../Figures/Basel
-ine multiple equilibria (British).pdf>]
-<../Figures/Correlation between correlated and average equilibrium.pdf, id=1449
+[44 <../Figures/Baseline multiple equilibria (American).pdf> <../Figures/Baseli
+ne multiple equilibria (British).pdf>]
+
+LaTeX Warning: Reference `fig:correlations_corrvsave' on page 45 undefined on i
+nput line 586.
+
+<../Figures/Correlation between correlated and average equilibrium.pdf, id=1380
 , 324.33571pt x 189.31929pt>
 File: ../Figures/Correlation between correlated and average equilibrium.pdf Gra
 phic file (type pdf)
 <use ../Figures/Correlation between correlated and average equilibrium.pdf>
 Package pdftex.def Info: ../Figures/Correlation between correlated and average 
-equilibrium.pdf  used on input line 588.
+equilibrium.pdf  used on input line 590.
 (pdftex.def)             Requested size: 162.16745pt x 94.65941pt.
- [45 <../Figures/Correlation between correlated and average equilibrium.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:treesize_panel1' on page 45 undefined on input li
+ne 597.
+
+
+LaTeX Warning: Reference `fig:treesize_panel4' on page 45 undefined on input li
+ne 597.
+
+[45]
 File: ../Figures/Disposition Baseline.pdf Graphic file (type pdf)
 <use ../Figures/Disposition Baseline.pdf>
 Package pdftex.def Info: ../Figures/Disposition Baseline.pdf  used on input lin
-e 601.
+e 603.
 (pdftex.def)             Requested size: 84.28381pt x 98.00351pt.
 
-Overfull \hbox (1.48192pt too wide) in paragraph at lines 601--602
+Overfull \hbox (1.48192pt too wide) in paragraph at lines 603--604
  [][] 
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 602--602
+Underfull \hbox (badness 2512) in paragraph at lines 604--604
 []\OT1/cmr/m/n/10 Figure 40: |Risk
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--602
+Underfull \hbox (badness 10000) in paragraph at lines 604--604
 \OT1/cmr/m/n/10 (sin-gle equi-lib-
  []
 
-<../Figures/Disposition Baseline (Correlated).pdf, id=1467, 561.91634pt x 653.3
+<../Figures/Disposition Baseline (Correlated).pdf, id=1387, 561.91634pt x 653.3
 8501pt>
 File: ../Figures/Disposition Baseline (Correlated).pdf Graphic file (type pdf)
 <use ../Figures/Disposition Baseline (Correlated).pdf>
 Package pdftex.def Info: ../Figures/Disposition Baseline (Correlated).pdf  used
- on input line 607.
+ on input line 609.
 (pdftex.def)             Requested size: 84.28381pt x 98.00351pt.
 
-Overfull \hbox (1.48192pt too wide) in paragraph at lines 607--608
+Overfull \hbox (1.48192pt too wide) in paragraph at lines 609--610
  [][] 
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 608--608
+Underfull \hbox (badness 2512) in paragraph at lines 610--610
 []\OT1/cmr/m/n/10 Figure 41: |Risk
  []
 
-<../Figures/Disposition (Risk Averse) Baseline.pdf, id=1469, 561.91634pt x 653.
+<../Figures/Disposition (Risk Averse) Baseline.pdf, id=1389, 561.91634pt x 653.
 38501pt>
 File: ../Figures/Disposition (Risk Averse) Baseline.pdf Graphic file (type pdf)
 
 <use ../Figures/Disposition (Risk Averse) Baseline.pdf>
 Package pdftex.def Info: ../Figures/Disposition (Risk Averse) Baseline.pdf  use
-d on input line 613.
+d on input line 615.
 (pdftex.def)             Requested size: 84.28381pt x 98.00351pt.
 
-Overfull \hbox (1.48192pt too wide) in paragraph at lines 613--614
+Overfull \hbox (1.48192pt too wide) in paragraph at lines 615--616
  [][] 
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 614--614
+Underfull \hbox (badness 2512) in paragraph at lines 616--616
 []\OT1/cmr/m/n/10 Figure 42: |Risk
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 614--614
+Underfull \hbox (badness 1400) in paragraph at lines 616--616
 \OT1/cmr/m/n/10 averse, large tree
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--614
+Underfull \hbox (badness 10000) in paragraph at lines 616--616
 \OT1/cmr/m/n/10 (sin-gle equi-lib-
  []
 
-<../Figures/Disposition (Risk Averse) Baseline (Correlated).pdf, id=1471, 561.9
+<../Figures/Disposition (Risk Averse) Baseline (Correlated).pdf, id=1391, 561.9
 1634pt x 653.38501pt>
 File: ../Figures/Disposition (Risk Averse) Baseline (Correlated).pdf Graphic fi
 le (type pdf)
 <use ../Figures/Disposition (Risk Averse) Baseline (Correlated).pdf>
 Package pdftex.def Info: ../Figures/Disposition (Risk Averse) Baseline (Correla
-ted).pdf  used on input line 619.
+ted).pdf  used on input line 621.
 (pdftex.def)             Requested size: 84.28381pt x 98.00351pt.
 
-Overfull \hbox (1.48192pt too wide) in paragraph at lines 619--620
+Overfull \hbox (1.48192pt too wide) in paragraph at lines 621--622
  [][] 
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 620--620
+Underfull \hbox (badness 2512) in paragraph at lines 622--622
 []\OT1/cmr/m/n/10 Figure 43: |Risk
  []
 
-[46 <../Figures/Disposition Baseline (Correlated).pdf> <../Figures/Disposition 
-(Risk Averse) Baseline.pdf> <../Figures/Disposition (Risk Averse) Baseline (Cor
-related).pdf>] [47] [48]
-Overfull \hbox (5.299pt too wide) in paragraph at lines 644--644
+[46 <../Figures/Correlation between correlated and average equilibrium.pdf> <..
+/Figures/Disposition Baseline (Correlated).pdf> <../Figures/Disposition (Risk A
+verse) Baseline.pdf> <../Figures/Disposition (Risk Averse) Baseline (Correlated
+).pdf>] [47] [48]
+Overfull \hbox (5.299pt too wide) in paragraph at lines 646--646
 []\OT1/cmr/m/n/10 John C Harsanyi. \  Games with in-com-plete in-for-ma-tion pl
 ayed by 'Bayesian'
  []
@@ -1201,18 +1486,28 @@ ayed by 'Bayesian'
 [49] [50] [51] (fee_shift.aux)
 Package rerunfilecheck Info: File `fee_shift.out' has not changed.
 (rerunfilecheck)             Checksum: F84421CD3B8933E6EFAA30E10520E4B8;1916.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+
 Package logreq Info: Writing requests to 'fee_shift.run.xml'.
 \openout1 = `fee_shift.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 16902 strings out of 480223
- 310340 string characters out of 2880086
- 993283 words of memory out of 3000000
- 33047 multiletter control sequences out of 15000+200000
+ 16901 strings out of 480223
+ 310318 string characters out of 2880086
+ 988271 words of memory out of 3000000
+ 33046 multiletter control sequences out of 15000+200000
  545691 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,8n,111p,2137b,1693s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,8n,111p,2134b,1697s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -1236,9 +1531,9 @@ Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Admin
 ers/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/boondo
 x/zxxrw8a.pfb>
-Output written on fee_shift.pdf (51 pages, 1276847 bytes).
+Output written on fee_shift.pdf (51 pages, 1265863 bytes).
 PDF statistics:
- 1627 PDF objects out of 1728 (max. 8388607)
+ 1556 PDF objects out of 1728 (max. 8388607)
  153 named destinations out of 1000 (max. 500000)
  685 words of extra memory for PDF output out of 10000 (max. 10000000)
 
