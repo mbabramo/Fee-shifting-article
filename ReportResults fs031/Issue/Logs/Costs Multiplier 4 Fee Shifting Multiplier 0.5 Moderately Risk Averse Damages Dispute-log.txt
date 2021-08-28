@@ -1,14 +1,14 @@
 
 Percentage Complete 82.09432454036771% of 1251
-Task to do: Optimize 1058 0 Started:2/28/2021 4:14:02 AM Complete:False
-Updated status (total 35 milliseconds)
+Task to do: Optimize 1058 0 Started:2/27/2021 7:54:56 PM Complete:False
+Updated status (total 45 milliseconds)
 Using SequenceForm
 Game: LitigationGame: FSA Costs Multiplier 4 Fee Shifting Multiplier 0.5 Moderately Risk Averse Damages Dispute
 InvertChanceDecisions True
-NumOffers 5   
+NumOffers 10   
 NumPotentialBargainingRounds 1  BargainingRoundsSimultaneous True SimultaneousOffersUltimatelyRevealed True 
 NumLiabilityStrengthPoints 1 NumLiabilitySignals 1 PLiabilityNoiseStdev 0.2 DLiabilityNoiseStdev 0.2 CourtLiabilityNoiseStdev 0.2 
-NumDamagesStrengthPoints 5 NumDamagesSignals 5 PDamagesNoiseStdev 0.1 DDamagesNoiseStdev 0.1 CourtDamagesNoiseStdev 0.15 
+NumDamagesStrengthPoints 10 NumDamagesSignals 10 PDamagesNoiseStdev 0.1 DDamagesNoiseStdev 0.1 CourtDamagesNoiseStdev 0.15 
 SkipFileAndAnswerDecisions False AllowAbandonAndDefaults True PredeterminedAbandonAndDefaults True IncludeAgreementToBargainDecisions False DeltaOffersOptions N/A 
 CostsMultiplier 4 PTrialCosts 0.15 DTrialCosts 0.15 PFilingCost 0.15 DAnswerCost 0.15 PerPartyCostsLeadingUpToBargainingRound 0 
 LoserPays True Multiple 0.5 AfterAbandonment False Rule68 False Margin False (0.8)
@@ -18,423 +18,40 @@ RegretAversion 0
 PUtilityCalculator CARA Alpha=2 DUtilityCalculator CARA Alpha=2 
 WarmStartOptions NoWarmStart for  iterations
 Initializing all game paths...
-...  Total information sets: 40 chance nodes: 33 final nodes: 2550 Initialization milliseconds 144
+...  Total information sets: 80 chance nodes: 113 final nodes: 40200 Initialization milliseconds 2960
 Prepping accelerated best response...
-... 20 milliseconds. Total information sets: 40
+... 230 milliseconds. Total information sets: 80
 Calculating min-max...
-... complete 12 milliseconds
+... complete 268 milliseconds
 Option set FSA Costs Multiplier 4 Fee Shifting Multiplier 0.5 Moderately Risk Averse Damages Dispute
 Using exact arithmetic for initial prior
 
-Game tree has 3176 nodes, of which 2448 are terminal nodes.
-    Player 0 has  32 information sets,  56 moves in total
-    Player 1 has  20 information sets,  70 moves in total
-    Player 2 has  20 information sets,  70 moves in total
-Sequence form LCP dimension is 184
-    Player 1 has  71 sequences, subject to  21 constraints
-    Player 2 has  71 sequences, subject to  21 constraints
+Game tree has 41145 nodes, of which 36582 are terminal nodes.
+    Player 0 has 104 information sets, 203 moves in total
+    Player 1 has  40 information sets, 240 moves in total
+    Player 2 has  40 information sets, 240 moves in total
+Sequence form LCP dimension is 564
+    Player 1 has 241 sequences, subject to  41 constraints
+    Player 2 has 241 sequences, subject to  41 constraints
 Prior 1 of 1
-Complete after 85 pivoting steps
+... 100 steps (48998 ms) ...Complete after 165 pivoting steps
 Equilibrium 1
 Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 1: 4804
+1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Elapsed milliseconds prior 1: 113437
 Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Perfect equilibrium confirmed 31 ms
-Trying inexact arithmetic for up to 49 random priors
+1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Perfect equilibrium confirmed 343 ms
 
-Game tree has 3176 nodes, of which 2448 are terminal nodes.
-    Player 0 has  32 information sets,  56 moves in total
-    Player 1 has  20 information sets,  70 moves in total
-    Player 2 has  20 information sets,  70 moves in total
-Sequence form LCP dimension is 184
-    Player 1 has  71 sequences, subject to  21 constraints
-    Player 2 has  71 sequences, subject to  21 constraints
-Prior 1 of 49
-Complete after 85 pivoting steps
-Equilibrium 1
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 1: 545
-Prior 2 of 49
-Complete after 85 pivoting steps
-Equilibrium 2
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 2: 509
-Prior 3 of 49
-Complete after 85 pivoting steps
-Equilibrium 3
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 3: 537
-Prior 4 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 3
-Elapsed milliseconds prior 4: 509
-Prior 5 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 3
-Elapsed milliseconds prior 5: 512
-Prior 6 of 49
-Ray termination when trying to enter w168 on pivot 89
-ECTA algorithm failed Ray termination on pivot 89
-Equilibrium 4
-Equilibrium behavior strategies player 1, 2:
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 6: 541
-Prior 7 of 49
-... 100 steps (576 ms) ...Ray termination when trying to enter w99 on pivot 101
-ECTA algorithm failed Ray termination on pivot 101
-Same as equilibrium 4
-Elapsed milliseconds prior 7: 609
-Prior 8 of 49
-Complete after 85 pivoting steps
-Equilibrium 5
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 8: 548
-Prior 9 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 2
-Elapsed milliseconds prior 9: 512
-Prior 10 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 1
-Elapsed milliseconds prior 10: 520
-Prior 11 of 49
-Complete after 85 pivoting steps
-Equilibrium 6
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 11: 540
-Prior 12 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 5
-Elapsed milliseconds prior 12: 501
-Prior 13 of 49
-Complete after 85 pivoting steps
-Equilibrium 7
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 13: 528
-Prior 14 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 5
-Elapsed milliseconds prior 14: 518
-Prior 15 of 49
-Ray termination when trying to enter w168 on pivot 91
-ECTA algorithm failed Ray termination on pivot 91
-Same as equilibrium 4
-Elapsed milliseconds prior 15: 554
-Prior 16 of 49
-Complete after 85 pivoting steps
-Equilibrium 8
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 16: 530
-Prior 17 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 2
-Elapsed milliseconds prior 17: 522
-Prior 18 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 6
-Elapsed milliseconds prior 18: 511
-Prior 19 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 1
-Elapsed milliseconds prior 19: 523
-Prior 20 of 49
-Ray termination when trying to enter w180 on pivot 95
-ECTA algorithm failed Ray termination on pivot 95
-Same as equilibrium 4
-Elapsed milliseconds prior 20: 572
-Prior 21 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 2
-Elapsed milliseconds prior 21: 528
-Prior 22 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 5
-Elapsed milliseconds prior 22: 509
-Prior 23 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 8
-Elapsed milliseconds prior 23: 529
-Prior 24 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 5
-Elapsed milliseconds prior 24: 530
-Prior 25 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 3
-Elapsed milliseconds prior 25: 523
-Prior 26 of 49
-Complete after 85 pivoting steps
-Equilibrium 9
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 26: 529
-Prior 27 of 49
-Complete after 85 pivoting steps
-Equilibrium 10
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 27: 557
-Prior 28 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 3
-Elapsed milliseconds prior 28: 516
-Prior 29 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 9
-Elapsed milliseconds prior 29: 527
-Prior 30 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 5
-Elapsed milliseconds prior 30: 507
-Prior 31 of 49
-Ray termination when trying to enter w168 on pivot 95
-ECTA algorithm failed Ray termination on pivot 95
-Same as equilibrium 4
-Elapsed milliseconds prior 31: 634
-Prior 32 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 9
-Elapsed milliseconds prior 32: 495
-Prior 33 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 1
-Elapsed milliseconds prior 33: 522
-Prior 34 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 3
-Elapsed milliseconds prior 34: 497
-Prior 35 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 2
-Elapsed milliseconds prior 35: 532
-Prior 36 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 3
-Elapsed milliseconds prior 36: 497
-Prior 37 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 10
-Elapsed milliseconds prior 37: 529
-Prior 38 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 9
-Elapsed milliseconds prior 38: 544
-Prior 39 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 3
-Elapsed milliseconds prior 39: 522
-Prior 40 of 49
-Ray termination when trying to enter w179 on pivot 95
-ECTA algorithm failed Ray termination on pivot 95
-Same as equilibrium 4
-Elapsed milliseconds prior 40: 599
-Prior 41 of 49
-Ray termination when trying to enter w172 on pivot 97
-ECTA algorithm failed Ray termination on pivot 97
-Same as equilibrium 4
-Elapsed milliseconds prior 41: 600
-Prior 42 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 2
-Elapsed milliseconds prior 42: 512
-Prior 43 of 49
-Complete after 85 pivoting steps
-Equilibrium 11
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 43: 550
-Prior 44 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 5
-Elapsed milliseconds prior 44: 551
-Prior 45 of 49
-Ray termination when trying to enter w175 on pivot 93
-ECTA algorithm failed Ray termination on pivot 93
-Same as equilibrium 4
-Elapsed milliseconds prior 45: 568
-Prior 46 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 1
-Elapsed milliseconds prior 46: 523
-Prior 47 of 49
-Complete after 85 pivoting steps
-Equilibrium 12
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 47: 541
-Prior 48 of 49
-Complete after 85 pivoting steps
-Equilibrium 13
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 48: 535
-Prior 49 of 49
-Complete after 85 pivoting steps
-Same as equilibrium 9
-Elapsed milliseconds prior 49: 515
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Perfect equilibrium confirmed 21 ms
-Perfect equilibrium confirmed 21 ms
-Perfect equilibrium confirmed 16 ms
-Best response improvement average was 0.38610567440940713; equilibrium rejected
-Perfect equilibrium confirmed 14 ms
-Perfect equilibrium confirmed 16 ms
-Perfect equilibrium confirmed 16 ms
-Perfect equilibrium confirmed 16 ms
-Perfect equilibrium confirmed 16 ms
-Perfect equilibrium confirmed 18 ms
-Perfect equilibrium confirmed 17 ms
-Perfect equilibrium confirmed 16 ms
-Perfect equilibrium confirmed 15 ms
-Resorting to exact arithmetic for up to 8 random priors
-
-Game tree has 3176 nodes, of which 2448 are terminal nodes.
-    Player 0 has  32 information sets,  56 moves in total
-    Player 1 has  20 information sets,  70 moves in total
-    Player 2 has  20 information sets,  70 moves in total
-Sequence form LCP dimension is 184
-    Player 1 has  71 sequences, subject to  21 constraints
-    Player 2 has  71 sequences, subject to  21 constraints
-Prior 1 of 8
-Complete after 85 pivoting steps
-Equilibrium 1
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 1: 4721
-Prior 2 of 8
-Complete after 85 pivoting steps
-Equilibrium 2
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 2: 5090
-Prior 3 of 8
-Complete after 85 pivoting steps
-Equilibrium 3
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 3: 5182
-Prior 4 of 8
-Complete after 85 pivoting steps
-Same as equilibrium 2
-Elapsed milliseconds prior 4: 4988
-Prior 5 of 8
-Complete after 85 pivoting steps
-Equilibrium 4
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 5: 5223
-Prior 6 of 8
-Complete after 85 pivoting steps
-Equilibrium 5
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 6: 5033
-Prior 7 of 8
-Complete after 87 pivoting steps
-Equilibrium 6
-Equilibrium behavior strategies player 1, 2:
-1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1
-0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Elapsed milliseconds prior 7: 5302
-Prior 8 of 8
-Complete after 87 pivoting steps
-Same as equilibrium 3
-Elapsed milliseconds prior 8: 5400
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Changed to original form:
-1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-Perfect equilibrium confirmed 33 ms
-Perfect equilibrium confirmed 27 ms
-Perfect equilibrium confirmed 27 ms
-Perfect equilibrium confirmed 27 ms
-Perfect equilibrium confirmed 26 ms
-Perfect equilibrium confirmed 27 ms
-
-FSA Costs Multiplier 4 Fee Shifting Multiplier 0.5 Moderately Risk Averse Damages Dispute-Eq1
+FSA Costs Multiplier 4 Fee Shifting Multiplier 0.5 Moderately Risk Averse Damages Dispute
 Result using all paths playing CurrentProbability
-Best iteration 1000 best exploitability 1.1368683772161603E-13
+Best iteration 1000 best exploitability -1.1368683772161603E-13
 Scenario index 0 Name: Option set FSA Costs Multiplier 4 Fee Shifting Multiplier 0.5 Moderately Risk Averse Damages Dispute
-Avg BR: 1.1368683772161603E-13 Perturbed refinement: 1 Custom: 1, 0, 0, 0
-U(P0): 1000.10274 BR vs. False 1000.1027400000003 BRimp: 2.27E-13
-U(P1): 998.8077843862001 BR vs. False 998.8077843862001 BRimp: 0
-Total best response calculation time: 1 milliseconds
+Avg BR: -1.1368683772161603E-13 Perturbed refinement: 1 Custom: 1, 0, 0, 0
+U(P0): 1000.10274 BR vs. False 1000.1027399999998 BRimp: -2.27E-13
+U(P1): 998.8080992008 BR vs. False 998.8080992008 BRimp: 0
+Total best response calculation time: 39 milliseconds
 
 
-Elapsed milliseconds report for eq 1 of 19: 139
-Elapsed milliseconds generating correlated equilibrium report: 92
-
-FSA Costs Multiplier 4 Fee Shifting Multiplier 0.5 Moderately Risk Averse Damages Dispute-Avg
-Result using all paths playing AverageStrategy
-Exploitability over time:
-1.1369999999999999E-13
-Best iteration 1000 best exploitability 1.1368683772161603E-13
-Scenario index 0 Name: Option set FSA Costs Multiplier 4 Fee Shifting Multiplier 0.5 Moderately Risk Averse Damages Dispute
-Avg BR: 1.1368683772161603E-13 Perturbed refinement: 1 Custom: 1, 0, 0, 0
-U(P0): 1000.10274 BR vs. False 1000.1027400000003 BRimp: 2.27E-13
-U(P1): 998.8077843862001 BR vs. False 998.8077843862001 BRimp: 0
-Total best response calculation time: 2 milliseconds
-
-
-Elapsed milliseconds generating average equilibrium report: 103
+Elapsed milliseconds report for eq 1 of 1: 820

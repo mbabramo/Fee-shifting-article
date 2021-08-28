@@ -32,31 +32,51 @@
 \draw[black, very thin] (13.4,1.75) -- (13.4,14.5);
 \draw[black, very thin] (13.35,1.75) -- (13.45,1.75);
 \node[anchor=west] at (13.35, 1.75) {};
+\draw[black, very thin] (13.35,12.271) -- (13.45,12.271);
+\node[anchor=west] at (13.35, 12.271) {};
+\draw[black, very thin] (13.35,13.128) -- (13.45,13.128);
+\node[anchor=west] at (13.35, 13.128) {};
 \draw[black, very thin] (13.35,14.5) -- (13.45,14.5);
 \node[anchor=west] at (13.35, 14.5) {};
 
-\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,1.75) rectangle (5.3833,8.125);
-\draw[black, very thin, pattern color=orange, pattern=north west lines] (1.75,8.125) rectangle (1.75,14.5);
-\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,1.75) rectangle (9.2667,8.125);
-\draw[black, very thin, pattern color=blue, pattern=north east lines] (5.6333,8.125) rectangle (5.6333,14.5);
-\draw[black, very thin, pattern color=orange, pattern=north west lines] (9.5167,1.75) rectangle (13.15,8.125);
-\draw[black, very thin, pattern color=blue, pattern=north east lines] (9.5167,8.125) rectangle (13.15,14.5);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,1.75) rectangle (4.1986,6.5078);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (1.75,6.5078) rectangle (1.75,12.271);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,12.271) rectangle (5.3833,12.788);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (1.75,12.788) rectangle (1.75,13.128);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (1.75,13.128) rectangle (2.2239,14.228);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (1.75,14.228) rectangle (1.75,14.5);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,1.75) rectangle (6.8181,7.5132);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (5.6333,7.5132) rectangle (5.6333,12.271);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,12.271) rectangle (6.1072,12.611);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (5.6333,12.611) rectangle (5.6333,13.128);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (5.6333,13.128) rectangle (9.2667,13.4);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (5.6333,13.4) rectangle (6.1072,14.5);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (9.5167,1.75) rectangle (11.333,7.5132);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (9.5167,7.5132) rectangle (11.333,12.271);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (9.5167,12.271) rectangle (13.15,12.611);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (9.5167,12.611) rectangle (13.15,13.128);
+\draw[black, very thin, pattern color=orange, pattern=north west lines] (9.5167,13.128) rectangle (13.15,13.4);
+\draw[black, very thin, pattern color=blue, pattern=north east lines] (9.5167,13.4) rectangle (13.15,14.5);
+\draw[black, dotted] (1.5,12.271) -- (13.4,12.271);
+\draw[black, dotted] (1.5,13.128) -- (13.4,13.128);
 \draw[black, very thin] (1.75,1.5) -- (5.3833,1.5);
 \node[anchor=north] at (3.5667, 1.5) {False Negatives};
 \draw[black, very thin] (5.3833,1.45) -- (5.3833,1.55);
-\node[anchor=north] at (5.3833, 1.45) {0.42};
+\node[anchor=north] at (5.3833, 1.45) {1.2};
 
 \draw[black, very thin] (5.6333,1.5) -- (9.2667,1.5);
 \node[anchor=north] at (7.45, 1.5) {False Positives};
 \draw[black, very thin] (9.2667,1.45) -- (9.2667,1.55);
-\node[anchor=north] at (9.2667, 1.45) {0.73};
+\node[anchor=north] at (9.2667, 1.45) {1.2};
 
 \draw[black, very thin] (9.5167,1.5) -- (13.15,1.5);
 \node[anchor=north] at (11.333, 1.5) {Total Expenditures};
 \draw[black, very thin] (13.15,1.45) -- (13.15,1.55);
-\node[anchor=north] at (13.15, 1.45) {0.15};
+\node[anchor=north] at (13.15, 1.45) {0.3};
 
-\node[black, centered, rotate=90] at (13.72, 8.125) {Settles};
+\node[black, centered, rotate=90] at (13.72, 7.0105) {Settles};
+
+\node[black, centered, rotate=90] at (13.72, 13.814) {P Wins};
 
 \draw (7.449999999999999,1.5) node[draw=none] (baseCoordinate) {};
 \begin{scope}[align=center]
