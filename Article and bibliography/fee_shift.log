@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.2.7)  25 JUL 2021 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2021.2.7)  28 AUG 2021 19:12
 entering extended mode
 **./fee_shift.tex
 (fee_shift.tex
@@ -1121,16 +1121,11 @@ Underfull \hbox (badness 2512) in paragraph at lines 604--604
 []\OT1/cmr/m/n/10 Figure 40: |Risk
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 604--604
-\OT1/cmr/m/n/10 (sin-gle equi-lib-
- []
-
-<../Figures/Disposition Baseline (Correlated).pdf, id=1461, 561.91634pt x 653.3
+<../Figures/Disposition Baseline (Small Tree).pdf, id=1461, 561.91634pt x 653.3
 8501pt>
-File: ../Figures/Disposition Baseline (Correlated).pdf Graphic file (type pdf)
-<use ../Figures/Disposition Baseline (Correlated).pdf>
-Package pdftex.def Info: ../Figures/Disposition Baseline (Correlated).pdf  used
+File: ../Figures/Disposition Baseline (Small Tree).pdf Graphic file (type pdf)
+<use ../Figures/Disposition Baseline (Small Tree).pdf>
+Package pdftex.def Info: ../Figures/Disposition Baseline (Small Tree).pdf  used
  on input line 609.
 (pdftex.def)             Requested size: 84.28381pt x 98.00351pt.
 
@@ -1161,23 +1156,13 @@ Underfull \hbox (badness 2512) in paragraph at lines 616--616
 []\OT1/cmr/m/n/10 Figure 42: |Risk
  []
 
-
-Underfull \hbox (badness 1400) in paragraph at lines 616--616
-\OT1/cmr/m/n/10 averse, large tree
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 616--616
-\OT1/cmr/m/n/10 (sin-gle equi-lib-
- []
-
-<../Figures/Disposition (Risk Averse) Baseline (Correlated).pdf, id=1465, 561.9
+<../Figures/Disposition (Risk Averse) Baseline (Small Tree).pdf, id=1465, 561.9
 1634pt x 653.38501pt>
-File: ../Figures/Disposition (Risk Averse) Baseline (Correlated).pdf Graphic fi
+File: ../Figures/Disposition (Risk Averse) Baseline (Small Tree).pdf Graphic fi
 le (type pdf)
-<use ../Figures/Disposition (Risk Averse) Baseline (Correlated).pdf>
-Package pdftex.def Info: ../Figures/Disposition (Risk Averse) Baseline (Correla
-ted).pdf  used on input line 621.
+<use ../Figures/Disposition (Risk Averse) Baseline (Small Tree).pdf>
+Package pdftex.def Info: ../Figures/Disposition (Risk Averse) Baseline (Small T
+ree).pdf  used on input line 621.
 (pdftex.def)             Requested size: 84.28381pt x 98.00351pt.
 
 Overfull \hbox (1.48192pt too wide) in paragraph at lines 621--622
@@ -1190,8 +1175,8 @@ Underfull \hbox (badness 2512) in paragraph at lines 622--622
  []
 
 [46 <../Figures/Correlation between correlated and average equilibrium.pdf> <..
-/Figures/Disposition Baseline (Correlated).pdf> <../Figures/Disposition (Risk A
-verse) Baseline.pdf> <../Figures/Disposition (Risk Averse) Baseline (Correlated
+/Figures/Disposition Baseline (Small Tree).pdf> <../Figures/Disposition (Risk A
+verse) Baseline.pdf> <../Figures/Disposition (Risk Averse) Baseline (Small Tree
 ).pdf>] [47] [48]
 Overfull \hbox (5.299pt too wide) in paragraph at lines 646--646
 []\OT1/cmr/m/n/10 John C Harsanyi. \  Games with in-com-plete in-for-ma-tion pl
@@ -1199,9 +1184,14 @@ ayed by 'Bayesian'
  []
 
 [49] [50] [51] (fee_shift.aux)
-Package rerunfilecheck Info: File `fee_shift.out' has not changed.
-(rerunfilecheck)             Checksum: F84421CD3B8933E6EFAA30E10520E4B8;1916.
 
+Package rerunfilecheck Warning: File `fee_shift.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `fee_shift.out':
+(rerunfilecheck)             Before: 6DD8A0FFBB5D1936A13D19B93512F7CB;1943
+(rerunfilecheck)             After:  F84421CD3B8933E6EFAA30E10520E4B8;1916.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -1240,7 +1230,7 @@ Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Admin
 ers/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/boondo
 x/zxxrw8a.pfb>
-Output written on fee_shift.pdf (51 pages, 1278548 bytes).
+Output written on fee_shift.pdf (51 pages, 1278415 bytes).
 PDF statistics:
  1628 PDF objects out of 1728 (max. 8388607)
  153 named destinations out of 1000 (max. 500000)
