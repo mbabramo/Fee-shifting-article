@@ -1,0 +1,43 @@
+Filter,Assessment,Data Type
+P Doesn't File,False Negatives,Values,
+P Doesn't File,False Negatives,Probabilities,
+D Doesn't Answer,False Negatives,Values,
+D Doesn't Answer,False Negatives,Probabilities,
+Settles,False Negatives,Values,0.975,0.875,0.775,0.675,0.575,0.17499999999999993,0
+Settles,False Negatives,Probabilities,0.0117136096909078,9.147799420406736E-06,9.257361087250284E-06,9.428723625847786E-06,0.0007824881897999936,0.12034476263323755,0.23683692251769828
+P Abandons,False Negatives,Values,1.075,0
+P Abandons,False Negatives,Probabilities,0.029677024083892972,0.135836182730328
+D Defaults,False Negatives,Values,0.07499999999999996,0
+D Defaults,False Negatives,Probabilities,0.1325436738440701,0.04514642412593209
+P Loses,False Negatives,Values,1.45,0
+P Loses,False Negatives,Probabilities,0.027520691135625313,0.04094376612057575
+P Wins,False Negatives,Values,0,0
+P Wins,False Negatives,Probabilities,0.04123223278831903,0.1773943882554801
+P Doesn't File,False Positives,Values,
+P Doesn't File,False Positives,Probabilities,
+D Doesn't Answer,False Positives,Values,
+D Doesn't Answer,False Positives,Probabilities,
+Settles,False Positives,Values,0.975,0.575,0.475,0.375,0.275,0.175,0
+Settles,False Positives,Probabilities,0.035700854282539475,0.010122936854913611,0.00012197803766378332,0.0001197611452171847,0.00011834376173506492,0.19065304843562914,0.13286869439807886
+P Abandons,False Positives,Values,0.075,0
+P Abandons,False Positives,Probabilities,0.135836182730328,0.029677024083892972
+D Defaults,False Positives,Values,1.075,0.07499999999999996
+D Defaults,False Positives,Probabilities,0.04514642412593209,0.1325436738440701
+P Loses,False Positives,Values,0,0
+P Loses,False Positives,Probabilities,0.04094376612057575,0.027520691135625313
+P Wins,False Positives,Values,1.45,0.44999999999999996
+P Wins,False Positives,Probabilities,0.04123223278831903,0.1773943882554801
+P Doesn't File,Total Expenditures,Values,
+P Doesn't File,Total Expenditures,Probabilities,
+D Doesn't Answer,Total Expenditures,Values,
+D Doesn't Answer,Total Expenditures,Probabilities,
+Settles,Total Expenditures,Values,0.15000000000000002,0.15000000000000002,0.14999999999999997,0.14999999999999997,0.1499999999999999,0.1499999999999999
+Settles,Total Expenditures,Probabilities,0.000360082944616033,2.7833884133504804E-05,0.20077598529054277,0.012496097880707796,0.035700854282539475,0.12034476263323755
+P Abandons,Total Expenditures,Values,0.15,0.15
+P Abandons,Total Expenditures,Probabilities,0.135836182730328,0.029677024083892972
+D Defaults,Total Expenditures,Values,0.1499999999999999,0.1499999999999999
+D Defaults,Total Expenditures,Probabilities,0.04514642412593209,0.1325436738440701
+P Loses,Total Expenditures,Values,0.29999999999999993,0.29999999999999993
+P Loses,Total Expenditures,Probabilities,0.04094376612057575,0.027520691135625313
+P Wins,Total Expenditures,Values,0.30000000000000004,0.30000000000000004
+P Wins,Total Expenditures,Probabilities,0.04123223278831903,0.1773943882554801
