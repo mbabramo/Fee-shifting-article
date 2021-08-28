@@ -1,8 +1,8 @@
 Filter,Assessment,Data Type
-P Doesn't File,False Negatives,Values,
-P Doesn't File,False Negatives,Probabilities,
-D Doesn't Answer,False Negatives,Values,0.6,0
-D Doesn't Answer,False Negatives,Probabilities,0.49999060542662055,0.5000093945733798
+P Doesn't File,False Negatives,Values,1,0
+P Doesn't File,False Negatives,Probabilities,0.4999939130504803,0.5000060869495201
+D Doesn't Answer,False Negatives,Values,
+D Doesn't Answer,False Negatives,Probabilities,
 Settles,False Negatives,Values,
 Settles,False Negatives,Probabilities,
 P Abandons,False Negatives,Values,
@@ -13,10 +13,10 @@ P Loses,False Negatives,Values,
 P Loses,False Negatives,Probabilities,
 P Wins,False Negatives,Values,
 P Wins,False Negatives,Probabilities,
-P Doesn't File,False Positives,Values,
-P Doesn't File,False Positives,Probabilities,
-D Doesn't Answer,False Positives,Values,1,0
-D Doesn't Answer,False Positives,Probabilities,0.5000093945733798,0.49999060542662055
+P Doesn't File,False Positives,Values,0,0
+P Doesn't File,False Positives,Probabilities,0.5000060869495201,0.4999939130504803
+D Doesn't Answer,False Positives,Values,
+D Doesn't Answer,False Positives,Probabilities,
 Settles,False Positives,Values,
 Settles,False Positives,Probabilities,
 P Abandons,False Positives,Values,
@@ -27,10 +27,10 @@ P Loses,False Positives,Values,
 P Loses,False Positives,Probabilities,
 P Wins,False Positives,Values,
 P Wins,False Positives,Probabilities,
-P Doesn't File,Total Expenditures,Values,
-P Doesn't File,Total Expenditures,Probabilities,
-D Doesn't Answer,Total Expenditures,Values,0.6,0.6
-D Doesn't Answer,Total Expenditures,Probabilities,0.5000093945733798,0.49999060542662055
+P Doesn't File,Total Expenditures,Values,0,0
+P Doesn't File,Total Expenditures,Probabilities,0.5000060869495201,0.4999939130504803
+D Doesn't Answer,Total Expenditures,Values,
+D Doesn't Answer,Total Expenditures,Probabilities,
 Settles,Total Expenditures,Values,
 Settles,Total Expenditures,Probabilities,
 P Abandons,Total Expenditures,Values,
