@@ -160,7 +160,50 @@ The algorithm is initialized by setting every information set to a fully mixed b
 
 The algorithm is not without its limitations. First, the algorithm is not guaranteed to produce all Nash equilibria. One may attempt to obtain multiple equilibria by choosing different initializations of the information sets. Second, to ensure that an equilibrium is reached, the algorithm must be performed using exact arithmetic with rational numbers, rather than floating point arithmetic. Even given the generous amount of storage allowed by modern 64-bit computer architectures, floating point operations involve rounding, and that may prevent the algorithm from converging.  The use of exact arithmetic is cumbersome, however, given the frequent need to calculate greatest common factors of integers with many digits. Third, the algorithm is roughly linear in the size of the game tree, not in the size of the set of player sequences. The game tree grows exponentially as more moves are added to the game.
 
-\subsection{The Game Tree} \label{gametree}
+\subsection{A Near Replication} \label{replication}
+
+One approach to using the algorithm is to attempt to replicate Dari-Mattiacci and Saraceno as closely as possible. Such an attempted replication requires restriction of each player's bid function to consisting of piecewise linear segments. Yet, there are an infinite number of possible combinations of piecewise linear segments, and so we must adopt some restrictions. In theory, we could, for example, require each player to choose one of 100 starting values and one of 100 ending values for each of 10 signal ranges; for example, plaintiff might bid $0.47$ at $z=0.5$ and $0.92$ at $z=0.6$, representing one such segment. But, for each player, this would produce $(100 \times 100)^10$ possible strategies, and the game tree would be the square of this in size. 
+
+For this approach to run in a feasible amount of time, the strategies must be severely constrained. We thus allowed each player to choose a line with a minimum value in $\{0.02, 0.06, 0.10, ..., 0.98\}$, and a slope in $\{ \frac{1}{3}, \frac{1}{2}, \frac{2}{3}, 1 \}$. Because truncations are critical to the Dari-Mattiacci and Saraceno equilibria, each player also could choose a truncation portion from $\{0, \frac{1}{9}, \frac{2}{9}, ..., 1\}$; for example, when the plaintiff's strategy contains a truncation value of $\frac{1}{3}$, then the plaintiff's minimum bid is set equal to the minimum value selected plus $\frac{1}{3}$ of the slope. Thus, each player may in effect choose from $25 \times 4 \times 10 = 1,000$ strategies, so the game tree is thus quite large, consisting of 1,000,000 final nodes, even though the strategies are quite constrained. At each of these final nodes, the players' utilities are calculated by determining, for each of 10,000 combinations of the players' signals, the outcome of the game given the players' strategies. 
+
+Figure \ref{fig:replication1} illustrates a result of the algorithm, in this case for parameters $q = 0.4$, $c = 0.2$, and $t = 0.4$. The panels on the left represent the plaintiff's strategies; on the right, the defendants. The results of the computational model, on the bottom, are reasonably similar to the equilibrium for these parameters identified in the analytical model of Dari-Mattiacci and Saraceno, on the top, though hardly an exact match. This result is an exact equilibrium in the game as defined with these restrictions, but it is only an approximate equilibrium in the original Dari-Mattiacci and Saraceno game, which does not impose these restrictions. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.25, trim={0in 0in 0in 0in}, clip]{../Figures/replication1.pdf}
+\caption{Attempted replication with $q = 0.4$, $c = 0.2$, and $t = 0.4$}
+\label{fig:replication1}
+\end{figure}
+
+Still, by combining a number of such parameter sets, one can perform a task similar to that of Dari-Mattiacci and Saraceno, observing how changes in parameters affect the equilibrium. The results of a number of such observations are available in the Online Supplement to this article in the "DMS Replication" folder, corresponding to parameter values that are multiples of $0.1$ that meet Dari-Mattiacci and Saraceno's assumptions regarding $q$ and $c$ and for which in their analytical model neither party's strategy consists of more than a single line segment. The results in Figure \ref{fig:replication1} are typical, though there are some surprises, like Figure \ref{fig:replication2}, in which the algorithm calculates a mixed strategy equilibrium, with the relatively darkness of each of the parties' strategies corresponding to the probability that a party will play them. Though it seems unlikely that any individual would play such a strategy, a mixed strategy can be interpreted as a set of pure strategies that might be played by different litigants, where neither litigant knows the other litigant's type. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.25, trim={0in 0in 0in 0in}, clip]{../Figures/replication2.pdf}
+\caption{Attempted replication with $q = 0.4$, $c = 0.3$, and $t = 0.6$}
+\label{fig:replication2}
+\end{figure}
+
+Although these results illustrate that the algorithm can approximately replicate some analytical results, they may be disappointing. The most interesting results of Dari-Mattiacci and Saraceno occur in cases in which the strategies are discontinuous, and we have not even attempted to replicate those cases. The reason that the algorithm performs so weakly is that it does not fully take advantage of the sequence form. Each party has a limited number of information sets, in many of which it considers a large number of possibilities (such as which of 25 minimum values to select) that in turn dictate the party's strategy over a range of signals. The result is not much better than could be achieved by applying iterated elimination of dominated strategies. Still, the exercise is sufficiently simple that one might wonder why the settlement bargaining literature has eschewed even that well known technique. Even if it is practical to represent only 1,000 strategies per player, as here, this technique at least is a step beyond the prior literature in using computation to identify Nash equilibria in settlement bargaining games, and it is a technique that can be applied to a wide range of game specifications. 
+
+\subsection{A Discretized Evidentiary Signals Game} \label{gametree}
+
+A seemingly less ambitious but ultimately more fruitful strategy relies each player of the obligation to produce a bid function mapping every signal to an offer. Instead, we can discretize the signal, so that each party receives a discrete signal from $n_S$ possible signals and then must make a discrete offer from $n_{\mathcal{o}}$ available offers. For legibility, Figure \ref{fig:gametree} illustrates a highly simplified version of this game for  $n_S=2$ and $n_{\mathcal{o}}=2$, but we will generally use  $n_S=10$ and $n_{\mathcal{o}}=10$, which produces a game tree consisting of 11,111 nodes. The circles identify the players (Chance, Plaintiff, or Defendant), as well as information set numbers. The plaintiff does not observe the signal received by the defendant and vice-versa. Thus, for example, at each of the four points in the tree labeled as "D0," the defendant has the same information set, in which it has received the signal 1 (corresponding to $z=0.25$) instead of the signal 2 (corresponding to $z=0.75$). Thus, the defendant must assign the same move probabilities to its two alternative offers (corresponding to 0.25 and 0.75) at each of these points. The diagram illustrates an equilibrium identified by the algorithm for this simple game, in which each player is always aggressive, with the plaintiff demanding 0.75 and the defendant offering only 0.25. Given the Chaterjee and Samuelson bargaining protocol, this does not result in a settlement.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.25, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
+\caption{The game tree with $n_S=2$ and $n_{\mathcal{o}}=2$}. 
+\label{fig:gametree}
+\end{figure}
+
+The strategies permitted with this approach are in some ways more constrained and in some ways less constrained than the strategies in Dari-Mattiacci and Saraceno. The analytical model, of course, does not restrict the signals or offers to the 10 discrete points for each that we will allow for each set of parameters. But it does restrict the litigants from playing nonlinear strategies between the points that produce discontinuities in their proferred equilibria. The computational and analytical approaches both impose admittedly arbitrary constraints on what strategies are permissible. This is, of course, not unusual, and it is common in the settlement bargaining literature to see tighter constraints, such as in models where a party receives one in two signals instead of one in ten. An important question, however, is whether the discretization dramatically changes the nature of the equilibrium.
+
+We can test that ...
+
+relax Dari-Mattiacci and Saraceno's assumption that each player has a piecewise linear strategy, which allows at signal values that can be calculated to produce kinks in the party's expected litigation results. 
+
+[HOW DO WE KNOW THIS WORKS]
 
 To use a computational approach that finds equilibria from extensive form game trees, the model must encompass a discrete number of values representing the strength of the plaintiff's case, the signal that each party receives about the strength of the case, and the settlement values that each party can offer the other. In most of the simulations, we will allow for $n_{LS}=10$ quality levels on the issue of liability, $n_{LS}^P=n_{LS}^D=10$ signals of liability strength for each of the plaintiff and defendant on the issue of liability (damages will be considered separately later), and  $n_{\mathcal{o}}=10$ offers for each party. 
 
