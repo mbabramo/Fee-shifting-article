@@ -97,6 +97,8 @@ In a subtle way, the Dari-Mattiacci and Saraceno cost assumption is more restric
 
 \paragraph{Game structure}
 
+\subparagraph{Fee-shifting structure}Fee shifting in Dari-Mattiacci and Saraceno's model depends not only on which party wins more than half of the judgment at trial, but also on the quality of the evidence produced by the winning party. This is mathematically convenient, because each party knows the quality of its own evidence and thus whether fee-shifting will occur for any given value of the opponent's signal and any value of $t$. An alternative approach, however, would be for fee-shifting to depend on both parties' evidence. Indeed, Dari-Mattiacci and Saraceno explicitly consider fee-shifting based on the margin of victory, defined by a parameter $m$, where $0 \leq m \leq 1$. With this approach, if $\theta_\Pi + \theta_\Delta < m$, then the plaintiff must pay the defendant's fees, and if $\theta_\Pi + \theta_\Delta > 2 - m$, then the defendant must pay the plaintiff's fees. In this regime, if $m = 0$, no fee shifting occurs (the American rule), and if $m = 1$, fee shifting always occurs absent an evenly split judgment (the English rule); thus, the margin-of-victory approach converges with the other approaches at the extremes. Dari-Mattiacci and Saraceno explicitly calculate the parties' offers under this approach, but they do not prove their results related to accuracy. This raises the question whether their accuracy results are robust to the alternative specification. One might also imagine other fee-shifting rules, such as a simple rule in which a party always occurs when the party wins half of the judgment but the proportion of fees shifted may vary from 0 to 1.
+
 \subparagraph{Damages vs. liability}Dari-Mattiacci and Saraceno explicitly describe their model as one in which the parties are arguing about how to divide a disputed asset, such as in a case of divorce, and they point out that without loss of generality, this can be extended to a judicial determination of damages between some minimum and maximum value. An extension would be to consider cases where liability is at issue, i.e. where the plaintiff will receive 1 if $\theta_\Pi + \theta_\Delta > 1$ and 0 otherwise. For example, they might generalize the model to an arbitrary cumulative distribution function mapping $\theta_\Pi + \theta_\Delta$ onto the judgment, but this would add considerable challenge. Once again, this should be trivial in a computational model, which need only transform the judgment values in particular cases, either to 0 or 1 or based on some other distribution.   
 
 \subparagraph{Signal variance independent of true merits}Dari-Mattiacci and Saraceno refer to the signals that the parties receive as "evidence" of the true merits of the case, but there is a paradox: The parties are assumed to know the true merits of the case ($q$) and indeed use this information in constructing their offer functions. Thus the variance in the signals that each party may receive has nothing to do with the merits. Given the fixed value of $q$, whether the plaintiff receives a signal slightly above 0 or slightly below $q$ tells the plaintiff nothing about the true merits. What receipt of the signal accomplishes is to inform the plaintiff about the plaintiff's likely ability to persuade the judge about the true merits. The judge does not know the true merits, but is trying to guess the true merits. The higher $q$, the higher the parties' signals will tend to be, so the judge's strategy is reasonable, even if non-Bayesian. But the result is that from the perspective of the parties, for whom $q$ is fixed, the randomness in case outcomes has to do only with who is lucky in finding promising evidence.
@@ -126,11 +128,39 @@ An alternative measure, which arguably would be more appropriate at least for ri
 
 \section{Litigation as an Extensive Form Game}
 
-This section frames the fee-shifting problem in explicitly game theoretic terms by describing the extensive-form game tree, and it then offers an overview of the algorithm the article uses to solve it. The last subsection reports on the performance of the algorithm in practice when applied to the game tree. 
+This section describes an algorithm that can be used to find equilibria in any extensive form game. It illustrates that this approach can come close to replicating the Friedman and Wittman results by applying the algorithm to a model in which each party selects a slope for its bid function and a truncation. It then explains how discretization can relax the assumption of piecewise linearity and thus allow for more complex bid functions. 
+
+\subsection{The von Stengel, van den Elzen, and Talman Algorithm}
+
+In principle, any two-player extensive form game can be presented in strategic form, with the parties' payoffs embedded in a matrix. The row player may use a pure strategy and select a single row from the matrix or a mixed strategy, a probability distribution over the matrix rows. The column player analogously chooses a column or a probability distribution over matrix columns. Nash (1951) famously proved that every strategic game involving a finite number of players has at least one equilibrium, now called a Nash equilibrium, in which neither player could increase the player's payoff by switching to a different strategy given the opponent's strategy. Moreover, given a game in strategic form, any equilibrium in pure strategies can be identified relatively easily by the algorithm of iterative elimination of dominated strategies. If a cell of the matrix exists where the column player's utility is greater than in any other cell in its row and the row player's utility is greater than in any other cell in its column, then that cell represents a Nash equilibrium. 
+
+This approach is insufficient to find mixed strategy equilibria. The problem of finding Nash equilibria, however, can be converted into a linear programming problem. The reader with a strong interest in the algorithm applied here should read von Stengel (2002) for a comprehensive overview, including proofs that it produces equilibria. The reader interested solely in legal ramifications may skip this section altogether. A virtue of using computational game theory to identify equilibria is that one may choose to treat algorithms as black boxes, particularly because all equilibria found in this article were computationally verified.
+
+Still, we will provide an introduction to the algorithm for the reader with an intermediate level of interest. Let the payoffs for players 1 and 2, respectively, be represented by the $M \times N$ matrices $A$ and $B$, whose entries are positive; any game with negative payoffs can be scaled to an equivalent such game. Player 1's strategy can thus be represented by a vector $x \in \mathbb{R}^M$ whose components sum to 1, and Player 2's strategy can be represented by a vector $y \in \mathbb{R}^N$ whose components have the same property. Using matrix notation, if $E=[1, ..., 1]\in\mathbb{R}^{1XM}$ and $F=[1, ..., 1]\in\mathbb{R}^{1XN}$, then $Ex=1$, $Fy=1$, and $x,y>0$.  Player 1's strategy is called a "best response" to a strategy $y$ if it maximizes the expected payoff $x^TAy$ subject to the $Ex=1$ constraint, and similarly a strategy $y$ maximizing $x^TBy$ subject to the $Fy=1$ constraint is a best response to $x$. The strategy pair $(x,y)$ forms a Nash equilibrium if each is a best response to the other. To find a Nash equilibrium, one can take advantage of a linear programming principle known as duality. Under strong duality, if there is an optimal solution to a "primal LP," then a dual LP has the same optimal solution. In the dual LP, the variables and constraints are reversed and the objective (maximization or minimization) is inverted, relative to the primal LP. Thus, the primal problem of maximizing $x^TAy$ subject to $Ex=e$ (where $e=1$) has a dual problem of finding $u$ that minimizes $e^Tu$ subject to $E^Tu-Ay \geq 0$. A similar dual minimization problem can be used to represent player 2's constrained maximization of $x^TBy$.
+
+In von Stengel (2002), Theorem 2.4 shows that $(x,y)$ form a Nash equilibrium if and only if, for some $u$ and $v$, all of the following hold:
+
+\begin{align*}
+x^T(E^Tu-Ay) = 0 \\
+y^T(F^Tv-B^Tx) = 0 \\
+Ex = e \\
+Fy = f\\
+E^T u - A y \geq 0 \\
+F^Tv - B^Tx \geq 0 \\
+x, y \geq 0
+\end{align*}
+
+\noindent These conditions collectively define a mixed linear complementarity problem (LCP). The word "complementarity" refers to the fact that because $x$, $y$, $A$, and $B$ are nonnegative, the first line implies that $x$ and $E^Tu-Ay$ cannot have a positive component in the same position. The same holds for $y$ and $F^Tv-B^Tx$. The best known algorithm for finding a solution to a linear complementarity problem is that of Lemke and Howson (1964) \cite{lemkehowson}. 
+
+Even this algorithm, which is beyond our scope here, is inadequate to the settlement bargaining problem. The problem is that the bimatrix game will be too large. When an extensive form game is converted to a matrix, the matrix must contain a separate row for all permutations of the choices that the row player may make at an information set, and similarly a column for each permutation of the column player's information set choices. For example, if each player has 10 different information sets (perhaps corresponding to 10 different possible signals), and may make 10 different moves at each information set, then $10^10$ rows or columns would be needed for that player. Several different scholars, the earliest being Romanovskii (1962) \cite{romanovskii}, offer a way around this dilemma. The trick, as explained by Koller, Megiddo, and von Stengel (1996) \cite{kollermegiddovonstengel}, is to craft a matrix in which the rows or columns represent not a player's pure strategies, but instead the sequences that the player may play at any stage of the game. In the above example, there would be 101 sequences per player (10 for each information set plus an empty sequence). If we inserted an opportunity by each player to quit after receiving its signal, then there would be 121 sequences per player (the above, plus decisions to quit or not at each of the 10 signals). Some sequences may be incompatible, because it may be impossible for a player to play a certain information set given a move by another; thus, the relevant matrix includes a zero in such cells. 
+
+The von Stengel, van den Elzen, and Talman (2002) algorithm adapts the "sequence form" approach by combining techniques used in von Stengel (1996) with developments in van den Elzen and Talman (1999), which adapts the Lemke-Howson algorithm to ensure perfect equilibria. The result is an algorithm that produces perfect, Nash equilibria. The requirement of perfection would not be needed if players committed to strategies at the outset of the game. But in litigation, such commitments do not occur. Thus, even if an equilibrium meets the Nash criterion, meaning that neither player will have an incentive at the outset of the game to change its strategy choice given the opponent's strategy choice, it may be imperfect, if a player might have an incentive to deviate in its strategy choice after learning new information. The solution concept of perfect Bayesian equilibrium, a term in use since at least the 1960s, has various formal definitions in the literature, including that of Fudenberg and Tirole (1991) \cite{fudenberg}, and is the imperfect information analogue of the subgame perfection equilibrium concept proposed by Selten (1965) \cite{selten}.
+
+The algorithm is initialized by setting every information set to a fully mixed behavior strategy, that is a strategy in which each action has some positive probability of being played. A data structure called a tableau is initialized in turn based on these values. This tableau encodes not only action probabilities, but also the relationships among information sets, specifically which information sets may follow other information sets in sequence. The initialization is designed so that the equations reflected by the tableau reflect a "basic feasible solution" to some of the equations in the linear complementarity problem, albeit ordinarily not a solution that corresponds to a perfect Nash equilibrium.  The algorithm then proceeds through a series of pivoting steps, which represent  linear algebraic manipulations in which variables are added to or removed from the list of non-zero variables known as the basis. When the variable initially added to the basis eventually leaves the basis, a Nash equilibrium is guaranteed.
+
+The algorithm is not without its limitations. First, the algorithm is not guaranteed to produce all Nash equilibria. One may attempt to obtain multiple equilibria by choosing different initializations of the information sets. Second, to ensure that an equilibrium is reached, the algorithm must be performed using exact arithmetic with rational numbers, rather than floating point arithmetic. Even given the generous amount of storage allowed by modern 64-bit computer architectures, floating point operations involve rounding, and that may prevent the algorithm from converging.  The use of exact arithmetic is cumbersome, however, given the frequent need to calculate greatest common factors of integers with many digits. Third, the algorithm is roughly linear in the size of the game tree, not in the size of the set of player sequences. The game tree grows exponentially as more moves are added to the game.
 
 \subsection{The Game Tree} \label{gametree}
-
-
 
 To use a computational approach that finds equilibria from extensive form game trees, the model must encompass a discrete number of values representing the strength of the plaintiff's case, the signal that each party receives about the strength of the case, and the settlement values that each party can offer the other. In most of the simulations, we will allow for $n_{LS}=10$ quality levels on the issue of liability, $n_{LS}^P=n_{LS}^D=10$ signals of liability strength for each of the plaintiff and defendant on the issue of liability (damages will be considered separately later), and  $n_{\mathcal{o}}=10$ offers for each party. 
 
@@ -139,7 +169,7 @@ A model dependent on discrete variables is admittedly less general than a model 
 To describe the litigation game, however, it is easier to focus on a much smaller game tree, where $n_{LS}=n_{LS}^P=n_{LS}^D=n_{\mathcal{o}}=2$. This smaller game tree, including probabilities corresponding to a perfect equilibrium of the game (produced to three decimal places), is presented in Figure \ref{fig:gametree2x2x2}. This is presented in full at the expense of legibility to illustrate that even with these low parameter values, the game tree is fairly large. (The full figure is available in the Supplemental Materials.) Thus, we will simplify further, focusing on particular parts of the game tree.
 \begin{figure}[h!]
 \centering
-\includegraphics[width=10cm, height=10cm, trim={0in 0in 0in 0in}, clip]{../Figures/game tree 2x2x2.pdf}
+\includegraphics[width=10cm, height=10cm, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{A bird's eye view of a small game tree}
 \label{fig:gametree2x2x2}
 \end{figure}
@@ -150,7 +180,7 @@ Explicit modeling of true liability will allow us ultimately to measure the accu
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.25, trim={0in 0in 0in 0in}, clip]{../Figures/game tree 2x2x2 beginning.pdf}
+\includegraphics[scale=0.25, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{The beginning of the small game tree}
 \label{fig:gametree2x2x2beginning}
 \end{figure}
@@ -163,7 +193,7 @@ Figure \ref{fig:liabilitysignalsdefault} provides a simple visualization of the 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.4, trim={0in 0in 0in 0in}, clip]{../Figures/liability signals default.pdf}
+\includegraphics[scale=0.4, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{Liability strength given true liability and party's signal given liability strength}
 \label{fig:liabilitysignalsdefault}
 \end{figure}
@@ -190,7 +220,7 @@ Figure \ref{fig:gametree2x2x2end} illustrates the decision to be made by the pla
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.25, trim={0in 0in 0in 0in}, clip]{../Figures/game tree 2x2x2 end.pdf}
+\includegraphics[scale=0.25, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{The end of the game tree}
 \label{fig:gametree2x2x2end}
 \end{figure}
@@ -207,7 +237,7 @@ The game tree can be simplified when calculating equilibria. The Chance decision
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.25, trim={0in 0in 0in 0in}, clip]{../Figures/game tree 2x2x2 beginning simplified.pdf}
+\includegraphics[scale=0.25, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{A reduced-form version of the beginning of the game tree}
 \label{fig:gametree2x2x2beginning_reduced}
 \end{figure}
@@ -216,61 +246,12 @@ The end of the game can also be simplified. The court's eventual decision on lia
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.25, trim={0in 0in 0in 0in}, clip]{../Figures/game tree 2x2x2 end simplified.pdf}
+\includegraphics[scale=0.25, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{A reduced-form version of end of the game tree}
 \label{fig:gametree2x2x2end_reduced}
 \end{figure}
 
 The full game tree will still be needed to calculate variables such as party win rates at trial and accuracy of the system of litigation. Thus, after the equilibria are calculated using the simplified version of the tree, the full tree can be explored to determine the exact probability of every outcome. None of the results in this article depends on Monte Carlo sampling, and so no error bars are needed, given the exact equilibrium identified by the algorithm.
-
-\subsection{The von Stengel, van den Elzen, and Talman Algorithm}
-
-In principle, any two-player extensive form game can be presented in strategic form, with the parties' payoffs embedded in a matrix. The row player may use a pure strategy and select a single row from the matrix or a mixed strategy, a probability distribution over the matrix rows. The column player analogously chooses a column or a probability distribution over matrix columns. Nash (1951) famously proved that every strategic game involving a finite number of players has at least one equilibrium, now called a Nash equilibrium, in which neither player could increase the player's payoff by switching to a different strategy given the opponent's strategy. Moreover, given a game in strategic form, any equilibrium in pure strategies can be solved relatively easily by the algorithm of iterative elimination of dominated strategies. If a cell of the matrix exists where the column player's utility is greater than in any other cell in its row and the row player's utility is greater than in any other cell in its column, then that cell represents a Nash equilibrium. 
-
-This approach is insufficient to find mixed strategy equilibria. The problem of finding Nash equilibria, however, can be converted into a linear programming problem. The reader with a strong interest in the algorithm should read von Stengel (2002) for a comprehensive overview, including proofs that it produces equilibria. The reader interested solely in legal ramifications may skip this section altogether. A virtue of using computational game theory to identify equilibria is that one may choose to treat algorithms as black boxes, particularly because all equilibria found in this article were computationally verified.
-
-Still, we will provide an introduction to the algorithm for the reader with an intermediate level of interest. Let the payoffs for players 1 and 2, respectively, be represented by the $M \times N$ matrices $A$ and $B$, whose entries are positive; any game with negative payoffs can be scaled to an equivalent such game. Player 1's strategy can thus be represented by a vector $x \in \mathbb{R}^M$ whose components sum to 1, and Player 2's strategy can be represented by a vector $y \in \mathbb{R}^N$ whose components have the same property. Using matrix notation, if $E=[1, ..., 1]\in\mathbb{R}^{1XM}$ and $F=[1, ..., 1]\in\mathbb{R}^{1XN}$, then $Ex=1$, $Fy=1$, and $x,y>0$.  Player 1's strategy is called a "best response" to a strategy $y$ if it maximizes the expected payoff $x^TAy$ subject to the $Ex=1$ constraint, and similarly a strategy $y$ maximizing $x^TBy$ subject to the $Fy=1$ constraint is a best response to $x$. The strategy pair $(x,y)$ forms a Nash equilibrium if each is a best response to the other. To find a Nash equilibrium, one can take advantage of a linear programming principle known as duality. Under strong duality, if there is an optimal solution to a "primal LP," then a dual LP has the same optimal solution. In the dual LP, the variables and constraints are reversed and the objective (maximization or minimization) is inverted, relative to the primal LP. Thus, the primal problem of maximizing $x^TAy$ subject to $Ex=e$ (where $e=1$) has a dual problem of finding $u$ that minimizes $e^Tu$ subject to $E^Tu-Ay \geq 0$. A similar dual minimization problem can be used to represent player 2's constrained maximization of $x^TBy$.
-
-In von Stengel (2002), Theorem 2.4 shows that $(x,y)$ form a Nash equilibrium if and only if, for some $u$ and $v$, all of the following hold:
-
-\begin{align*}
-x^T(E^Tu-Ay) = 0 \\
-y^T(F^Tv-B^Tx) = 0 \\
-Ex = e \\
-Fy = f\\
-E^T u - A y \geq 0 \\
-F^Tv - B^Tx \geq 0 \\
-x, y \geq 0
-\end{align*}
-
-\noindent These conditions collectively define a mixed linear complementarity problem (LCP). The word "complementarity" refers to the fact that because $x$, $y$, $A$, and $B$ are nonnegative, the first line implies that $x$ and $E^Tu-Ay$ cannot have a positive component in the same position. The same holds for $y$ and $F^Tv-B^Tx$. The best known algorithm for finding a solution to a linear complementarity problem is that of Lemke and Howson (1964) \cite{lemkehowson}. 
-
-Even this algorithm, which is beyond our scope here, is inadequate to the settlement bargaining problem. The problem is that the bimatrix game will be too large. When an extensive form game is converted to a matrix, the matrix must contain a separate row for all permutations of the choices that the row player may make at an information set, and similarly a column for each permutation of the column player's information set choices. In our game, for example, a plaintiff faces 20 different information sets (corresponding to the previous decision by the plaintiff of whether to quit the game if settlement fails and to 10 different liability signals), at each of which the plaintiff may choose 10 offer levels. Thus, that alone produces $10^{20}$ pure strategies for the plaintiff; adding the filing and quit decisions to the strategy makes for exponentially more rows. The total number of cells in the matrix is considerably larger than $10^{40}$. 
-
-Several different scholars, the earliest being Romanovskii (1962) \cite{romanovskii}, offer a way around this dilemma. The trick, as explained by Koller, Megiddo, and von Stengel (1996) \cite{kollermegiddovonstengel}, is to craft a matrix in which the rows or columns represent not a player's pure strategies, but instead the sequences that the player may play. For example, in the litigation game, a sequence for the plaintiff is to file the suit, decide not to abandon if settlement fails, and then offer a settlement at the third available settlement level. Note that some sequences may be incompatible, because it may be impossible for a player to play a certain information set given a move by another; thus, the relevant matrix includes a zero in such cells. 
-
-The von Stengel, van den Elzen, and Talman (2002) algorithm adapts the approach in Koller, Megiddo, and von Stengel (1992). It combines techniques used in von Stengel (1996) with developments in van den Elzen and Talman (1999), which adapts the Lemke-Howson algorithm to ensure perfect equilibria. The result is an algorithm that produces perfect, Nash equilibria. The requirement of perfection would not be needed if players committed to strategies at the outset of the game. But in litigation, such commitments do not occur. Thus, even if an equilibrium meets the Nash criterion, meaning that neither player will have an incentive at the outset of the game to change its strategy choice given the opponent's strategy choice, it may be imperfect, if a player might have an incentive to deviate in its strategy choice after learning new information. The solution concept of perfect Bayesian equilibrium, a term in use since at least the 1960s, has various formal definitions in the literature, including that of Fudenberg and Tirole (1991) \cite{fudenberg}, and is the imperfect information analogue of the subgame perfection equilibrium concept proposed by Selten (1965) \cite{selten}.
-
-The algorithm is initialized by setting every information set to a fully mixed behavior strategy, that is a strategy in which each action has some positive probability of being played. Except where noted later, we chose to initialize each information set such that each action has an equal chance of being played. A data structure called a tableau is initialized in turn based on these values. This tableau encodes not only action probabilities, but also the relationships among information sets, specifically which information sets may follow other information sets in sequence. The initialization is designed so that the equations reflected by the tableau reflect a "basic feasible solution" to some of the equations in the linear complementarity problem, albeit ordinarily not a solution that corresponds to a perfect Nash equilibrium.  The algorithm then proceeds through a series of pivoting steps, which represent  linear algebraic manipulations in which variables are added to or removed from the list of non-zero variables known as the basis. When the variable initially added to the basis eventually leaves the basis, a Nash equilibrium is guaranteed.
-
-The algorithm is not without its limitations. First, the algorithm is not guaranteed to produce all Nash equilibria. One may attempt to obtain multiple equilibria by choosing different initializations of the information sets. In most of this article, we simply obtain the one equilibrium corresponding to the evenly mixed strategies, but as a robustness check, we will seek out multiple equilibria in a smaller version of the game. 
-
-Second, to ensure that an equilibrium is reached, the algorithm must be performed using exact arithmetic, rather than floating point arithmetic. That is, the algorithm is not guaranteed to succeed if rounding occurs during the pivoting phase, even given the generous number of digits allowed by modern 64-bit computer architectures. A consequence of using exact arithmetic is that every utility value and chance probability must be represented as a positive rational number. Accordingly, in each simulation, utility values were scaled to integers ranging from 1 for the lowest possible utility for a player to 100,000 for the highest. The loss in precision from rounding off some utility values is immaterial, and because rounding occurs before the pivoting, it allows the algorithm to proceed. The use of exact arithmetic is cumbersome, however, requiring complications involving fractions of relatively large numbers. For example, in the baseline simulation to be reported in Figure \ref{fig:offers_american}, the defendant in equilibrium takes one particular action with an exact probability in canonical form of $\frac{7,686,146}{13,380,759}$, and the calculations leading to determination of the equilibria often involve fractions with many more digits. (For legibility, we will present this and other results using decimal approximations.) The source code accompanying the present article allows the algorithm to be performed using either exact arithmetic or floating point arithmetic. Floating point arithmetic is much faster and sometimes yields an equilibrium, but the procedure is hit or miss.
-
-Third, in the worst case, the algorithm is exponential in the size of the strategic form game matrix. Even with a relatively small matrix, an exponential algorithm may be infeasible. In practice, however, von Stengel, van den Elzen, and Talman find that the number of steps needed to solve a set of games they consider is proportional to the dimension of the matrix. Whether we will be able to solve the litigation game described above efficiently for a wide range of parameter values is an empirical question.
-
-\subsection{Performance of the Algorithm}
-
-This empirical question has an affirmative answer. The algorithm was capable of solving the game sufficiently quickly to produce results for a wide range of parameter values, though the algorithm's performance suggests that even modest increases to the complexity of the game might considerably reduce the algorithm's feasibility.  Figure \ref{fig:performance} documents the algorithm's performance using game trees of various sizes, ranging from the small game tree illustrated in Figure \ref{fig:gametree2x2x2}, where $n_{LS}=n_{LS}^P=n_{LS}^D=n_{\mathcal{o}}=2$, to a much larger game tree in which $n_{LS}=n_{LS}^P=n_{LS}^D=n_{\mathcal{o}}=10$. The left panel demonstrates that the number of nodes in the game tree (presented in increments of 10,000 on the y axis) increases rapidly in the number of signals and offers. This is as one would expect; because the game tree contains every combination of plaintiff signal, defendant signal, plaintiff offer, and defendant offer, the number of nodes is $O(N^4)$. Even though this implies that the number of sequences also grows with the same relationship, the number of pivoting steps needed to find an equilibrium appears to be roughly linear. As the granularity of signals and offers grows, however, the number of seconds that the algorithm takes to process an equilibrium, executing on a single core of a modern desktop computer, grows exponentially as well. 
-
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.40, trim={0in 0in 0in 0in}, clip]{../Figures/ECTA algorithm complexity.pdf}
-\caption{The performance of the algorithm}
-\label{fig:performance}
-\end{figure}
-
-Figure \ref{fig:performance} reflects just nine simulations, all run with the parameters, other than game tree size, used in Section \ref{gametree}. In Section \ref{results}, results are based on 1,250 different combinations of parameters for each game size. In some cases, the algorithm took far longer to complete than in other cases. For example, one simulation, in which both parties had high risk aversion and there was a moderate amount of fee shifting, concluded after 6,263 pivoting steps and took nearly 8 hours to complete on a single processor core. The entire set of simulations took approximately 448 processor-core hours to complete. An increase in game complexity might exceed the algorithm's capacity. For example, if the litigation game tree is expanded to allow for two bargaining rounds, with the parties making additional offers if they fail initially to settle, the number of nodes in the game tree increases to 2,070,211, and the time needed to solve the game for just a single set of parameters, seems likely to increase proportionately. (The source code for this article supports multiple bargaining rounds, but completing execution was not attempted for this article.) That could still be within the range of what is feasible with a sufficient budget, but it hints at the limits of this approach. More complex games may require alternative solution techniques, but for a problem of this size, the von Stengel, van den Elzen, and Talman algorithm's complexity is justified by its promise of finding exact, perfect Nash equilibria and its success in delivering on that promise in a manageable amount of time. 
 
 \section{Results} \label{results}
 
@@ -286,14 +267,14 @@ The unexpected stasis helps illustrate the power of computed equilibria to ident
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/File and answer decisions (American).pdf}
+\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{File and answer decisions (American rule)}
 \label{fig:fileans_american}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/File and answer decisions (British).pdf}
+\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{File and answer decisions (British rule)}
 \label{fig:fileans_british}
 \end{figure}
@@ -306,14 +287,14 @@ We will return to exploring other parameter values, but first let us consider th
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/Offers heatmap (American).pdf}
+\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{Offer decisions (American rule)}
 \label{fig:offers_american}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/Offers heatmap (British).pdf}
+\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{Offer decisions (British rule)}
 \label{fig:offers_british}
 \end{figure}
@@ -328,13 +309,13 @@ Figures \ref{fig:errors_american} and \ref{fig:errors_british} offer a visualiza
     \centering
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Source of error costs and expenditures (American)} % first figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % first figure itself
         \caption{Errors and expenditures (American)}
 		\label{fig:errors_american}
     \end{minipage}\hfill
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Source of error costs and expenditures (British)} % second figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % second figure itself
         \caption{Errors and expenditures (British)}
 		\label{fig:errors_british}
     \end{minipage}
@@ -352,7 +333,7 @@ To develop a more complete picture of how fee-shifting intensity may affect case
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/Disposition Baseline.pdf}
+\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{Dispositions with baseline parameters, varying costs and fee shifting multipliers}
 \label{fig:disposition_baseline}
 \end{figure}
@@ -369,7 +350,7 @@ On these parameters, though, that inference would be wrong. Figure \ref{fig:acce
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/Accuracy and Expenditures Baseline.pdf}
+\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{Inaccuracy and expenditures with baseline parameters}
 \label{fig:accexp_baseline}
 \end{figure}
@@ -382,7 +363,7 @@ A computational model also can easily consider the effects of risk aversion. Uti
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.40, trim={0in 0in 0in 0in}, clip]{../Figures/risk aversion.pdf}
+\includegraphics[scale=0.40, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{Levels of risk aversion}
 \label{fig:riskaversion}
 \end{figure}
@@ -393,7 +374,7 @@ Figure \ref{fig:disposition_riskaversion} confirms that trial becomes considerab
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/Disposition Varying Risk Aversion.pdf}
+\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{Dispositions varying risk aversion}
 \label{fig:disposition_riskaversion}
 \end{figure}
@@ -402,7 +383,7 @@ Sufficiently high risk aversion makes the litigation game similar to the famous 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/Accuracy and Expenditures Varying Risk Aversion.pdf}
+\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{Inaccuracy and expenditures with risk aversion}
 \label{fig:accexp_riskaversion}
 \end{figure}
@@ -413,7 +394,7 @@ The above analysis assumed that both parties had the same level of risk aversion
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/Disposition Varying Risk Aversion Asymmetry.pdf}
+\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{Disposition of cases with asymmetric risk aversion}
 \label{fig:disposition_riskaversionasymmetry}
 \end{figure}
@@ -422,7 +403,7 @@ The result is a divergence between the false negative inaccuracy and false posit
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/Accuracy and Expenditures Varying Risk Aversion Asymmetry.pdf}
+\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{Inaccuracy and expenditures with asymmetric risk aversion}
 \label{fig:accexp_riskaversionasymmetry}
 \end{figure}
@@ -439,13 +420,13 @@ If the litigants both have better information, they are more likely to be able t
     \centering
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Disposition Varying Noise Multiplier} % first figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % first figure itself
         \caption{Disposition based on player noise levels}
 		\label{fig:dispositions_playernoise}
     \end{minipage}\hfill
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Accuracy and Expenditures Varying Noise Multiplier} % second figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % second figure itself
         \caption{Errors and expenditures based on player noise levels}
 		\label{fig:accexp_playernoise}
     \end{minipage}
@@ -465,13 +446,13 @@ Thus, the party with high-quality information will continue to trial if it has a
     \centering
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Disposition Varying Information Asymmetry} % first figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % first figure itself
         \caption{Disposition based on information quality asymmetry}
 		\label{fig:dispositions_playernoise_asymmetry}
     \end{minipage}\hfill
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Accuracy and Expenditures Varying Information Asymmetry} % second figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % second figure itself
         \caption{Errors and expenditures based on information quality asymmetry}
 		\label{fig:accexp_playernoise_asymmetry}
     \end{minipage}
@@ -485,7 +466,7 @@ So far, this section has focused on variations to the noise that obfuscates the 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/Accuracy and Expenditures Varying Case Strength Noise Costs 1.pdf}
+\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{Inaccuracy and expenditures varying case strength noise}
 \label{fig:accexp_qualitylegalsystem}
 \end{figure}
@@ -502,13 +483,13 @@ A party might bear higher costs than its adversary because it chooses a pricier 
     \centering
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Disposition Varying Relative Costs} % first figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % first figure itself
         \caption{Disposition with asymmetric costs}
 		\label{fig:dispositions_costsasymmetry}
     \end{minipage}\hfill
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Accuracy and Expenditures Varying Relative Costs} % second figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % second figure itself
         \caption{Errors and expenditures with asymmetric costs}
 		\label{fig:accexp_costsasymmetry}
     \end{minipage}
@@ -526,13 +507,13 @@ The net effects on error costs and total expenditures are relatively small. In t
     \centering
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Disposition Varying Proportion of Costs at Beginning} % first figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % first figure itself
         \caption{Disposition based on timing of costs}
 		\label{fig:dispositions_timing}
     \end{minipage}\hfill
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Accuracy and Expenditures Varying Proportion of Costs at Beginning} % second figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % second figure itself
         \caption{Errors and expenditures based on timing of costs}
 		\label{fig:accexp_timing}
     \end{minipage}
@@ -548,7 +529,7 @@ When damages are at issue, the model assumes that the plaintiff is always liable
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.4, trim={0in 0in 0in 0in}, clip]{../Figures/damages signals.pdf}
+\includegraphics[scale=0.4, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{Damages signals given true damages strength}
 \label{fig:damagessignals}
 \end{figure}
@@ -559,13 +540,13 @@ Because the defendant is always liable, fees are always shifted against the defe
     \centering
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Disposition Varying Issue} % first figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % first figure itself
         \caption{Disposition based on issue in case}
 		\label{fig:dispositions_issue}
     \end{minipage}\hfill
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Accuracy and Expenditures Varying Issue} % second figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % second figure itself
         \caption{Errors and expenditures based on issue in case}
 		\label{fig:accexp_issue}
     \end{minipage}
@@ -579,13 +560,13 @@ In cases in which damages are at issue, Federal Rule of Civil Procedure 68 or me
     \centering
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Disposition Varying Fee Shifting Rule (Damages Issue)} % first figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % first figure itself
         \caption{Disposition based on fee-shifting rule}
 		\label{fig:dispositions_damagesrule}
     \end{minipage}\hfill
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Accuracy and Expenditures Varying Fee Shifting Rule (Damages Issue)} % second figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % second figure itself
         \caption{Errors and expenditures based on fee-shifting rule}
 		\label{fig:accexp_damagesrule}
     \end{minipage}
@@ -605,13 +586,13 @@ Figures \ref{fig:dispositions_quit} and \ref{fig:accexp_quit} show that, at leas
     \centering
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Disposition Varying Quitting Rules} % first figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % first figure itself
         \caption{Disposition based on permissibility of quitting}
 		\label{fig:dispositions_quit}
     \end{minipage}\hfill
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/Accuracy and Expenditures Varying Quitting Rules} % second figure itself
+        \includegraphics[width=0.98\textwidth, scale=0.70, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf} % second figure itself
         \caption{Errors and expenditures based on permissibility of quitting}
 		\label{fig:accexp_quit}
     \end{minipage}
@@ -631,13 +612,13 @@ We performed this for the baseline simulation, both with and without fee shiftin
     \centering
     \begin{minipage}{0.48\textwidth}
         \centering
-        \includegraphics[scale=0.5, trim={0in 0in 0in 0in}, clip]{../Figures/Baseline multiple equilibria (American).pdf}
+        \includegraphics[scale=0.5, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 		\caption{Coefficient of variation for 29 American rule equilibria}
 \label{fig:baseline_multieq_american}
     \end{minipage}\hfill
     \begin{minipage}{0.48\textwidth}
         \centering
-		\includegraphics[scale=0.5, trim={0in 0in 0in 0in}, clip]{../Figures/Baseline multiple equilibria (British).pdf}
+		\includegraphics[scale=0.5, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 		\caption{Coefficient of variation for 9 British rule equilibria}
 		\label{fig:baseline_multieq_british}
     \end{minipage}
@@ -655,7 +636,7 @@ For each of the 1,250 parameter sets, we created a correlated equilibrium strate
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.5, trim={0in 0in 0in 0in}, clip]{../Figures/Correlation between correlated and average equilibrium.pdf}
+\includegraphics[scale=0.5, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 \caption{Correlations in outcome variables between correlated and average equilibria}
 \label{fig:correlations_corrvsave}
 \end{figure}
@@ -668,25 +649,25 @@ The equilibria on the smaller game tree also can be compared directly to the equ
     \centering
     \begin{minipage}{0.24\textwidth}
         \centering
-        \includegraphics[scale=0.15, trim={0in 0in 0in 0in}, clip]{../Figures/Disposition Baseline.pdf}
+        \includegraphics[scale=0.15, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 		\caption{Risk neutral, large tree}
 		\label{fig:treesize_panel1}
     \end{minipage}\hfill
     \begin{minipage}{0.24\textwidth}
         \centering
-		\includegraphics[scale=0.15, trim={0in 0in 0in 0in}, clip]{../Figures/Disposition Baseline (Small Tree).pdf}
+		\includegraphics[scale=0.15, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 		\caption{Risk neutral, small tree}
 		\label{fig:treesize_panel2}
     \end{minipage}
    \begin{minipage}{0.24\textwidth}
         \centering
-        \includegraphics[scale=0.15, trim={0in 0in 0in 0in}, clip]{../Figures/Disposition (Risk Averse) Baseline.pdf}
+        \includegraphics[scale=0.15, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 		\caption{Risk averse, large tree}
 		\label{fig:treesize_panel3}
     \end{minipage}\hfill
     \begin{minipage}{0.24\textwidth}
         \centering
-		\includegraphics[scale=0.15, trim={0in 0in 0in 0in}, clip]{../Figures/Disposition (Risk Averse) Baseline (Small Tree).pdf}
+		\includegraphics[scale=0.15, trim={0in 0in 0in 0in}, clip]{../Figures/gametree.pdf}
 		\caption{Risk averse, small tree}
 		\label{fig:treesize_panel4}
     \end{minipage}
