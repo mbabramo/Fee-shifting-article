@@ -203,25 +203,79 @@ An important question is whether these differing restrictions significantly affe
 
 This assessment requires two steps. First, we calculate each player's offer value at the discrete signal values, and then identify the discrete offer value nearest that value. This produces discretized versions of the bid functions derived by Dari-Mattiacci and Saraceno. Second, we determine each player's best response to the other player's strategy using an algorithm detailed in [CITE] and use these to calculate the exploitability of those strategies. That is, let $\sigma_{\mathcal{p}}$ represent the strategy of player $\mathcal{p}$ at the discretized equilibrium, let $\sigma_{-\mathcal{p}}$ represent the strategy of that player's opponent, and let $\mathcal{u}_{\mathcal{p}}(\sigma_{\mathcal{p}}, \sigma_{-\mathcal{p}})$ represent the expected return of player $\mathcal{p}$ given these strategies. Now, let $\sigma_{\overline{\mathcal{p}}}$ represent the best response of player $\mathcal{p}$ to $\sigma_{-\mathcal{p}}$. We then define exploitability of player $-\mathcal{p}$'s strategy $\mathcal{E}_{-\mathcal{p}} = \mathcal{u}_{\mathcal{p}}(\sigma_{\mathcal{\overline{p}}}, \sigma_{-\mathcal{p}}) - \mathcal{u}_{\mathcal{p}}(\sigma_{\mathcal{p}}, \sigma_{-\mathcal{p}})$. Allowing $P$ and $D$ to represent, respectively, the plaintiff and defendant in the discretization of the Dari-Mattiacci and Saraceno equilibrium, we define overall exploitability $\mathcal{E} = \frac{\mathcal{E}_P + \mathcal{E}_D}{2}$, i.e. the average of the amounts that each player can improve its score by changing its strategy holding the other's strategy constant. By definition, at a Nash equilibrium, overall exploitability is zero, and so $\mathcal{E}$ provides a measure of how much discretization moves the strategies from Nash equilibrium. 
 
-Figure \ref{fig:exploit} illustrates the results. The outer horizontal $c$ axis represents trial cost. The outer vertical $p$ axis represents litigation quality. All of the later simulations will be executed with $q \in \{ 0.2, 0.35, 0.5, 0.65, 0.8 \}$, but here, we omit the row for $q = 0.65$ because it is identical to the row for $q = 0.35$, and we omit the extreme values of $q$ because they are outside the bounds assumed by Dari-Mattiacci and Saraceno. Each mini-graph represents the measurement of exploitability $\mathcal{E}$ for each value of the fee-shifting threshold $t$ in $\{0, 0.01, ... , 1\}$. We can see that for $c \leq 0.125$, exploitability is very close to zero; overall all of these cases, the average $\mathcal{E}$ value is 0.00047. This indicates that the discretization changes the strategic dynamics of the game very little. With higher trial costs, considerably higher exploitability values (up to 0.067) can be seen in Figure \ref{fig:exploit}. This is likely due to Dari-Mattiacci and Saraceno's implicit assumption, noted earlier, that $c$ is not too high.
+Figure \ref{fig:exploit} illustrates the results. The outer horizontal $c$ axis represents trial cost. The outer vertical $p$ axis represents litigation quality. All of the later simulations will be executed with $q \in \{ 0.2, 0.35, 0.5, 0.65, 0.8 \}$, but we omit the row for $q = 0.65$ where it is identical or symmetric to the row for $q = 0.35$, and we omit the extreme values of $q$ because they are outside the bounds assumed by Dari-Mattiacci and Saraceno. (Diagrams including these rows, both for this and for other truncated diagrams produced later, are available in the Online Repository.) Each mini-graph represents the measurement of exploitability $\mathcal{E}$ for each value of the fee-shifting threshold $t$ in $\{0, 0.01, ... , 1\}$. We can see that for $c \leq 0.125$, exploitability is very close to zero; overall all of these cases, the average $\mathcal{E}$ value is 0.00047. This indicates that the discretization changes the strategic dynamics of the game very little. With higher trial costs, considerably higher exploitability values (up to 0.067) can be seen in Figure \ref{fig:exploit}. This is likely due to Dari-Mattiacci and Saraceno's implicit assumption, noted earlier, that $c$ is not too high.
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.60, trim={0in 0in 0in 0in}, clip]{../Figures/DMS formulas exploitability.pdf}
+\includegraphics[scale=0.60, trim={0.05in 0.15in 0in 0in}, clip]{../Figures/DMS formulas exploitability.pdf}
+\vspace*{-2mm}
 \caption{Exploitability of discretized Dari-Mattiacci and Saraceno strategies}. 
 \label{fig:exploit}
 \end{figure}
 
-We can also calculate accuracy using the discretization of the Dari-Mattiacci and Saraceno strategies. This is illustrated in \ref{fig:dmsaccuracy}. The accuracy $A$ is defined analogously to Dari-Mattiacci and Saraceno, i.e. by comparing each party's expected outcome (taking into account settlements and judgments, including fee shifting, and not taking into account each party's own legal costs) to the true merits $q$, though for easier visual interpretability, the absolute value instead of the square of the difference is shown. This reflects, as Dari-Mattiacci and Saraceno prove, that for relatively low costs, the English rule produces at least as good accuracy (relative low $A$) in comparison to the American rule. This does not reflect that the reverse is true with relatively high costs, again presumably due to their implicit assumption governing costs.
+Using the discretization of the Dari-Mattiacci and Saraceno strategies, we can calculate outcome variables. Results on accuracy are illustrated in Figure \ref{fig:dmsaccuracy}. The accuracy $A$ is defined analogously to Dari-Mattiacci and Saraceno, i.e. by comparing each party's expected outcome (taking into account settlements and judgments, including fee shifting, and not taking into account each party's own legal costs) to the true merits $q$, though for easier visual interpretability, the absolute value instead of the square of the difference is shown. This reflects, as Dari-Mattiacci and Saraceno prove, that for relatively low costs, the English rule produces at least as good accuracy (relative low $A$) in comparison to the American rule. This does not reflect that the reverse is true with relatively high costs, again presumably due to their implicit assumption governing costs. Note also that accuracy is very high when $q=0.50$. This does not indicate that each case produces the correct result, but that the Dari-Mattiacci and Saraceno accuracy measure is based on averages across cases, and with $q=0.5$, the cases in which the plaintiff receives too much exactly balance those in which the plaintiff receives too little. 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.60, trim={0in 0in 0in 0in}, clip]{../Figures/DMS formulas accuracy.pdf}
+\includegraphics[scale=0.60, trim={0.05in 0.15in 0in 0in}, clip]{../Figures/DMS formulas accuracy.pdf}
 \caption{Accuracy with discretized Dari-Mattiacci and Saraceno strategies}. 
 \label{fig:dmsaccuracy}
 \end{figure}
 
-These results, it is worth emphasizing, are simply calculations based on discretizations of Dari-Mattiacci and Saraceno's constructed equilibria, not equilibria calculated by application of the von Stengel et al. algorithm. These accuracy results, however, provide a baseline that we can compare to results from equilibria calculated by that algorithm. We will thus be able to assess whether exact, perfect equilibria calculated by the algorithm produce similar results in the discretized version of the original additive evidence game and in variations generated by relaxing various assumptions of the Dari-Mattiacci and Saraceno model. It is to that assessment that we now turn.
+Figure \ref{fig:dmstrial}, meanwhile, illustrates the analytical model's conclusions regarding the trial rate $L$. As Dari-Mattiacci and Saraceno show, and as is reflected here at least with $c \leq 0.125$, trial rates are invariant to the degree of fee shifting and the quality of the true merits, though small wobbles are observable here as a result of discretization. Also as expected, trial rates fall as the cost of trial rises. Note that trial rates are relatively high, perhaps in part because of the assumption of risk neutrality.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.60, trim={0.05in 0.15in 0in 0in}, clip]{../Figures/DMS formulas trial.pdf}
+\vspace*{-2mm}
+\caption{Trial with discretized Dari-Mattiacci and Saraceno strategies}. 
+\label{fig:dmstrial}
+\end{figure}
+
+The accuracy and trial results, it is worth emphasizing, are simply calculations based on discretizations of Dari-Mattiacci and Saraceno's constructed equilibria, not equilibria calculated by application of the von Stengel et al. algorithm. These measurements, however, provide a baseline that we can compare to results from equilibria calculated by that algorithm. We will thus be able to assess whether exact, perfect equilibria calculated by the algorithm produce similar results in the discretized version of the original additive evidence game and in variations generated by relaxing various assumptions of the Dari-Mattiacci and Saraceno model. 
+
+\section{Results} \label{section:Results}
+
+This section first identifies multiple equilibria with a single set of parameters. It then aggregates results from the additive evidence game as defined by Dari-Mattiacci and Saraceno over many different sets of parameters. Finally, it progressively relaxes assumptions of their model identified above.
+
+\subsection{Equilibria for a single set of parameters}
+
+Which equilibrium of a game the von Stengel et al. algorithm identifies may depend on the initialization of the information sets. We ran the algorithm 5,000 times for a single set of parameter values representing the middle of the values we are exploring each, i.e. $t = 0.5, q = 0.5, c = 0.125$, and identified 194 different equilibria. Figure \ref{fig:multeq} illustrates for each player a strategy in which each of these is played with equal probability. For example, when receiving a signal corresponding to $z_\Pi = 0.05$, the plaintiff makes an offer $\mathcal{o}_P = 0.35$ approximately 8\% of the time. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.50, trim={0in 0in 0in 0in}, clip]{../Figures/average strategies.pdf}
+\caption{Average strategies across 194 equilibria for $t = 0.5, q = 0.5, c = 0.125$}. 
+\label{fig:multeq}
+\end{figure}
+
+Although there are a large number of equilibria, they cluster near the equilibrium derived by Dari-Mattiacci and Saraceno, represented by dotted lines, though some of the equilibria reflect somewhat more aggressive game play. Some of the equilibria differ from others in ways that have no bearing on the game outcome. For example, if plaintiff chooses $\mathcal{o}_P \geq 0.75$ for some signal, settlement will never occur, and so an offer of 0.75 is functionally equivalent to an offer of 0.85. Of the 194 equilibria identified, 106 are pure strategy equilibria while 88 reflect mixed strategies, but many are mixed strategy equilibria, such as one in which given a particular signal, a party made one offer with exact probability $\frac{4,164}{15,277}$ and another with probability $\frac{11,113}{15,227}$. Correlated strategies over the 194 equilibria would by definition also be exact Nash equilibria. The average strategy in \ref{fig:multeq} is not an exact equilibria, but is close, with exploitability $\mathcal(E)=0.0027$. 
+
+It will not be practical to seek out 5,000 equilibria for each parameter value for each variation of the model in the remainder of the paper, as this exercise took nearly three and a half hours of computer time. But our later results will continue to reflect initialization of each information set to a random determination of a fully mixed strategy for each player, and we will run the algorithm for every value of $t \in {0, 0.01, ..., 1}$, so it will be possible to identify different families of equilibria that arise for very close values of $t$.
+
+\subsection{Aggregating results over parameter values}
+
+Figures \ref{fig:dmsaccuracy} and \ref{fig:dmstrial} calculated accuracy and trial results using the strategies constructed by Dari-Mattiacci and Saraceno. Figures \ref{fig:origaccuracy} and \ref{fig:origtrial} show the analogous results calculating discretized equilibria using the original rules of the additive evidence game. This is a snippet of the aggregated results. For each of the 1,515 permutations of parameter values executed under these assumptions, the Online Repository includes files with the exact equilibria calculated, heatmaps illustrating the parties' strategies, reports elaborating various outcome variables, and logs of program execution. Such files are also available for each of the assumptions to be explored later in this article.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.60, trim={0.05in 0.15in 0in 0in}, clip]{../Figures/Original accuracy.pdf}
+\vspace*{-2mm}
+\caption{Accuracy with calculated equilibria}. 
+\label{fig:origaccuracy}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.60, trim={0.05in 0.15in 0in 0in}, clip]{../Figures/Original trial.pdf}
+\vspace*{-2mm}
+\caption{Trial rates with calculated equilibria}. 
+\label{fig:origtrial}
+\end{figure}
+
+These results are generally close to the results corresponding to Dari-Mattiacci and Saraceno's constructed equilibria, at least for $c \leq 0.125$. The shape of the accuracy curves are very similar, reflecting that their results concerning the better accuracy of the English rule extend to the computational model. Trial rates in the computational model are a bit higher, and multiple equilibria are apparent. The most notable difference is that with sufficiently high costs, the English rule appears to increase trial rates. For example, with $q = 0.35$ and $c = 0.25$, some equilibria with around half of cases going to trial exist at all fee shifting levels, but equilibria with much lower trial rates are apparent only with relatively low levels of fee shifting. We must, however, acknowledge a limitation of the computational model here. The absence of evidence of equilibria with lower trial rates does not prove that no such exact equilibria exist, only that the algorithm did not identify them over a range of fee shifting values with different randomized initial conditions.
+
+\subsection{Relaxing assumptions}
 
 \printbibliography
 \end{document}
