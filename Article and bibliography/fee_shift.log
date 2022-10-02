@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.10) (format=lualatex 2022.8.7)  1 OCT 2022 17:35
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.10) (format=lualatex 2022.8.7)  2 OCT 2022 14:51
  restricted system commands enabled.
 **fee_shift.tex
 (./fee_shift.tex
@@ -606,7 +606,11 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
-(C:/Users/Admin/AppData/Local/Programs/MiKTeX/tex/latex/boondox/BOONDOX-cal.sty
+(C:/Users/Admin/AppData/Local/Programs/MiKTeX/tex/latex/boondox/BOONDOx-cal.sty
+
+LaTeX Warning: You have requested package `BOONDOx-cal',
+               but the package provides `BOONDOX-cal'.
+
 Package: BOONDOX-cal 2017/02/25 v1.02 U/BOONDOX-cal
 (C:/Users/Admin/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
@@ -900,142 +904,174 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 71.
 
-[6] [7] [8]
-Overfull \hbox (7.77333pt too wide) in paragraph at lines 100--101
+[6] [7] [8] [9]
+Overfull \hbox (7.77333pt too wide) in paragraph at lines 110--111
  []\TU/lmr/bx/n/10 Fee-shifting struc-ture[] \TU/lmr/m/n/10 Fee shift-ing in Dar
 i-Mattiacci and Sara-ceno’s model
  []
 
-[9] [10] [11] [12]
-
-LaTeX Warning: Citation 'portnoykoenker' on page 13 undefined on input line 126.
-
-
-
-Overfull \hbox (9.07002pt too wide) in paragraph at lines 126--127
-\TU/lmr/m/n/10 greater tractabil-ity of the for-mer. Port-noy and Koenker (1997)
- [[]]
+[10]
+Overfull \hbox (6.39331pt too wide) in paragraph at lines 112--113
+ []\TU/lmr/bx/n/10 Dam-ages is-sue[] \TU/lmr/m/n/10 Dari-Mattiacci and Sara-ceno
+ ex-plic-itly de-scribe their model
  []
+
+
+Overfull \hbox (4.40999pt too wide) in paragraph at lines 114--115
+ []\TU/lmr/bx/n/10 Con-tes-ta-tion[] \TU/lmr/m/n/10 Dari-Mattiacci and Sara-ceno
+’s model as-sumes that the plain-
+ []
+
+[11] [12]
+
+LaTeX Warning: Citation 'portnoykoenker' on page 13 undefined on input line 128.
+
 
 [13] [14] [15]
 LaTeX Font Info:    Trying to load font information for U+BOONDOX-cal on input l
-ine 167.
+ine 169.
 
 (C:/Users/Admin/AppData/Local/Programs/MiKTeX/tex/latex/boondox/uboondox-cal.fd
 File: uboondox-cal.fd 2011/04/26 Fontinst v1.933 font definitions for U/BOONDOX-
 cal.
 )
 LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
-(Font)              scaled to size 10.0pt on input line 167.
+(Font)              scaled to size 10.0pt on input line 169.
 LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
-(Font)              scaled to size 7.0pt on input line 167.
+(Font)              scaled to size 7.0pt on input line 169.
 LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
-(Font)              scaled to size 5.0pt on input line 167.
-<../Figures/replication1.pdf, id=219, 626.1011pt x 292.19966pt>
+(Font)              scaled to size 5.0pt on input line 169.
+ [16]
+<../Figures/replication1.pdf, id=229, 626.1011pt x 292.19966pt>
 File: ../Figures/replication1.pdf Graphic file (type pdf)
 <use ../Figures/replication1.pdf>
-Package luatex.def Info: ../Figures/replication1.pdf  used on input line 173.
+Package luatex.def Info: ../Figures/replication1.pdf  used on input line 175.
 (luatex.def)             Requested size: 325.57445pt x 151.94469pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[16]
-<../Figures/replication2.pdf, id=230, 626.1011pt x 292.19966pt>
+ [17<../Figures/replication1.pdf>]
+<../Figures/replication2.pdf, id=252, 626.1011pt x 292.19966pt>
 File: ../Figures/replication2.pdf Graphic file (type pdf)
 <use ../Figures/replication2.pdf>
-Package luatex.def Info: ../Figures/replication2.pdf  used on input line 182.
+Package luatex.def Info: ../Figures/replication2.pdf  used on input line 184.
 (luatex.def)             Requested size: 325.57445pt x 151.94469pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[17<../Figures/replication1.pdf>]
-<../Figures/gametree.pdf, id=251, 570.7754pt x 456.78253pt>
+ [18<../Figures/replication2.pdf>]
+<../Figures/gametree.pdf, id=273, 570.7754pt x 456.78253pt>
 File: ../Figures/gametree.pdf Graphic file (type pdf)
 <use ../Figures/gametree.pdf>
-Package luatex.def Info: ../Figures/gametree.pdf  used on input line 195.
+Package luatex.def Info: ../Figures/gametree.pdf  used on input line 197.
 (luatex.def)             Requested size: 285.38701pt x 228.3907pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[18<../Figures/replication2.pdf>] [19<../Figures/gametree.pdf>]
-<../Figures/DMS formulas exploitability.pdf, id=289, 569.05498pt x 293.06288pt>
+[19<../Figures/gametree.pdf>]
+<../Figures/DMS formulas exploitability.pdf, id=292, 569.05498pt x 293.06288pt>
 File: ../Figures/DMS formulas exploitability.pdf Graphic file (type pdf)
 <use ../Figures/DMS formulas exploitability.pdf>
 Package luatex.def Info: ../Figures/DMS formulas exploitability.pdf  used on inp
-ut line 210.
+ut line 212.
 (luatex.def)             Requested size: 339.2674pt x 169.33499pt.
- [20<../Figures/DMS formulas exploitability.pdf>]
-<../Figures/DMS formulas accuracy.pdf, id=322, 569.05498pt x 293.06288pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20]
+<../Figures/DMS formulas accuracy.pdf, id=304, 569.05498pt x 293.06288pt>
 File: ../Figures/DMS formulas accuracy.pdf Graphic file (type pdf)
 <use ../Figures/DMS formulas accuracy.pdf>
 Package luatex.def Info: ../Figures/DMS formulas accuracy.pdf  used on input lin
-e 220.
+e 222.
 (luatex.def)             Requested size: 339.2674pt x 169.33499pt.
-<../Figures/DMS formulas trial.pdf, id=325, 569.05498pt x 293.06288pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<../Figures/DMS formulas trial.pdf, id=307, 569.05498pt x 293.06288pt>
 File: ../Figures/DMS formulas trial.pdf Graphic file (type pdf)
 <use ../Figures/DMS formulas trial.pdf>
 Package luatex.def Info: ../Figures/DMS formulas trial.pdf  used on input line 2
-29.
+31.
 (luatex.def)             Requested size: 339.2674pt x 169.33499pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21<../Figures/DMS formulas accuracy.pdf>]
-<../Figures/average strategies.pdf, id=353, 685.42374pt x 144.66145pt>
+[21<../Figures/DMS formulas exploitability.pdf>] [22<../Figures/DMS formulas acc
+uracy.pdf><../Figures/DMS formulas trial.pdf>]
+<../Figures/average strategies.pdf, id=379, 685.42374pt x 144.66145pt>
 File: ../Figures/average strategies.pdf Graphic file (type pdf)
 <use ../Figures/average strategies.pdf>
 Package luatex.def Info: ../Figures/average strategies.pdf  used on input line 2
-47.
+49.
 (luatex.def)             Requested size: 342.71103pt x 72.33054pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[22<../Figures/DMS formulas trial.pdf>]
-<../Figures/Original accuracy.pdf, id=384, 569.05498pt x 293.06288pt>
+ [23<../Figures/average strategies.pdf>]
+<../Figures/Original accuracy.pdf, id=412, 569.05498pt x 293.06288pt>
 File: ../Figures/Original accuracy.pdf Graphic file (type pdf)
 <use ../Figures/Original accuracy.pdf>
 Package luatex.def Info: ../Figures/Original accuracy.pdf  used on input line 26
-2.
+4.
 (luatex.def)             Requested size: 339.2674pt x 169.33499pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../Figures/Original trial.pdf, id=386, 569.05498pt x 293.06288pt>
+<../Figures/Original trial.pdf, id=414, 569.05498pt x 293.06288pt>
 File: ../Figures/Original trial.pdf Graphic file (type pdf)
 <use ../Figures/Original trial.pdf>
-Package luatex.def Info: ../Figures/Original trial.pdf  used on input line 270.
+Package luatex.def Info: ../Figures/Original trial.pdf  used on input line 272.
 (luatex.def)             Requested size: 339.2674pt x 169.33499pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (4.59001pt too wide) in paragraph at lines 276--277
+Overfull \hbox (4.59001pt too wide) in paragraph at lines 278--279
 []\TU/lmr/m/n/10 These re-sults are gen-er-ally close to the re-sults cor-re-spo
 nd-ing to Dari-Mattiacci
  []
 
-[23<../Figures/average strategies.pdf>] [24<../Figures/Original accuracy.pdf><..
-/Figures/Original trial.pdf>]
-Overfull \hbox (5.03662pt too wide) in paragraph at lines 281--281
+[24<../Figures/Original accuracy.pdf><../Figures/Original trial.pdf>]
+
+LaTeX Warning: Reference `fig:trial' on page 25 undefined on input line 284.
+
+[25]
+<../Figures/quittree.pdf, id=470, 548.01337pt x 515.40855pt>
+File: ../Figures/quittree.pdf Graphic file (type pdf)
+<use ../Figures/quittree.pdf>
+Package luatex.def Info: ../Figures/quittree.pdf  used on input line 304.
+(luatex.def)             Requested size: 274.00601pt x 257.70364pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[26] [27<../Figures/quittree.pdf>]
+<../Figures/AverageAccuracy.pdf, id=498, 569.05498pt x 975.92906pt>
+File: ../Figures/AverageAccuracy.pdf Graphic file (type pdf)
+<use ../Figures/AverageAccuracy.pdf>
+Package luatex.def Info: ../Figures/AverageAccuracy.pdf  used on input line 350.
+
+(luatex.def)             Requested size: 310.99367pt x 530.8006pt.
+
+
+LaTeX Warning: Float too large for page by 5.51003pt on input line 354.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[28]
+<../Figures/CostInclusiveAccuracy.pdf, id=506, 569.05498pt x 975.92906pt>
+File: ../Figures/CostInclusiveAccuracy.pdf Graphic file (type pdf)
+<use ../Figures/CostInclusiveAccuracy.pdf>
+Package luatex.def Info: ../Figures/CostInclusiveAccuracy.pdf  used on input lin
+e 368.
+(luatex.def)             Requested size: 310.99367pt x 530.8006pt.
+
+
+LaTeX Warning: Float too large for page by 5.51003pt on input line 372.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[29] [30]
+Overfull \hbox (5.03662pt too wide) in paragraph at lines 377--377
 []\TU/lmr/m/n/10 John C Harsanyi. “  Games with in-com-plete in-for-ma-tion pl
 ayed by ’Bayesian’
  []
 
-[25] [26] [27] (./fee_shift.aux)
+[31] [32] [33<../Figures/AverageAccuracy.pdf>] [34<../Figures/CostInclusiveAccur
+acy.pdf>] (./fee_shift.aux)
 Package rerunfilecheck Info: File `fee_shift.out' has not changed.
-(rerunfilecheck)             Checksum: A6CD8EFBB026200F998DA727EC81EB99;3200.
+(rerunfilecheck)             Checksum: 3D26B67D5E89C8032900E8D474536297;3294.
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
@@ -1048,16 +1084,16 @@ Package logreq Info: Writing requests to 'fee_shift.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 20870 strings out of 479046
+ 20927 strings out of 479046
  125134,1144653 words of node,token memory allocated
- 619 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 4 dir, 2 glue, 4 kern, 1 glyph, 19 attribute, 66 gl
-ue_spec, 11 attribute_list, 1 write nodes
-   avail lists: 1:5,2:1442,3:377,4:41,5:585,6:107,7:8981,8:43,9:329,10:25,11:791
+ 631 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 4 dir, 2 glue, 4 kern, 1 glyph, 23 attribute, 66 gl
+ue_spec, 13 attribute_list, 1 write nodes
+   avail lists: 1:5,2:1607,3:396,4:41,5:522,6:104,7:9049,8:48,9:499,10:25,11:791
 
- 39500 multiletter control sequences out of 65536+200000
+ 39525 multiletter control sequences out of 65536+200000
  80 fonts using 7363163 bytes
- 63i,8n,109p,1969b,1691s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,9n,109p,1969b,1691s stack positions out of 5000i,500n,10000p,200000b,50000s
 <//?/c:/users/admin/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmon
 o10-regular.otf><//?/c:/users/admin/appdata/local/programs/miktex/fonts/opentype
 /public/lm/lmromancaps10-regular.otf><//?/c:/users/admin/appdata/local/programs/
@@ -1078,11 +1114,13 @@ ts/cm/cmmi5.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public
 s/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Admin/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Admin/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Admin/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on fee_shift.pdf (27 pages, 811376 bytes).
+/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Admin/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:
+/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxrw8a.pf
+b>
+Output written on fee_shift.pdf (34 pages, 1584754 bytes).
 
-PDF statistics: 575 PDF objects out of 1000 (max. 8388607)
- 107 named destinations out of 1000 (max. 131072)
- 195 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 723 PDF objects out of 1000 (max. 8388607)
+ 121 named destinations out of 1000 (max. 131072)
+ 233 words of extra memory for PDF output out of 10000 (max. 100000000)
 
