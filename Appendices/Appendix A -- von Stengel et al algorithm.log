@@ -1,7 +1,7 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.10) (format=lualatex 2022.8.7)  18 OCT 2022 19:17
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.10) (format=lualatex 2022.8.7)  18 OCT 2022 18:29
  restricted system commands enabled.
-**fee_shift.tex
-(./fee_shift.tex
+**"Appendix A -- von Stengel et al algorithm.tex"
+("./Appendix A -- von Stengel et al algorithm.tex"
 LaTeX2e <2020-10-01> patch level 1
 Lua module: luaotfload-main 2020-09-02 3.15 luaotfload entry point
 Lua module: luaotfload-init 2020-09-02 3.15 luaotfload submodule / initializatio
@@ -789,8 +789,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-(./fee_shift.aux)
-\openout1 = fee_shift.aux
+("./Appendix A -- von Stengel et al algorithm.aux")
+\openout1 = Appendix A -- von Stengel et al algorithm.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
@@ -833,10 +833,12 @@ Package biblatex Info: Input encoding 'utf8' specified.
 Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
 
-\openout3 = fee_shift-blx.bib
+\openout3 = Appendix_A_--_von_Stengel_et_al_algorithm-blx.bib
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'fee_shift.bbl' found.
- (./fee_shift.bbl)
+Package biblatex Info: ... file '"Appendix A -- von Stengel et al algorithm".bbl
+' not found.
+
+No file "Appendix A -- von Stengel et al algorithm".bbl.
 Package biblatex Info: Reference section=0 on input line 27.
 Package biblatex Info: Reference segment=0 on input line 27.
 
@@ -882,207 +884,39 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 27.
 LaTeX Info: Redefining \pageref on input line 27.
 LaTeX Info: Redefining \nameref on input line 27.
- (./fee_shift.out) (./fee_shift.out)
+ ("./Appendix A -- von Stengel et al algorithm.out")
+("./Appendix A -- von Stengel et al algorithm.out")
 \@outlinefile=\write4
 
-\openout4 = fee_shift.out
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
-
-(C:/Users/Admin/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
-
-(C:/Users/Admin/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-[1
-
-{C:/Users/Admin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3]
-[4] [5]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 73.
-
-[6] [7] [8] [9]
-Overfull \hbox (7.77333pt too wide) in paragraph at lines 113--114
- []\TU/lmr/bx/n/10 Fee-shifting struc-ture[] \TU/lmr/m/n/10 Fee shift-ing in Dar
-i-Mattiacci and Sara-ceno’s model
- []
+\openout4 = Appendix A -- von Stengel et al algorithm.out
 
 
-Overfull \hbox (6.39331pt too wide) in paragraph at lines 115--116
- []\TU/lmr/bx/n/10 Dam-ages is-sue[] \TU/lmr/m/n/10 Dari-Mattiacci and Sara-ceno
- ex-plic-itly de-scribe their model
- []
+LaTeX Warning: Empty bibliography on input line 29.
 
-[10]
-Overfull \hbox (4.40999pt too wide) in paragraph at lines 117--118
- []\TU/lmr/bx/n/10 Con-tes-ta-tion[] \TU/lmr/m/n/10 Dari-Mattiacci and Sara-ceno
-’s model as-sumes that the plain-
- []
+("./Appendix A -- von Stengel et al algorithm.aux")
+Package rerunfilecheck Info: File `"Appendix A -- von Stengel et al algorithm".o
+ut' has not changed.
+(rerunfilecheck)             Checksum: <no file>.
+Package logreq Info: Writing requests to '"Appendix A -- von Stengel et al algor
+ithm".run.xml'.
 
-[11] [12]
-LaTeX Font Info:    Trying to load font information for U+BOONDOX-cal on input l
-ine 138.
-
-(C:/Users/Admin/AppData/Local/Programs/MiKTeX/tex/latex/boondox/uboondox-cal.fd
-File: uboondox-cal.fd 2011/04/26 Fontinst v1.933 font definitions for U/BOONDOX-
-cal.
-)
-LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
-(Font)              scaled to size 10.0pt on input line 138.
-LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
-(Font)              scaled to size 7.0pt on input line 138.
-LaTeX Font Info:    Font shape `U/BOONDOX-cal/m/n' will be
-(Font)              scaled to size 5.0pt on input line 138.
-<../Figures/gametree.pdf, id=202, 570.7754pt x 456.78253pt>
-File: ../Figures/gametree.pdf Graphic file (type pdf)
-<use ../Figures/gametree.pdf>
-Package luatex.def Info: ../Figures/gametree.pdf  used on input line 142.
-(luatex.def)             Requested size: 285.38701pt x 228.3907pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[13] [14<../Figures/gametree.pdf>]
-<../Figures/DMS formulas exploitability.pdf, id=232, 569.05498pt x 293.06288pt>
-File: ../Figures/DMS formulas exploitability.pdf Graphic file (type pdf)
-<use ../Figures/DMS formulas exploitability.pdf>
-Package luatex.def Info: ../Figures/DMS formulas exploitability.pdf  used on inp
-ut line 157.
-(luatex.def)             Requested size: 339.2674pt x 169.33499pt.
-<../Figures/DMS formulas accuracy.pdf, id=235, 569.05498pt x 293.06288pt>
-File: ../Figures/DMS formulas accuracy.pdf Graphic file (type pdf)
-<use ../Figures/DMS formulas accuracy.pdf>
-Package luatex.def Info: ../Figures/DMS formulas accuracy.pdf  used on input lin
-e 167.
-(luatex.def)             Requested size: 339.2674pt x 169.33499pt.
- [15<../Figures/DMS formulas exploitability.pdf>]
-<../Figures/DMS formulas trial.pdf, id=266, 569.05498pt x 293.06288pt>
-File: ../Figures/DMS formulas trial.pdf Graphic file (type pdf)
-<use ../Figures/DMS formulas trial.pdf>
-Package luatex.def Info: ../Figures/DMS formulas trial.pdf  used on input line 1
-76.
-(luatex.def)             Requested size: 339.2674pt x 169.33499pt.
- [16<../Figures/DMS formulas accuracy.pdf><../Figures/DMS formulas trial.pdf>]
-<../Figures/average strategies.pdf, id=311, 685.42374pt x 144.66145pt>
-File: ../Figures/average strategies.pdf Graphic file (type pdf)
-<use ../Figures/average strategies.pdf>
-Package luatex.def Info: ../Figures/average strategies.pdf  used on input line 1
-90.
-(luatex.def)             Requested size: 342.71103pt x 72.33054pt.
- [17<../Figures/average strategies.pdf>]
-<../Figures/Original accuracy.pdf, id=342, 569.05498pt x 293.06288pt>
-File: ../Figures/Original accuracy.pdf Graphic file (type pdf)
-<use ../Figures/Original accuracy.pdf>
-Package luatex.def Info: ../Figures/Original accuracy.pdf  used on input line 20
-9.
-(luatex.def)             Requested size: 339.2674pt x 169.33499pt.
-<../Figures/Original trial.pdf, id=344, 569.05498pt x 293.06288pt>
-File: ../Figures/Original trial.pdf Graphic file (type pdf)
-<use ../Figures/Original trial.pdf>
-Package luatex.def Info: ../Figures/Original trial.pdf  used on input line 217.
-(luatex.def)             Requested size: 339.2674pt x 169.33499pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (4.59001pt too wide) in paragraph at lines 223--224
-[]\TU/lmr/m/n/10 These re-sults are gen-er-ally close to the re-sults cor-re-spo
-nd-ing to Dari-Mattiacci
- []
-
-[18<../Figures/Original accuracy.pdf>]
-
-LaTeX Warning: Reference `fig:trial' on page 19 undefined on input line 229.
-
-[19<../Figures/Original trial.pdf>] [20]
-<../Figures/quittree.pdf, id=408, 548.01337pt x 515.40855pt>
-File: ../Figures/quittree.pdf Graphic file (type pdf)
-<use ../Figures/quittree.pdf>
-Package luatex.def Info: ../Figures/quittree.pdf  used on input line 249.
-(luatex.def)             Requested size: 274.00601pt x 257.70364pt.
- [21<../Figures/quittree.pdf>]
-<../Figures/AverageAccuracy.pdf, id=431, 569.05498pt x 975.92906pt>
-File: ../Figures/AverageAccuracy.pdf Graphic file (type pdf)
-<use ../Figures/AverageAccuracy.pdf>
-Package luatex.def Info: ../Figures/AverageAccuracy.pdf  used on input line 295.
-
-(luatex.def)             Requested size: 310.99367pt x 530.8006pt.
-
-
-LaTeX Warning: Float too large for page by 5.51003pt on input line 299.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[22] [23]
-<../Figures/CostInclusiveAccuracy.pdf, id=447, 569.05498pt x 975.92906pt>
-File: ../Figures/CostInclusiveAccuracy.pdf Graphic file (type pdf)
-<use ../Figures/CostInclusiveAccuracy.pdf>
-Package luatex.def Info: ../Figures/CostInclusiveAccuracy.pdf  used on input lin
-e 313.
-(luatex.def)             Requested size: 310.99367pt x 530.8006pt.
-
-
-LaTeX Warning: Float too large for page by 5.51003pt on input line 317.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[24] [25] [26] [27<../Figures/AverageAccuracy.pdf>] [28<../Figures/CostInclusive
-Accuracy.pdf>] (./fee_shift.aux)
-Package rerunfilecheck Info: File `fee_shift.out' has not changed.
-(rerunfilecheck)             Checksum: DE3C8F132A6A80D01E74528331C62469;2891.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package logreq Info: Writing requests to 'fee_shift.run.xml'.
-
-\openout1 = fee_shift.run.xml
+\openout1 = Appendix A -- von Stengel et al algorithm.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 20864 strings out of 479046
+ 20216 strings out of 479046
  125134,1144653 words of node,token memory allocated
- 589 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 1 dir, 2 glue, 4 kern, 1 glyph, 17 attribute, 66 gl
-ue_spec, 10 attribute_list, 1 write nodes
-   avail lists: 1:6,2:1645,3:399,4:41,5:447,6:90,7:8777,8:39,9:576,10:25,11:777
- 39490 multiletter control sequences out of 65536+200000
- 80 fonts using 7363163 bytes
- 63i,9n,109p,1977b,1691s stack positions out of 5000i,500n,10000p,200000b,50000s
-<//?/c:/users/admin/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmon
-o10-regular.otf><//?/c:/users/admin/appdata/local/programs/miktex/fonts/opentype
-/public/lm/lmromancaps10-regular.otf><//?/c:/users/admin/appdata/local/programs/
-miktex/fonts/opentype/public/lm/lmroman10-bold.otf><//?/c:/users/admin/appdata/l
-ocal/programs/miktex/fonts/opentype/public/lm/lmroman10-italic.otf><//?/c:/users
-/admin/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman10-regular.
-otf><//?/c:/users/admin/appdata/local/programs/miktex/fonts/opentype/public/lm/l
-mroman12-bold.otf><//?/c:/users/admin/appdata/local/programs/miktex/fonts/openty
-pe/public/lm/lmroman9-regular.otf><//?/c:/users/admin/appdata/local/programs/mik
-tex/fonts/opentype/public/lm/lmroman9-bold.otf><//?/c:/users/admin/appdata/local
-/programs/miktex/fonts/opentype/public/lm/lmroman12-regular.otf><//?/c:/users/ad
-min/appdata/local/programs/miktex/fonts/opentype/public/lm/lmroman17-regular.otf
-><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-mi10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmmi5.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmmi7.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Admin/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Admin/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Admin/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on fee_shift.pdf (28 pages, 1465196 bytes).
+ 570 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 14 attribute, 62 glue_spec
+, 9 attribute_list, 3 write, 1 pdf_dest nodes
+   avail lists: 1:4,2:71,3:1,4:4,5:3,6:1,7:21,9:1
+ 39042 multiletter control sequences out of 65536+200000
+ 25 fonts using 3258707 bytes
+ 63i,1n,109p,1877b,801s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-PDF statistics: 649 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 131072)
- 205 words of extra memory for PDF output out of 10000 (max. 100000000)
+warning  (pdf backend): no pages of output.
+
+PDF statistics: 2 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

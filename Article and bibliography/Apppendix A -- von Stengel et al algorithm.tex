@@ -1,0 +1,63 @@
+\documentclass{article}
+%\documentclass[9pt]{extarticle}
+%\usepackage[margin=1.5in]{geometry}
+\usepackage[
+backend=bibtex]{biblatex}
+\usepackage{graphicx}
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\usepackage{BOONDOX-cal} % a calligraphic font that includes lowercase letters, will be used with mathcal command
+\usepackage{babel, blindtext}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\newenvironment{nohyphen}
+  {\tolerance=1% Also consider setting \pretolerance
+   \emergencystretch=\maxdimen%
+   \hyphenpenalty=10000%
+   \hbadness=10000}% \begin{nohyphen}
+  {\par}% \end{nohyphen}
+ 
+\addbibresource{fee_shift.bib}
+
+\begin{document}
+
+\title{Appendix A \\ The von Stengel, van den Elzen, and Talman Algorithm}
+\author{Michael Abramowicz \\ \href{mailto:abramowicz@law.gwu.edu}{abramowicz@law.gwu.edu} \\ George Washington University Law School}
+
+\maketitle
+
+In principle, any two-player extensive form game with a finite number of strategies can be presented in strategic form, with the parties' payoffs embedded in a matrix. The row player may use a pure strategy and select a single row from the matrix or a mixed strategy, a probability distribution over the matrix rows. The column player analogously chooses a column or a probability distribution over matrix columns. Nash (1951) famously proved that every strategic game involving a finite number of players has at least one equilibrium, now called a Nash equilibrium, in which neither player could increase the player's payoff by switching to a different strategy given the opponent's strategy. Moreover, given a game in strategic form, any equilibrium in pure strategies can be identified relatively easily by the algorithm of iterative elimination of dominated strategies. If a cell of the matrix exists where the column player's utility is greater than in any other cell in its row and the row player's utility is greater than in any other cell in its column, then that cell represents a Nash equilibrium. 
+
+This approach is insufficient to find mixed strategy equilibria. The problem of finding Nash equilibria, however, can be converted into a linear programming problem. The reader with a strong interest in the algorithm applied here should read von Stengel (2002) for a comprehensive overview, including proofs that it produces equilibria. The reader interested solely in legal ramifications may skip this section altogether. A virtue of using computational game theory to identify equilibria is that one may choose to treat algorithms as black boxes, particularly because all equilibria found in this article were computationally verified.
+
+Still, we will provide an introduction to the algorithm for the reader with an intermediate level of interest. Let the payoffs for players 1 and 2, respectively, be represented by the $M \times N$ matrices $A$ and $B$, whose entries are positive; any game with negative payoffs can be scaled to an equivalent such game. Player 1's strategy can thus be represented by a vector $x \in \mathbb{R}^M$ whose components sum to 1, and Player 2's strategy can be represented by a vector $y \in \mathbb{R}^N$ whose components have the same property. Using matrix notation, if $E=[1, ..., 1]\in\mathbb{R}^{1xM}$ and $F=[1, ..., 1]\in\mathbb{R}^{1xN}$, then $Ex=1$, $Fy=1$, and $x,y>0$.  Player 1's strategy is called a "best response" to a strategy $y$ if it maximizes the expected payoff $x^TAy$ subject to the $Ex=1$ constraint, and similarly a strategy $y$ maximizing $x^TBy$ subject to the $Fy=1$ constraint is a best response to $x$. The strategy pair $(x,y)$ forms a Nash equilibrium if each is a best response to the other. To find a Nash equilibrium, one can take advantage of a linear programming principle known as duality. Under strong duality, if there is an optimal solution to a "primal LP," then a dual LP has the same optimal solution. In the dual LP, the variables and constraints are reversed and the objective (maximization or minimization) is inverted, relative to the primal LP. Thus, the primal problem of maximizing $x^TAy$ subject to $Ex=e$ (where $e=1$) has a dual problem of finding $u$ that minimizes $e^Tu$ subject to $E^Tu-Ay \geq 0$. A similar dual minimization problem can be used to represent player 2's constrained maximization of $x^TBy$.
+
+In von Stengel (2002), Theorem 2.4 shows that $(x,y)$ form a Nash equilibrium if and only if, for some $u$ and $v$, all of the following hold:
+
+\begin{align*}
+x^T(E^Tu-Ay) = 0 \\
+y^T(F^Tv-B^Tx) = 0 \\
+Ex = e \\
+Fy = f\\
+E^T u - A y \geq 0 \\
+F^Tv - B^Tx \geq 0 \\
+x, y \geq 0
+\end{align*}
+
+\noindent These conditions collectively define a mixed linear complementarity problem (LCP). The word "complementarity" refers to the fact that because $x$, $y$, $A$, and $B$ are nonnegative, the first line implies that $x$ and $E^Tu-Ay$ cannot have a positive component in the same position. The same holds for $y$ and $F^Tv-B^Tx$. The best known algorithm for finding a solution to a linear complementarity problem is that of Lemke and Howson (1964) \cite{lemkehowson}. 
+
+Lemke and Howson is inadequate to the settlement bargaining problem, however, because the bimatrix game will be too large. When an extensive form game is converted to a matrix, the matrix must contain a separate row for all permutations of the choices that the row player may make at each information set, and similarly a column for each permutation of the column player's information set choices. For example, if each player has 10 different information sets (perhaps corresponding to 10 different possible signals), and may make 10 different moves at each information set, then $10^(10)$ rows or columns would be needed for that player. Several different scholars, the earliest being Romanovskii (1962) \cite{romanovskii}, offer a way around this dilemma. The trick, as explained by Koller, Megiddo, and von Stengel (1996) \cite{kollermegiddovonstengel}, is to craft a matrix in which the rows or columns represent not a player's pure strategies, but instead the sequences that the player may play at any stage of the game. In the above example, there would be 101 sequences per player (10 for each information set plus an empty sequence). If we inserted an opportunity by each player to quit after receiving its signal, then there would be 121 sequences per player (the above, plus decisions to quit or not at each of the 10 signals). Some sequences may be incompatible, because it may be impossible for a player to play a certain information set given a move by another; thus, the relevant matrix includes a zero in such cells. 
+
+The von Stengel, van den Elzen, and Talman (2002) algorithm adapts the "sequence form" approach by combining techniques used in von Stengel (1996) with developments in van den Elzen and Talman (1999), which adapts the Lemke-Howson algorithm to ensure perfect equilibria. The result is an algorithm that produces perfect, Nash equilibria. The requirement of perfection would not be needed if players committed to strategies at the outset of the game. But in litigation, such commitments do not occur. Thus, even if an equilibrium meets the Nash criterion, meaning that neither player will have an incentive at the outset of the game to change its strategy choice given the opponent's strategy choice, it may be imperfect, if a player might have an incentive to deviate in its strategy choice after learning new information. The solution concept of perfect Bayesian equilibrium, a term in use since at least the 1960s, has various formal definitions in the literature, including that of Fudenberg and Tirole (1991) \cite{fudenberg}, and is the imperfect information analogue of the subgame perfection equilibrium concept proposed by Selten (1965) \cite{selten}.
+
+The algorithm is initialized by setting every information set to a fully mixed behavior strategy, that is a strategy in which each action has some positive probability of being played. A data structure called a tableau is initialized in turn based on these values. This tableau encodes not only action probabilities, but also the relationships among information sets, specifically which information sets may follow other information sets in sequence. The initialization is designed so that the equations reflected by the tableau reflect a "basic feasible solution" to some of the equations in the linear complementarity problem, albeit ordinarily not a solution that corresponds to a perfect Nash equilibrium.  The algorithm then proceeds through a series of pivoting steps, which represent  linear algebraic manipulations in which variables are added to or removed from the list of non-zero variables known as the basis. When the variable initially added to the basis eventually leaves the basis, a Nash equilibrium is guaranteed.
+
+The algorithm is not without its limitations. First, the algorithm is not guaranteed to produce all Nash equilibria. One may attempt to obtain multiple equilibria by choosing different initializations of the information sets. Second, to ensure that an equilibrium is reached, the algorithm must be performed using exact arithmetic with rational numbers, rather than floating point arithmetic. Even given the generous amount of storage allowed by modern 64-bit computer architectures, floating point operations involve rounding, and that may prevent the algorithm from converging.  The use of exact arithmetic is cumbersome, however, given the frequent need to calculate greatest common factors of integers with many digits. Third, the algorithm is roughly linear in the size of the game tree, not in the size of the set of player sequences. The game tree grows exponentially as more moves are added to the game.
+
+\printbibliography
+\end{document}

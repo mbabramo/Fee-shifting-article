@@ -1,0 +1,30 @@
+\documentclass{article}
+%\documentclass[9pt]{extarticle}
+%\usepackage[margin=1.5in]{geometry}
+\usepackage[
+backend=bibtex]{biblatex}
+\usepackage{graphicx}
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\usepackage{BOONDOx-cal} % a calligraphic font that includes lowercase letters, will be used with mathcal command
+\usepackage{babel, blindtext}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\newenvironment{nohyphen}
+  {\tolerance=1% Also consider setting \pretolerance
+   \emergencystretch=\maxdimen%
+   \hyphenpenalty=10000%
+   \hbadness=10000}% \begin{nohyphen}
+  {\par}% \end{nohyphen}
+ 
+\addbibresource{fee_shift.bib}
+
+\begin{document}
+
+\printbibliography
+\end{document}

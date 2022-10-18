@@ -1,0 +1,59 @@
+\documentclass{article}
+%\documentclass[9pt]{extarticle}
+%\usepackage[margin=1.5in]{geometry}
+\usepackage[
+backend=bibtex]{biblatex}
+\usepackage{graphicx}
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\usepackage{BOONDOX-cal} % a calligraphic font that includes lowercase letters, will be used with mathcal command
+\usepackage{babel, blindtext}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\newenvironment{nohyphen}
+  {\tolerance=1% Also consider setting \pretolerance
+   \emergencystretch=\maxdimen%
+   \hyphenpenalty=10000%
+   \hbadness=10000}% \begin{nohyphen}
+  {\par}% \end{nohyphen}
+ 
+\addbibresource{fee_shift.bib}
+
+\begin{document}
+
+\title{Appendix A \\ Application of the Model Without Discretization}
+\author{Michael Abramowicz \\ \href{mailto:abramowicz@law.gwu.edu}{abramowicz@law.gwu.edu} \\ George Washington University Law School}
+
+\maketitle
+
+To replicate Dari-Mattiacci and Saraceno as closely as possible, we must restrict each player's bid function to consist of piecewise linear segments. Yet, there are an infinite number of possible combinations of piecewise linear segments, and so we must adopt some restrictions. In theory, we could, for example, require each player to choose one of 100 starting values and one of 100 ending values for each of 10 signal ranges; for example, plaintiff might bid $0.47$ at $z=0.5$ and $0.92$ at $z=0.6$, representing one such segment. But, for each player, this would produce $(100 \times 100)^{10}$ possible strategies, and the game tree would be the square of this in size. 
+
+For this approach to be feasible, the strategies must be severely constrained. For this preliminary exercise, we thus allow each of the plaintiff and defendant (denoted $P$ and $D$) to choose an offer $\mathcal{B}$ line with a slope $\mathcal{m}$ in $\{ \frac{1}{3}, \frac{1}{2}, \frac{2}{3}, 1 \}$ and a minimum value of $\mathcal{b}$ in $\{0.02, 0.06, 0.10, \ldots, 0.98\}$. Because truncations are critical to the Dari-Mattiacci and Saraceno equilibria, each player also chooses a portion $\mathcal{t}$ of this line to truncate in $\{0, \frac{1}{9}, \frac{2}{9}, \ldots, 1\}$. Thus, $\mathcal{B}_P = \max(\mathcal{m}_P \cdot z + \mathcal{y}_P , \mathcal{t}_P)$  and $\mathcal{B}_D = \min(\mathcal{m}_D \cdot z + \mathcal{y}_D , \mathcal{t}_D)$. Each player may in effect choose from $25 \times 4 \times 10 = 1,000$ strategies, so the game tree consists of 1,000,000 final nodes. At each of these nodes, for each of 10,000 combinations of the players' signals, the players' utilities are calculated by determining based on the corresponding strategies, whether the case settles and the resulting outcome of the game. 
+
+Figure \ref{fig:replication1} illustrates a result of the algorithm, in this case for parameters $q = 0.4$, $c = 0.2$, and $t = 0.4$. The panels on the left represent the plaintiff's strategies; on the right, the defendant's. The results of the computational model, on the bottom, are reasonably similar to the equilibrium for these parameters identified in the analytical model of Dari-Mattiacci and Saraceno, on the top, though hardly an exact match. This result is an exact equilibrium in the game as defined with these restrictions, but it is only an approximate equilibrium in the original Dari-Mattiacci and Saraceno game, which does not impose these restrictions. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.52, trim={0in 0in 0in 0in}, clip]{../Figures/replication1.pdf}
+\caption{Attempted replication with $q = 0.4$, $c = 0.2$, and $t = 0.4$}
+\label{fig:replication1}
+\end{figure}
+
+Still, by combining a number of such parameter sets, one can perform a task similar to that of Dari-Mattiacci and Saraceno, observing how changes in parameters affect the equilibrium. The results of a number of such observations are available in the Online Supplement to this article in the "DMS Replication" folder, corresponding to parameter values that are multiples of $0.1$ that meet Dari-Mattiacci and Saraceno's assumptions regarding $q$ and $c$ and for which in their analytical model neither party's strategy consists of more than a single line segment. The results in Figure \ref{fig:replication1} are typical, though there are some surprises, like Figure \ref{fig:replication2}, in which the algorithm calculates a mixed strategy equilibrium, with the relative darkness of each of the parties' strategies corresponding to the probability that a party will play them. Though it seems unlikely that any individual would play such a strategy, a mixed strategy can be interpreted as a set of pure strategies that might be played by different litigants, where neither litigant knows the other litigant's type. Given the significance of mixed strategies in games like chicken that bear some resemblance to settlement bargaining, the ability of the algorithm to find mixed strategies is a strength of the computational approach, but it complicates any attempt at replication.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.52, trim={0in 0in 0in 0in}, clip]{../Figures/replication2.pdf}
+\caption{Attempted replication with $q = 0.4$, $c = 0.3$, and $t = 0.6$}
+\label{fig:replication2}
+\end{figure}
+
+Although these results illustrate that the algorithm can approximately replicate some analytical results, they may be disappointing. The most interesting results of Dari-Mattiacci and Saraceno occur in cases in which the strategies are discontinuous, and we have not even attempted to replicate those cases. The reason that the algorithm is so constrained in this preliminary analysis is that it does not fully take advantage of the sequence form. Each party has a limited number of information sets, in many of which it considers a large number of possibilities (such as which of 25 minimum values to select) that in turn dictate the party's strategy over a range of signals. The result is not much better than could be achieved by applying iterated elimination of dominated strategies to the full bimatrix game. Still, the exercise is sufficiently simple that one might wonder why the settlement bargaining literature has eschewed even that well known technique. This approach is more flexible than a simple linear model, and it can be applied to a wide range of game specifications that are analytically intractable. Still, a more fruitful strategy is to discretize the model, so that each player has separate information sets based on the signals that it receives.
+
+\printbibliography
+\end{document}
