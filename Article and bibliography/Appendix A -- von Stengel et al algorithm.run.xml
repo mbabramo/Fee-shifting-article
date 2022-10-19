@@ -44,11 +44,11 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>"Apppendix A -- von Stengel et al algorithm".aux</file>
-      <file>Apppendix_A_--_von_Stengel_et_al_algorithm-blx.bib</file>
+      <file>"Appendix A -- von Stengel et al algorithm".aux</file>
+      <file>Appendix_A_--_von_Stengel_et_al_algorithm-blx.bib</file>
     </provides>
     <requires type="dynamic">
-      <file>"Apppendix A -- von Stengel et al algorithm".bbl</file>
+      <file>"Appendix A -- von Stengel et al algorithm".bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -69,20 +69,20 @@
     <cmdline>
       <binary>bibtex</binary>
       <option>-min-crossrefs 2</option>
-      <infile>"Apppendix A -- von Stengel et al algorithm"</infile>
+      <infile>"Appendix A -- von Stengel et al algorithm"</infile>
     </cmdline>
     <input>
-      <file>"Apppendix A -- von Stengel et al algorithm".aux</file>
+      <file>"Appendix A -- von Stengel et al algorithm".aux</file>
     </input>
     <output>
-      <file>"Apppendix A -- von Stengel et al algorithm".bbl</file>
+      <file>"Appendix A -- von Stengel et al algorithm".bbl</file>
     </output>
     <provides type="dynamic">
-      <file>"Apppendix A -- von Stengel et al algorithm".bbl</file>
+      <file>"Appendix A -- von Stengel et al algorithm".bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>"Apppendix A -- von Stengel et al algorithm".aux</file>
-      <file>Apppendix_A_--_von_Stengel_et_al_algorithm-blx.bib</file>
+      <file>"Appendix A -- von Stengel et al algorithm".aux</file>
+      <file>Appendix_A_--_von_Stengel_et_al_algorithm-blx.bib</file>
     </requires>
     <requires type="editable">
       <file>fee_shift.bib</file>
