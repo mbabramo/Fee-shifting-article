@@ -1,0 +1,38 @@
+Completed task Optimize (ID 532) time 9/25/2022 11:28:49 PM
+
+Percentage Complete 1.3676206568803464% of 37876
+Updated status (total 385 milliseconds)
+Task to do: Optimize 549 0 Started:9/25/2022 11:28:50 PM Complete:False
+Beginning task Optimize (ID 549) time 9/25/2022 11:28:50 PM
+Using SequenceForm
+Game: Shared trial cost: 0  Shared evidence: Quality 0.3333333333333333 Bias 0
+Alpha_Quality 0.5: Both 1 P 0 D 0 Neither 0
+Alpha_Bias 0.5: Both 0 P 0.3333333333333333 D 0.6666666666666667 Neither 0
+FeeShifting True Margin False Threshold 0.44
+NumOffers 10 MinOffer 0 OfferRange 1 
+WinnerTakesAll False RiskAversion False
+NumQualityAndBiasLevels 10 (private) 1 (neither info)
+IncludePQuit False IncludeDQuit False UseDMS True
+TrialGuaranteed False 
+Initializing all game paths...
+...  Total information sets: 20 chance nodes: 11 final nodes: 10000 Initialization milliseconds 287
+Prepping accelerated best response...
+... 47 milliseconds. Total information sets: 20
+Calculating min-max...
+... complete 26 milliseconds
+Option set dms;q0.333;c0.000;t0.4400
+Using exact arithmetic for initial prior
+
+dms;q0.333;c0.000;t0.4400
+Result using all paths playing CurrentProbability
+Best iteration 1000 best exploitability 0.00025001999999987867
+Scenario index 0 Name: Option set dms;q0.333;c0.000;t0.4400
+Avg BR: 0.00025001999999987867 Perturbed refinement: 1 Custom: 0.97, 0.0183, 0.416, 0.584
+U(P0): 0.41641664000000006 BR score 0.41666674999999964 BRimp: 0.00025
+U(P1): 0.5835833600000001 BR score 0.5838332900000003 BRimp: 0.00025
+Total best response calculation time: 7 milliseconds
+
+
+Elapsed milliseconds report for eq 1 of 1: 140
+Writing report to blob
+Report written to blob

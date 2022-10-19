@@ -1,0 +1,790 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usetikzlibrary{patterns, positioning}
+
+    \usetikzlibrary{calc}
+    \usepackage{relsize}
+    \tikzset{fontscale/.style = {font=\relsize{#1}}}
+\newsavebox{\myboxRACA} 
+\begin{lrbox}{\myboxRACA}
+  \begin{tikzpicture}
+    \begin{scope}
+% 
+% Cell 0,0
+% 
+\draw[black] (1.1,0.9) -- (1.1,4.5);
+\node[rotate=90, fontscale=0.7, anchor=center] at (0.2, 2.7) {$A$};
+\draw[black] (1.05,0.9) -- (1.15,0.9);
+\node[fontscale=0.7, anchor=east] at (1.05, 0.9) {0};
+\draw[black] (1.05,1.8) -- (1.15,1.8);
+\node[fontscale=0.7, anchor=east] at (1.05, 1.8) {0.25};
+\draw[black] (1.05,2.7) -- (1.15,2.7);
+\node[fontscale=0.7, anchor=east] at (1.05, 2.7) {0.5};
+\draw[black] (1.05,3.6) -- (1.15,3.6);
+\node[fontscale=0.7, anchor=east] at (1.05, 3.6) {0.75};
+\draw[black] (1.05,4.5) -- (1.15,4.5);
+\node[fontscale=0.7, anchor=east] at (1.05, 4.5) {1};
+
+\draw[black] (1.1,0.9) -- (3.51,0.9);
+\node[fontscale=0.7, anchor=center] at (2.305, 0.2) {$t$};
+\draw[black] (1.1119,0.85) -- (1.1119,0.95);
+\node[fontscale=0.7, anchor=north] at (1.1119, 0.85) {0};
+\draw[black] (1.3505,0.85) -- (1.3505,0.95);
+\node[fontscale=0.7, anchor=north] at (1.3505, 0.85) {};
+\draw[black] (1.5892,0.85) -- (1.5892,0.95);
+\node[fontscale=0.7, anchor=north] at (1.5892, 0.85) {};
+\draw[black] (1.8278,0.85) -- (1.8278,0.95);
+\node[fontscale=0.7, anchor=north] at (1.8278, 0.85) {};
+\draw[black] (2.0664,0.85) -- (2.0664,0.95);
+\node[fontscale=0.7, anchor=north] at (2.0664, 0.85) {};
+\draw[black] (2.305,0.85) -- (2.305,0.95);
+\node[fontscale=0.7, anchor=north] at (2.305, 0.85) {0.5};
+\draw[black] (2.5436,0.85) -- (2.5436,0.95);
+\node[fontscale=0.7, anchor=north] at (2.5436, 0.85) {};
+\draw[black] (2.7822,0.85) -- (2.7822,0.95);
+\node[fontscale=0.7, anchor=north] at (2.7822, 0.85) {};
+\draw[black] (3.0208,0.85) -- (3.0208,0.95);
+\node[fontscale=0.7, anchor=north] at (3.0208, 0.85) {};
+\draw[black] (3.2595,0.85) -- (3.2595,0.95);
+\node[fontscale=0.7, anchor=north] at (3.2595, 0.85) {};
+\draw[black] (3.4981,0.85) -- (3.4981,0.95);
+\node[fontscale=0.7, anchor=north] at (3.4981, 0.85) {1};
+
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1119,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1358,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1597,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1835,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.2074,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.2312,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.2551,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.279,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3028,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3267,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3505,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3744,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3983,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.4221,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.446,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.4699,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.4937,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5176,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5414,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5653,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5892,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.613,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.6369,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.6607,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.6846,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.7085,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.7323,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.7562,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.78,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8039,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8278,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8516,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8755,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8994,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9232,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9471,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9709,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9948,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0187,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0425,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0664,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0902,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.1141,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.138,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.1618,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.1857,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2096,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2334,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2573,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2811,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.305,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.3289,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.3527,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.3766,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4004,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4243,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4482,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.472,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4959,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5198,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5436,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5675,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5913,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6152,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6391,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6629,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6868,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7106,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7345,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7584,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7822,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.8061,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.83,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.8538,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.8777,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9015,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9254,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9493,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9731,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.997,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0208,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0447,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0686,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0924,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.1163,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.1401,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.164,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.1879,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2117,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2356,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2595,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2833,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.3072,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.331,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.3549,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.3788,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4026,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4265,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4503,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4742,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4981,1.26) circle(0.05cm); 
+
+  \end{scope}
+  \end{tikzpicture}
+\end{lrbox}
+\newsavebox{\myboxRACB} 
+\begin{lrbox}{\myboxRACB}
+  \begin{tikzpicture}
+    \begin{scope}
+% 
+% Cell 0,1
+% 
+\draw[black] (1.1,0.9) -- (1.1,4.5);
+\node[rotate=90, fontscale=0.7, anchor=center] at (0.2, 2.7) {$A$};
+\draw[black] (1.05,0.9) -- (1.15,0.9);
+\node[fontscale=0.7, anchor=east] at (1.05, 0.9) {0};
+\draw[black] (1.05,1.8) -- (1.15,1.8);
+\node[fontscale=0.7, anchor=east] at (1.05, 1.8) {0.25};
+\draw[black] (1.05,2.7) -- (1.15,2.7);
+\node[fontscale=0.7, anchor=east] at (1.05, 2.7) {0.5};
+\draw[black] (1.05,3.6) -- (1.15,3.6);
+\node[fontscale=0.7, anchor=east] at (1.05, 3.6) {0.75};
+\draw[black] (1.05,4.5) -- (1.15,4.5);
+\node[fontscale=0.7, anchor=east] at (1.05, 4.5) {1};
+
+\draw[black] (1.1,0.9) -- (3.51,0.9);
+\node[fontscale=0.7, anchor=center] at (2.305, 0.2) {$t$};
+\draw[black] (1.1119,0.85) -- (1.1119,0.95);
+\node[fontscale=0.7, anchor=north] at (1.1119, 0.85) {0};
+\draw[black] (1.3505,0.85) -- (1.3505,0.95);
+\node[fontscale=0.7, anchor=north] at (1.3505, 0.85) {};
+\draw[black] (1.5892,0.85) -- (1.5892,0.95);
+\node[fontscale=0.7, anchor=north] at (1.5892, 0.85) {};
+\draw[black] (1.8278,0.85) -- (1.8278,0.95);
+\node[fontscale=0.7, anchor=north] at (1.8278, 0.85) {};
+\draw[black] (2.0664,0.85) -- (2.0664,0.95);
+\node[fontscale=0.7, anchor=north] at (2.0664, 0.85) {};
+\draw[black] (2.305,0.85) -- (2.305,0.95);
+\node[fontscale=0.7, anchor=north] at (2.305, 0.85) {0.5};
+\draw[black] (2.5436,0.85) -- (2.5436,0.95);
+\node[fontscale=0.7, anchor=north] at (2.5436, 0.85) {};
+\draw[black] (2.7822,0.85) -- (2.7822,0.95);
+\node[fontscale=0.7, anchor=north] at (2.7822, 0.85) {};
+\draw[black] (3.0208,0.85) -- (3.0208,0.95);
+\node[fontscale=0.7, anchor=north] at (3.0208, 0.85) {};
+\draw[black] (3.2595,0.85) -- (3.2595,0.95);
+\node[fontscale=0.7, anchor=north] at (3.2595, 0.85) {};
+\draw[black] (3.4981,0.85) -- (3.4981,0.95);
+\node[fontscale=0.7, anchor=north] at (3.4981, 0.85) {1};
+
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1119,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1358,1.2621) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1597,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1835,1.2621) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.2074,1.2621) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.2312,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.2551,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.279,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3028,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3267,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3505,1.2621) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3744,1.2628) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3983,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.4221,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.446,1.2607) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.4699,1.2621) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.4937,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5176,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5414,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5653,1.26) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5892,1.2621) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.613,1.2597) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.6369,1.2555) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.6607,1.2597) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.6846,1.2555) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.7085,1.2555) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.7323,1.2576) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.7562,1.2555) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.78,1.2555) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8039,1.2562) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8278,1.2517) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8516,1.251) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8755,1.2531) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8994,1.2531) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9232,1.2538) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9471,1.2531) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9709,1.2531) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9948,1.2486) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0187,1.2441) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0425,1.2427) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0664,1.2441) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0902,1.242) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.1141,1.242) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.138,1.242) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.1618,1.2375) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.1857,1.2375) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2096,1.233) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2334,1.2372) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2573,1.233) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2811,1.233) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.305,1.233) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.3289,1.2276) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.3527,1.2306) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.3766,1.2306) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4004,1.2285) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4243,1.2268) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4482,1.224) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.472,1.2195) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4959,1.2237) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5198,1.2195) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5436,1.2216) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5675,1.2237) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5913,1.2195) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6152,1.2171) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6391,1.2105) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6629,1.2126) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6868,1.2126) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7106,1.2105) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7345,1.2105) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7584,1.2147) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7822,1.2169) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.8061,1.2063) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.83,1.2088) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.8538,1.2102) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.8777,1.206) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9015,1.2081) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9254,1.2078) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9493,1.2054) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9731,1.2067) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.997,1.2081) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0208,1.2057) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0447,1.2015) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0686,1.2049) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0924,1.2049) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.1163,1.2027) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.1401,1.2015) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.164,1.2033) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.1879,1.2033) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2117,1.2043) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2356,1.2032) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2595,1.2023) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2833,1.2025) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.3072,1.2035) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.331,1.2035) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.3549,1.204) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.3788,1.2032) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4026,1.2047) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4265,1.2048) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4503,1.2015) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4742,1.2033) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4981,1.202) circle(0.05cm); 
+
+  \end{scope}
+  \end{tikzpicture}
+\end{lrbox}
+\newsavebox{\myboxRACC} 
+\begin{lrbox}{\myboxRACC}
+  \begin{tikzpicture}
+    \begin{scope}
+% 
+% Cell 0,2
+% 
+\draw[black] (1.1,0.9) -- (1.1,4.5);
+\node[rotate=90, fontscale=0.7, anchor=center] at (0.2, 2.7) {$A$};
+\draw[black] (1.05,0.9) -- (1.15,0.9);
+\node[fontscale=0.7, anchor=east] at (1.05, 0.9) {0};
+\draw[black] (1.05,1.8) -- (1.15,1.8);
+\node[fontscale=0.7, anchor=east] at (1.05, 1.8) {0.25};
+\draw[black] (1.05,2.7) -- (1.15,2.7);
+\node[fontscale=0.7, anchor=east] at (1.05, 2.7) {0.5};
+\draw[black] (1.05,3.6) -- (1.15,3.6);
+\node[fontscale=0.7, anchor=east] at (1.05, 3.6) {0.75};
+\draw[black] (1.05,4.5) -- (1.15,4.5);
+\node[fontscale=0.7, anchor=east] at (1.05, 4.5) {1};
+
+\draw[black] (1.1,0.9) -- (3.51,0.9);
+\node[fontscale=0.7, anchor=center] at (2.305, 0.2) {$t$};
+\draw[black] (1.1119,0.85) -- (1.1119,0.95);
+\node[fontscale=0.7, anchor=north] at (1.1119, 0.85) {0};
+\draw[black] (1.3505,0.85) -- (1.3505,0.95);
+\node[fontscale=0.7, anchor=north] at (1.3505, 0.85) {};
+\draw[black] (1.5892,0.85) -- (1.5892,0.95);
+\node[fontscale=0.7, anchor=north] at (1.5892, 0.85) {};
+\draw[black] (1.8278,0.85) -- (1.8278,0.95);
+\node[fontscale=0.7, anchor=north] at (1.8278, 0.85) {};
+\draw[black] (2.0664,0.85) -- (2.0664,0.95);
+\node[fontscale=0.7, anchor=north] at (2.0664, 0.85) {};
+\draw[black] (2.305,0.85) -- (2.305,0.95);
+\node[fontscale=0.7, anchor=north] at (2.305, 0.85) {0.5};
+\draw[black] (2.5436,0.85) -- (2.5436,0.95);
+\node[fontscale=0.7, anchor=north] at (2.5436, 0.85) {};
+\draw[black] (2.7822,0.85) -- (2.7822,0.95);
+\node[fontscale=0.7, anchor=north] at (2.7822, 0.85) {};
+\draw[black] (3.0208,0.85) -- (3.0208,0.95);
+\node[fontscale=0.7, anchor=north] at (3.0208, 0.85) {};
+\draw[black] (3.2595,0.85) -- (3.2595,0.95);
+\node[fontscale=0.7, anchor=north] at (3.2595, 0.85) {};
+\draw[black] (3.4981,0.85) -- (3.4981,0.95);
+\node[fontscale=0.7, anchor=north] at (3.4981, 0.85) {1};
+
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1119,1.2642) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1358,1.2673) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1597,1.2678) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1835,1.2714) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.2074,1.2693) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.2312,1.2673) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.2551,1.2648) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.279,1.2637) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3028,1.2709) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3267,1.2685) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3505,1.2709) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3744,1.2714) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3983,1.2694) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.4221,1.2694) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.446,1.2658) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.4699,1.273) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.4937,1.2673) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5176,1.2709) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5414,1.2678) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5653,1.273) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5892,1.2694) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.613,1.2567) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.6369,1.2624) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.6607,1.2624) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.6846,1.2624) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.7085,1.2559) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.7323,1.2603) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.7562,1.2546) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.78,1.2547) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8039,1.2588) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8278,1.2433) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8516,1.2444) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8755,1.255) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8994,1.2498) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9232,1.2514) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9471,1.2514) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9709,1.2453) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9948,1.2408) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0187,1.2289) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0425,1.2318) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0664,1.2277) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0902,1.2297) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.1141,1.237) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.138,1.2354) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.1618,1.2243) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.1857,1.2228) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2096,1.2138) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2334,1.2048) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2573,1.2154) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2811,1.2161) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.305,1.2138) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.3289,1.1982) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.3527,1.21) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.3766,1.2003) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4004,1.2079) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4243,1.1989) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4482,1.1958) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.472,1.1823) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4959,1.1904) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5198,1.1787) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5436,1.1884) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5675,1.1875) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5913,1.1839) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6152,1.1814) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6391,1.1704) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6629,1.1719) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6868,1.174) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7106,1.1668) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7345,1.174) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7584,1.181) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7822,1.1762) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.8061,1.1554) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.83,1.1531) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.8538,1.1627) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.8777,1.1558) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9015,1.1606) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9254,1.1581) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9493,1.1598) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9731,1.1461) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.997,1.1646) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0208,1.1512) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0447,1.1498) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0686,1.1522) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0924,1.1466) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.1163,1.1483) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.1401,1.1561) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.164,1.1569) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.1879,1.1597) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2117,1.1523) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2356,1.1493) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2595,1.1541) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2833,1.1497) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.3072,1.1508) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.331,1.1489) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.3549,1.1501) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.3788,1.1492) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4026,1.1492) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4265,1.1512) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4503,1.1474) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4742,1.1508) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4981,1.1497) circle(0.05cm); 
+
+  \end{scope}
+  \end{tikzpicture}
+\end{lrbox}
+\newsavebox{\myboxRACD} 
+\begin{lrbox}{\myboxRACD}
+  \begin{tikzpicture}
+    \begin{scope}
+% 
+% Cell 0,3
+% 
+\draw[black] (1.1,0.9) -- (1.1,4.5);
+\node[rotate=90, fontscale=0.7, anchor=center] at (0.2, 2.7) {$A$};
+\draw[black] (1.05,0.9) -- (1.15,0.9);
+\node[fontscale=0.7, anchor=east] at (1.05, 0.9) {0};
+\draw[black] (1.05,1.8) -- (1.15,1.8);
+\node[fontscale=0.7, anchor=east] at (1.05, 1.8) {0.25};
+\draw[black] (1.05,2.7) -- (1.15,2.7);
+\node[fontscale=0.7, anchor=east] at (1.05, 2.7) {0.5};
+\draw[black] (1.05,3.6) -- (1.15,3.6);
+\node[fontscale=0.7, anchor=east] at (1.05, 3.6) {0.75};
+\draw[black] (1.05,4.5) -- (1.15,4.5);
+\node[fontscale=0.7, anchor=east] at (1.05, 4.5) {1};
+
+\draw[black] (1.1,0.9) -- (3.51,0.9);
+\node[fontscale=0.7, anchor=center] at (2.305, 0.2) {$t$};
+\draw[black] (1.1119,0.85) -- (1.1119,0.95);
+\node[fontscale=0.7, anchor=north] at (1.1119, 0.85) {0};
+\draw[black] (1.3505,0.85) -- (1.3505,0.95);
+\node[fontscale=0.7, anchor=north] at (1.3505, 0.85) {};
+\draw[black] (1.5892,0.85) -- (1.5892,0.95);
+\node[fontscale=0.7, anchor=north] at (1.5892, 0.85) {};
+\draw[black] (1.8278,0.85) -- (1.8278,0.95);
+\node[fontscale=0.7, anchor=north] at (1.8278, 0.85) {};
+\draw[black] (2.0664,0.85) -- (2.0664,0.95);
+\node[fontscale=0.7, anchor=north] at (2.0664, 0.85) {};
+\draw[black] (2.305,0.85) -- (2.305,0.95);
+\node[fontscale=0.7, anchor=north] at (2.305, 0.85) {0.5};
+\draw[black] (2.5436,0.85) -- (2.5436,0.95);
+\node[fontscale=0.7, anchor=north] at (2.5436, 0.85) {};
+\draw[black] (2.7822,0.85) -- (2.7822,0.95);
+\node[fontscale=0.7, anchor=north] at (2.7822, 0.85) {};
+\draw[black] (3.0208,0.85) -- (3.0208,0.95);
+\node[fontscale=0.7, anchor=north] at (3.0208, 0.85) {};
+\draw[black] (3.2595,0.85) -- (3.2595,0.95);
+\node[fontscale=0.7, anchor=north] at (3.2595, 0.85) {};
+\draw[black] (3.4981,0.85) -- (3.4981,0.95);
+\node[fontscale=0.7, anchor=north] at (3.4981, 0.85) {1};
+
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1119,1.3302) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1358,1.341) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1597,1.305) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1835,1.1973) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.2074,1.3266) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.2312,1.3194) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.2551,1.2937) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.279,1.2798) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3028,1.3158) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3267,1.341) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3505,1.3122) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3744,1.3374) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3983,1.3158) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.4221,1.2865) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.446,1.2834) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.4699,1.2654) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.4937,1.3374) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5176,1.3014) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5414,1.3482) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5653,1.3374) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5892,1.3338) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.613,1.323) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.6369,1.3122) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.6607,1.3086) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.6846,1.3014) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.7085,1.2395) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.7323,1.323) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.7562,1.3014) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.78,1.2618) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8039,1.3122) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8278,1.2577) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8516,1.2465) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8755,1.2438) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8994,1.2726) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9232,1.2762) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9471,1.2577) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9709,1.2285) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9948,1.2474) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0187,1.2474) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0425,1.2236) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0664,1.1912) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0902,1.2402) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.1141,1.2402) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.138,1.2438) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.1618,1.197) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.1857,1.215) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2096,1.1934) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2334,1.2006) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2573,1.1934) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2811,1.1745) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.305,1.197) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.3289,1.2222) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.3527,1.1406) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.3766,1.2011) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4004,1.1639) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4243,1.1939) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4482,1.1723) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.472,1.1219) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4959,1.1257) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5198,1.1381) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5436,1.0897) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5675,1.1278) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5913,1.1257) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6152,1.1225) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6391,1.1222) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6629,1.0876) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6868,1.073) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7106,1.1045) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7345,1.0747) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7584,1.0942) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7822,1.1065) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.8061,1.0645) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.83,1.0261) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.8538,1.0763) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.8777,1.0132) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9015,1.0571) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9254,1.0595) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9493,1.0915) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9731,1.0378) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.997,1.0417) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0208,1.0548) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0447,0.98376) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0686,1.0076) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0924,1.0081) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.1163,0.98428) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.1401,0.97842) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.164,1.0303) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.1879,1.0399) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2117,0.93324) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2356,0.94684) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2595,0.96222) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2833,0.97654) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.3072,0.95368) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.331,0.98526) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.3549,0.97425) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.3788,0.93702) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4026,1.0058) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4265,1.013) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4503,0.976) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4742,0.97248) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4981,0.96322) circle(0.05cm); 
+
+  \end{scope}
+  \end{tikzpicture}
+\end{lrbox}
+\newsavebox{\myboxRACE} 
+\begin{lrbox}{\myboxRACE}
+  \begin{tikzpicture}
+    \begin{scope}
+% 
+% Cell 0,4
+% 
+\draw[black] (1.1,0.9) -- (1.1,4.5);
+\node[rotate=90, fontscale=0.7, anchor=center] at (0.2, 2.7) {$A$};
+\draw[black] (1.05,0.9) -- (1.15,0.9);
+\node[fontscale=0.7, anchor=east] at (1.05, 0.9) {0};
+\draw[black] (1.05,1.8) -- (1.15,1.8);
+\node[fontscale=0.7, anchor=east] at (1.05, 1.8) {0.25};
+\draw[black] (1.05,2.7) -- (1.15,2.7);
+\node[fontscale=0.7, anchor=east] at (1.05, 2.7) {0.5};
+\draw[black] (1.05,3.6) -- (1.15,3.6);
+\node[fontscale=0.7, anchor=east] at (1.05, 3.6) {0.75};
+\draw[black] (1.05,4.5) -- (1.15,4.5);
+\node[fontscale=0.7, anchor=east] at (1.05, 4.5) {1};
+
+\draw[black] (1.1,0.9) -- (3.51,0.9);
+\node[fontscale=0.7, anchor=center] at (2.305, 0.2) {$t$};
+\draw[black] (1.1119,0.85) -- (1.1119,0.95);
+\node[fontscale=0.7, anchor=north] at (1.1119, 0.85) {0};
+\draw[black] (1.3505,0.85) -- (1.3505,0.95);
+\node[fontscale=0.7, anchor=north] at (1.3505, 0.85) {};
+\draw[black] (1.5892,0.85) -- (1.5892,0.95);
+\node[fontscale=0.7, anchor=north] at (1.5892, 0.85) {};
+\draw[black] (1.8278,0.85) -- (1.8278,0.95);
+\node[fontscale=0.7, anchor=north] at (1.8278, 0.85) {};
+\draw[black] (2.0664,0.85) -- (2.0664,0.95);
+\node[fontscale=0.7, anchor=north] at (2.0664, 0.85) {};
+\draw[black] (2.305,0.85) -- (2.305,0.95);
+\node[fontscale=0.7, anchor=north] at (2.305, 0.85) {0.5};
+\draw[black] (2.5436,0.85) -- (2.5436,0.95);
+\node[fontscale=0.7, anchor=north] at (2.5436, 0.85) {};
+\draw[black] (2.7822,0.85) -- (2.7822,0.95);
+\node[fontscale=0.7, anchor=north] at (2.7822, 0.85) {};
+\draw[black] (3.0208,0.85) -- (3.0208,0.95);
+\node[fontscale=0.7, anchor=north] at (3.0208, 0.85) {};
+\draw[black] (3.2595,0.85) -- (3.2595,0.95);
+\node[fontscale=0.7, anchor=north] at (3.2595, 0.85) {};
+\draw[black] (3.4981,0.85) -- (3.4981,0.95);
+\node[fontscale=0.7, anchor=north] at (3.4981, 0.85) {1};
+
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1119,1.3992) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1358,1.224) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1597,1.3992) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.1835,1.3272) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.2074,1.3992) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.2312,1.3272) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.2551,1.3992) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.279,1.3992) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3028,1.3992) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3267,1.3992) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3505,1.3992) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3744,1.296) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.3983,1.3992) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.4221,1.224) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.446,1.392) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.4699,1.2552) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.4937,1.3992) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5176,1.3992) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5414,1.368) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5653,1.3608) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.5892,1.3296) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.613,1.2642) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.6369,1.3821) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.6607,1.2045) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.6846,1.2306) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.7085,1.3026) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.7323,1.3485) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.7562,1.2765) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.78,1.3224) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8039,1.3485) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8278,1.1712) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8516,1.3584) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8755,1.2768) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.8994,1.2432) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9232,1.2864) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9471,1.1712) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9709,1.2432) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (1.9948,1.2384) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0187,1.2177) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0425,1.2189) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0664,1.2282) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.0902,1.1466) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.1141,1.2282) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.138,1.1781) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.1618,1.152) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.1857,1.2282) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2096,1.152) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2334,1.1713) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2573,1.152) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.2811,1.1616) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.305,1.152) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.3289,1.1538) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.3527,1.1538) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.3766,1.1749) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4004,1.1245) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4243,1.147) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4482,1.1245) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.472,1.3612) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.4959,1.3642) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5198,1.3642) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5436,1.3642) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5675,1.3642) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.5913,1.3013) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6152,1.2939) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6391,1.3476) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6629,1.2972) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.6868,1.2972) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7106,1.4013) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7345,1.2489) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7584,1.3071) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.7822,1.2539) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.8061,1.2002) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.83,1.1591) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.8538,1.1422) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.8777,1.1422) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9015,1.1422) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9254,1.1497) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9493,1.105) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.9731,1.1497) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (2.997,1.1497) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0208,1.1008) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0447,1.2034) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0686,1.087) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.0924,1.1587) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.1163,1.1497) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.1401,1.1587) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.164,1.105) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.1879,1.2204) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2117,1.1587) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2356,1.105) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2595,1.1587) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.2833,1.1139) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.3072,1.105) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.331,1.1139) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.3549,1.1667) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.3788,1.2213) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4026,1.1577) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4265,1.1587) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4503,1.1497) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4742,1.1587) circle(0.05cm); 
+\draw[red, opacity=0.2, line width=0.1mm, solid] (3.4981,1.1587) circle(0.05cm); 
+
+  \end{scope}
+  \end{tikzpicture}
+\end{lrbox}
+
+\begin{document}
+\begin{tikzpicture}
+\clip(0, 0) rectangle + (20,6.3); 
+\draw[black] (1.7,1.5) -- (1.7,6.3);
+\node[rotate=90, fontscale=2, anchor=center] at (0.9, 4.35) {$q$};
+\draw[black] (1.65,4.35) -- (1.75,4.35);
+\node[fontscale=2, anchor=east] at (1.65, 4.35) {Avg.};
+
+\draw[black] (1.7,1.5) -- (20,1.5);
+\node[fontscale=2, anchor=center] at (11.4, 0.5) {$c$};
+\draw[black] (4.08,1.45) -- (4.08,1.55);
+\node[fontscale=2, anchor=north] at (4.08, 1.45) {$0$};
+\draw[black] (7.74,1.45) -- (7.74,1.55);
+\node[fontscale=2, anchor=north] at (7.74, 1.45) {$\frac{1}{16}$};
+\draw[black] (11.4,1.45) -- (11.4,1.55);
+\node[fontscale=2, anchor=north] at (11.4, 1.45) {$\frac{1}{8}$};
+\draw[black] (15.06,1.45) -- (15.06,1.55);
+\node[fontscale=2, anchor=north] at (15.06, 1.45) {$\frac{1}{4}$};
+\draw[black] (18.72,1.45) -- (18.72,1.55);
+\node[fontscale=2, anchor=north] at (18.72, 1.45) {$\frac{1}{2}$};
+
+
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (1.75,6.2) { \usebox{\myboxRACA} };
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (5.41,6.2) { \usebox{\myboxRACB} };
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (9.07,6.2) { \usebox{\myboxRACC} };
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (12.73,6.2) { \usebox{\myboxRACD} };
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (16.39,6.2) { \usebox{\myboxRACE} };
+
+
+\end{tikzpicture}
+\end{document}

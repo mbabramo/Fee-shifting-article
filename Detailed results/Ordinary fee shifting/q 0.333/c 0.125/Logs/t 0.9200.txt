@@ -1,0 +1,57 @@
+Completed task Optimize (ID 13400) time 9/26/2022 12:50:40 AM
+
+Percentage Complete 35.36012250501636% of 37876
+Updated status (total 337 milliseconds)
+Task to do: Optimize 13424 0 Started:9/26/2022 12:50:41 AM Complete:False
+Beginning task Optimize (ID 13424) time 9/26/2022 12:50:41 AM
+Using SequenceForm
+Game: Shared trial cost: 0.125  Shared evidence: Quality 0.3333333333333333 Bias 0
+Alpha_Quality 0.5: Both 1 P 0 D 0 Neither 0
+Alpha_Bias 0.5: Both 0 P 0.5 D 0.5 Neither 0
+FeeShifting True Margin False Threshold 0.92
+NumOffers 10 MinOffer 0 OfferRange 1 
+WinnerTakesAll False RiskAversion False
+NumQualityAndBiasLevels 10 (private) 1 (neither info)
+IncludePQuit False IncludeDQuit False UseDMS False
+TrialGuaranteed False 
+Initializing all game paths...
+...  Total information sets: 20 chance nodes: 11 final nodes: 10000 Initialization milliseconds 268
+Prepping accelerated best response...
+... 68 milliseconds. Total information sets: 20
+Calculating min-max...
+... complete 37 milliseconds
+Option set ordes;q0.333;c0.125;t0.9200
+Using exact arithmetic for initial prior
+Using pseudorandom seed -1972199905
+
+Game tree has 11111 nodes, of which 10000 are terminal nodes.
+    Player 0 has  11 information sets, 110 moves in total
+    Player 1 has  10 information sets, 100 moves in total
+    Player 2 has  10 information sets, 100 moves in total
+Sequence form LCP dimension is 224
+    Player 1 has 101 sequences, subject to  11 constraints
+    Player 2 has 101 sequences, subject to  11 constraints
+Prior 1 of 1
+Complete after 65 pivoting steps
+Equilibrium 1
+Equilibrium behavior strategies player 1, 2:
+0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0
+0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6668/14259,7591/14259,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Elapsed milliseconds prior 1: 6488
+Changed to original form:
+0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,6668/14259,7591/14259,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Perfect equilibrium confirmed 72 ms
+
+ordes;q0.333;c0.125;t0.9200
+Result using all paths playing CurrentProbability
+Best iteration 1000 best exploitability -2.7755575615628914E-17
+Scenario index 0 Name: Option set ordes;q0.333;c0.125;t0.9200
+Avg BR: -2.7755575615628914E-17 Perturbed refinement: 1 Custom: 0.8, 0.0215, 0.334, 0.566
+U(P0): 0.33398276000000016 BR score 0.3339827600000002 BRimp: 5.55E-17
+U(P1): 0.5660168900000002 BR score 0.5660168900000001 BRimp: -1.11E-16
+Total best response calculation time: 12 milliseconds
+
+
+Elapsed milliseconds report for eq 1 of 1: 185
+Writing report to blob
+Report written to blob
