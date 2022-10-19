@@ -22,47 +22,49 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: fee_shift-blx.bib
 Database file #2: fee_shift.bib
+Warning--I didn't find a database entry for "lanctot"
 Biblatex version: 3.15
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 34 entries,
+You've used 30 entries,
             6393 wiz_defined-function locations,
-            1394 strings with 13592 characters,
-and the built_in function-call counts, 186504 in all, are:
-= -- 12632
-> -- 3409
-< -- 861
-+ -- 3811
-- -- 1286
-* -- 14445
-:= -- 19279
+            1370 strings with 12999 characters,
+and the built_in function-call counts, 165924 in all, are:
+= -- 11309
+> -- 3004
+< -- 758
++ -- 3375
+- -- 1133
+* -- 12884
+:= -- 17211
 add.period$ -- 0
-call.type$ -- 34
-change.case$ -- 328
+call.type$ -- 30
+change.case$ -- 288
 chr.to.int$ -- 42
-cite$ -- 66
-duplicate$ -- 18573
-empty$ -- 17897
-format.name$ -- 2090
-if$ -- 38930
+cite$ -- 58
+duplicate$ -- 16380
+empty$ -- 15929
+format.name$ -- 1841
+if$ -- 34632
 int.to.chr$ -- 0
-int.to.str$ -- 70
+int.to.str$ -- 62
 missing$ -- 0
-newline$ -- 938
-num.names$ -- 1363
-pop$ -- 11309
+newline$ -- 830
+num.names$ -- 1199
+pop$ -- 9950
 preamble$ -- 1
-purify$ -- 474
+purify$ -- 417
 quote$ -- 0
-skip$ -- 5768
+skip$ -- 5079
 stack$ -- 0
-substring$ -- 22824
-swap$ -- 4600
-text.length$ -- 910
-text.prefix$ -- 33
+substring$ -- 20621
+swap$ -- 4049
+text.length$ -- 804
+text.prefix$ -- 29
 top$ -- 1
-type$ -- 1144
+type$ -- 1008
 warning$ -- 0
-while$ -- 2481
+while$ -- 2199
 width$ -- 0
-write$ -- 905
+write$ -- 801
+(There was 1 warning)

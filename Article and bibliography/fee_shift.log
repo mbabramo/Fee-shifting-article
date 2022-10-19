@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.10) (format=lualatex 2022.8.7)  18 OCT 2022 21:07
+This is LuaHBTeX, Version 1.12.0 (MiKTeX 20.10) (format=lualatex 2022.8.7)  18 OCT 2022 21:50
  restricted system commands enabled.
 **fee_shift.tex
 (./fee_shift.tex
@@ -947,7 +947,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [13]
 
-LaTeX Warning: Citation 'lanctot' on page 14 undefined on input line 151.
+LaTeX Warning: Citation 'lanctot2' on page 14 undefined on input line 151.
 
 [14<../Figures/gametree.pdf>]
 <../Figures/DMS formulas exploitability.pdf, id=230, 569.05498pt x 293.06288pt>
@@ -1037,16 +1037,13 @@ LaTeX Warning: Float too large for page by 5.51003pt on input line 317.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[23] [24] [25] [26] [27] [28<../Figures/AverageAccuracy.pdf>] [29<../Figures/Cos
-tInclusiveAccuracy.pdf>] (./fee_shift.aux)
+[23] [24] [25] [26] [27<../Figures/AverageAccuracy.pdf>] [28<../Figures/CostIncl
+usiveAccuracy.pdf>] (./fee_shift.aux)
 Package rerunfilecheck Info: File `fee_shift.out' has not changed.
 (rerunfilecheck)             Checksum: DE3C8F132A6A80D01E74528331C62469;2891.
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
@@ -1059,13 +1056,13 @@ Package logreq Info: Writing requests to 'fee_shift.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 20864 strings out of 479046
+ 20855 strings out of 479046
  125134,1144653 words of node,token memory allocated
  589 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 1 dir, 2 glue, 4 kern, 1 glyph, 17 attribute, 66 gl
 ue_spec, 10 attribute_list, 1 write nodes
-   avail lists: 1:6,2:1711,3:426,4:41,5:494,6:93,7:9442,8:40,9:573,10:25,11:777
- 39489 multiletter control sequences out of 65536+200000
+   avail lists: 1:6,2:1620,3:402,4:41,5:482,6:85,7:9333,8:48,9:581,10:25,11:777
+ 39485 multiletter control sequences out of 65536+200000
  80 fonts using 7363163 bytes
  63i,9n,109p,1977b,1691s stack positions out of 5000i,500n,10000p,200000b,50000s
 <//?/c:/users/admin/appdata/local/programs/miktex/fonts/opentype/public/lm/lmmon
@@ -1090,9 +1087,9 @@ X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Admin/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Admin/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Admin/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on fee_shift.pdf (29 pages, 1618587 bytes).
+Output written on fee_shift.pdf (28 pages, 1616511 bytes).
 
-PDF statistics: 700 PDF objects out of 1000 (max. 8388607)
- 106 named destinations out of 1000 (max. 131072)
+PDF statistics: 692 PDF objects out of 1000 (max. 8388607)
+ 101 named destinations out of 1000 (max. 131072)
  205 words of extra memory for PDF output out of 10000 (max. 100000000)
 
