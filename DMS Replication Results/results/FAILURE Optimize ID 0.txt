@@ -1,0 +1,117 @@
+System.Exception: Repeated failures
+   at ACESim.Launcher.GetSingleRepetitionReport(String optionSetName, Int32 i, Boolean addOptionSetColumns, IStrategiesDeveloper developer, Nullable`1 restrictToScenarioIndex, Action`1 logAction) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\Launcher.cs:line 590
+   at ACESim.Launcher.GetSingleRepetitionReportAndSave(String masterReportName, GameOptions options, String optionSetName, Int32 repetition, Boolean addOptionSetColumns, IStrategiesDeveloper developer, Nullable`1 restrictToScenarioIndex, Action`1 logAction) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\Launcher.cs:line 542
+   at ACESim.Launcher.GetSingleRepetitionReportAndSave(String masterReportName, Int32 optionSetIndex, Int32 repetition, Boolean addOptionSetColumns, IStrategiesDeveloper developer, Nullable`1 restrictToScenarioIndex, Action`1 logAction) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\Launcher.cs:line 529
+   at ACESim.Launcher.CompleteIndividualTask(String masterReportName, IndividualTask taskToDo, Action`1 logAction) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\Launcher.cs:line 322
+   at ACESim.Launcher.ParticipateInDistributedProcessing(String masterReportName, CancellationToken cancellationToken, Action`1 logAction) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\Launcher.cs:line 298
+Starting participation in DMS008
+
+Percentage Complete 0% of 68
+Task to do: Optimize 0 0 Started:7/15/2022 3:22:07 PM Complete:False
+Updated status (total 19 milliseconds)
+Using SequenceForm
+Game: T: 0, C: 0.1, Q: 0.4
+Initializing all game paths...
+...  Total information sets: 210 chance nodes: 1 final nodes: 1000000 Initialization milliseconds 222638
+Prepping accelerated best response...
+... 10845 milliseconds. Total information sets: 210
+Calculating min-max...
+... complete 2886 milliseconds
+Option set T0,C0.1,Q0.4
+Using exact arithmetic for initial prior
+Error: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.SetToEquilibriumConstructingAverage(List`1 infoSets, Double[] actionProbabilities, Int32 eqNum, Boolean recordProbabilitiesAsPastValues) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 1149
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.ProcessEquilibrium(ReportCollection reportCollection, Boolean includeAverageEquilibriumReport, Boolean includeCorrelatedEquilibriumReport, Boolean includeReportForFirstEquilibrium, Boolean includeReportForEachEquilibrium, Int32 numEquilibria, List`1 infoSets, Int32 eqNum, Boolean isFirst, Boolean isLast, Double[] actionProbabilities) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 1070
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.GenerateReportsFromEquilibria(List`1 equilibria, ReportCollection reportCollection) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 1063
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.ProcessIdentifiedEquilibria(ReportCollection reportCollection, List`1 equilibria) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 251
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.RunAlgorithm(String optionSetName) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 105
+   at ACESim.StrategiesDeveloperBase.DevelopStrategies(String optionSetName, Nullable`1 restrictToScenarioIndex, String masterReportName) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 150
+   at ACESim.Launcher.GetSingleRepetitionReport(String optionSetName, Int32 i, Boolean addOptionSetColumns, IStrategiesDeveloper developer, Nullable`1 restrictToScenarioIndex, Action`1 logAction) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\Launcher.cs:line 580
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.SetToEquilibriumConstructingAverage(List`1 infoSets, Double[] actionProbabilities, Int32 eqNum, Boolean recordProbabilitiesAsPastValues) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 1149
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.ProcessEquilibrium(ReportCollection reportCollection, Boolean includeAverageEquilibriumReport, Boolean includeCorrelatedEquilibriumReport, Boolean includeReportForFirstEquilibrium, Boolean includeReportForEachEquilibrium, Int32 numEquilibria, List`1 infoSets, Int32 eqNum, Boolean isFirst, Boolean isLast, Double[] actionProbabilities) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 1070
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.GenerateReportsFromEquilibria(List`1 equilibria, ReportCollection reportCollection) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 1063
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.ProcessIdentifiedEquilibria(ReportCollection reportCollection, List`1 equilibria) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 251
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.RunAlgorithm(String optionSetName) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 105
+   at ACESim.StrategiesDeveloperBase.DevelopStrategies(String optionSetName, Nullable`1 restrictToScenarioIndex, String masterReportName) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 150
+   at ACESim.Launcher.GetSingleRepetitionReport(String optionSetName, Int32 i, Boolean addOptionSetColumns, IStrategiesDeveloper developer, Nullable`1 restrictToScenarioIndex, Action`1 logAction) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\Launcher.cs:line 580
+Initializing all game paths...
+...  Total information sets: 0 chance nodes: 0 final nodes: 0 Initialization milliseconds 1142
+Prepping accelerated best response...
+... 8969 milliseconds. Total information sets: 0
+Calculating min-max...
+... complete 2226 milliseconds
+Error: System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.Min[TSource](IEnumerable`1 source, Func`2 selector)
+   at ACESim.StrategiesDeveloperBase.<GetUtilitiesAsRationals>b__164_0(Int32 p) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1588
+   at System.Linq.Enumerable.SelectRangeIterator`1.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at ACESim.StrategiesDeveloperBase.GetUtilitiesAsRationals() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1588
+   at ACESim.StrategiesDeveloperBase.SetFinalUtilitiesToRoundedOffValues() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1569
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.Initialize() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 57
+   at ACESim.StrategiesDeveloperBase.DevelopStrategies(String optionSetName, Nullable`1 restrictToScenarioIndex, String masterReportName) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 114
+   at ACESim.Launcher.GetSingleRepetitionReport(String optionSetName, Int32 i, Boolean addOptionSetColumns, IStrategiesDeveloper developer, Nullable`1 restrictToScenarioIndex, Action`1 logAction) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\Launcher.cs:line 580
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.Min[TSource](IEnumerable`1 source, Func`2 selector)
+   at ACESim.StrategiesDeveloperBase.<GetUtilitiesAsRationals>b__164_0(Int32 p) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1588
+   at System.Linq.Enumerable.SelectRangeIterator`1.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at ACESim.StrategiesDeveloperBase.GetUtilitiesAsRationals() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1588
+   at ACESim.StrategiesDeveloperBase.SetFinalUtilitiesToRoundedOffValues() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1569
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.Initialize() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 57
+   at ACESim.StrategiesDeveloperBase.DevelopStrategies(String optionSetName, Nullable`1 restrictToScenarioIndex, String masterReportName) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 114
+   at ACESim.Launcher.GetSingleRepetitionReport(String optionSetName, Int32 i, Boolean addOptionSetColumns, IStrategiesDeveloper developer, Nullable`1 restrictToScenarioIndex, Action`1 logAction) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\Launcher.cs:line 580
+Initializing all game paths...
+...  Total information sets: 0 chance nodes: 0 final nodes: 0 Initialization milliseconds 988
+Prepping accelerated best response...
+... 8325 milliseconds. Total information sets: 0
+Calculating min-max...
+... complete 2402 milliseconds
+Error: System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.Min[TSource](IEnumerable`1 source, Func`2 selector)
+   at ACESim.StrategiesDeveloperBase.<GetUtilitiesAsRationals>b__164_0(Int32 p) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1588
+   at System.Linq.Enumerable.SelectRangeIterator`1.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at ACESim.StrategiesDeveloperBase.GetUtilitiesAsRationals() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1588
+   at ACESim.StrategiesDeveloperBase.SetFinalUtilitiesToRoundedOffValues() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1569
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.Initialize() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 57
+   at ACESim.StrategiesDeveloperBase.DevelopStrategies(String optionSetName, Nullable`1 restrictToScenarioIndex, String masterReportName) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 114
+   at ACESim.Launcher.GetSingleRepetitionReport(String optionSetName, Int32 i, Boolean addOptionSetColumns, IStrategiesDeveloper developer, Nullable`1 restrictToScenarioIndex, Action`1 logAction) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\Launcher.cs:line 580
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.Min[TSource](IEnumerable`1 source, Func`2 selector)
+   at ACESim.StrategiesDeveloperBase.<GetUtilitiesAsRationals>b__164_0(Int32 p) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1588
+   at System.Linq.Enumerable.SelectRangeIterator`1.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at ACESim.StrategiesDeveloperBase.GetUtilitiesAsRationals() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1588
+   at ACESim.StrategiesDeveloperBase.SetFinalUtilitiesToRoundedOffValues() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1569
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.Initialize() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 57
+   at ACESim.StrategiesDeveloperBase.DevelopStrategies(String optionSetName, Nullable`1 restrictToScenarioIndex, String masterReportName) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 114
+   at ACESim.Launcher.GetSingleRepetitionReport(String optionSetName, Int32 i, Boolean addOptionSetColumns, IStrategiesDeveloper developer, Nullable`1 restrictToScenarioIndex, Action`1 logAction) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\Launcher.cs:line 580
+Initializing all game paths...
+...  Total information sets: 0 chance nodes: 0 final nodes: 0 Initialization milliseconds 1070
+Prepping accelerated best response...
+... 7330 milliseconds. Total information sets: 0
+Calculating min-max...
+... complete 2396 milliseconds
+Error: System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.Min[TSource](IEnumerable`1 source, Func`2 selector)
+   at ACESim.StrategiesDeveloperBase.<GetUtilitiesAsRationals>b__164_0(Int32 p) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1588
+   at System.Linq.Enumerable.SelectRangeIterator`1.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at ACESim.StrategiesDeveloperBase.GetUtilitiesAsRationals() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1588
+   at ACESim.StrategiesDeveloperBase.SetFinalUtilitiesToRoundedOffValues() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1569
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.Initialize() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 57
+   at ACESim.StrategiesDeveloperBase.DevelopStrategies(String optionSetName, Nullable`1 restrictToScenarioIndex, String masterReportName) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 114
+   at ACESim.Launcher.GetSingleRepetitionReport(String optionSetName, Int32 i, Boolean addOptionSetColumns, IStrategiesDeveloper developer, Nullable`1 restrictToScenarioIndex, Action`1 logAction) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\Launcher.cs:line 580
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.Min[TSource](IEnumerable`1 source, Func`2 selector)
+   at ACESim.StrategiesDeveloperBase.<GetUtilitiesAsRationals>b__164_0(Int32 p) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1588
+   at System.Linq.Enumerable.SelectRangeIterator`1.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at ACESim.StrategiesDeveloperBase.GetUtilitiesAsRationals() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1588
+   at ACESim.StrategiesDeveloperBase.SetFinalUtilitiesToRoundedOffValues() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 1569
+   at ACESimBase.GameSolvingAlgorithms.SequenceForm.Initialize() in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingAlgorithms\SequenceForm.cs:line 57
+   at ACESim.StrategiesDeveloperBase.DevelopStrategies(String optionSetName, Nullable`1 restrictToScenarioIndex, String masterReportName) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\StrategiesDeveloperBase.cs:line 114
+   at ACESim.Launcher.GetSingleRepetitionReport(String optionSetName, Int32 i, Boolean addOptionSetColumns, IStrategiesDeveloper developer, Nullable`1 restrictToScenarioIndex, Action`1 logAction) in C:\Users\Admin\Documents\GitHub\ACESim4\ACESimBase\GameSolvingSupport\Launcher.cs:line 580

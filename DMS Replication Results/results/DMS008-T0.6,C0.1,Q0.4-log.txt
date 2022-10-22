@@ -1,0 +1,26 @@
+
+Percentage Complete 27.941176470588236% of 68
+Task to do: Optimize 50 0 Started:7/15/2022 3:26:15 PM Complete:False
+Updated status (total 29 milliseconds)
+Using SequenceForm
+Game: T: 0.6, C: 0.1, Q: 0.4
+Initializing all game paths...
+...  Total information sets: 210 chance nodes: 1 final nodes: 1000000 Initialization milliseconds 229059
+Prepping accelerated best response...
+... 10251 milliseconds. Total information sets: 210
+Calculating min-max...
+... complete 2921 milliseconds
+Option set T0.6,C0.1,Q0.4
+Using exact arithmetic for initial prior
+
+T0.6,C0.1,Q0.4
+Result using all paths playing CurrentProbability
+Best iteration 1000 best exploitability 0
+Scenario index 0 Name: Option set T0.6,C0.1,Q0.4
+Avg BR: 0 Perturbed refinement: NaN Custom: 0, 0, 0, 0
+U(P0): 0.3879754587 BR vs. False 0.3879754587 BRimp: 0
+U(P1): 0.5255464278 BR vs. False 0.5255464278 BRimp: 0
+Total best response calculation time: 1413 milliseconds
+
+
+Elapsed milliseconds report for eq 1 of 1: 2923
