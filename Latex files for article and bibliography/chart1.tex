@@ -1,0 +1,322 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usetikzlibrary{patterns, positioning}
+
+    \usetikzlibrary{calc}
+    \usepackage{relsize}
+    \tikzset{fontscale/.style = {font=\relsize{#1}}}
+\newsavebox{\myboxRACA} 
+\begin{lrbox}{\myboxRACA}
+  \begin{tikzpicture}
+    \begin{scope}
+% 
+% Cell 0,0
+% 
+\draw[black] (1.1,0.9) -- (1.1,4.1);
+\node[rotate=90, fontscale=0.7, anchor=center] at (-0.2, 2.5) {Litigation rate};
+\draw[black] (1.05,0.9) -- (1.15,0.9);
+\node[fontscale=0.7, anchor=east] at (1.05, 0.9) {0\%};
+\draw[black] (1.05,2.5) -- (1.15,2.5);
+\node[fontscale=0.7, anchor=east] at (1.05, 2.5) {50\%};
+\draw[black] (1.05,4.1) -- (1.15,4.1);
+\node[fontscale=0.7, anchor=east] at (1.05, 4.1) {100\%};
+
+\draw[black] (1.1,0.9) -- (5.95,0.9);
+\node[fontscale=0.7, anchor=center] at (3.525, 0.2) {Party noise};
+\draw[black] (1.9083,0.85) -- (1.9083,0.95);
+\node[fontscale=0.7, anchor=north] at (1.9083, 0.85) {L};
+\draw[black] (3.525,0.85) -- (3.525,0.95);
+\node[fontscale=0.7, anchor=north] at (3.525, 0.85) {M};
+\draw[black] (5.1417,0.85) -- (5.1417,0.95);
+\node[fontscale=0.7, anchor=north] at (5.1417, 0.85) {H};
+
+\draw[orange, opacity=0.50, line width=0.5mm, dashed] (1.9083,0.90165) -- (3.525,1.0333) -- (5.1417,1.1671);
+\draw[blue, opacity=0.50, line width=0.5mm] (1.9083,0.90552) -- (3.525,1.0465) -- (5.1417,1.3807);
+
+  \end{scope}
+  \end{tikzpicture}
+\end{lrbox}
+\newsavebox{\myboxRACB} 
+\begin{lrbox}{\myboxRACB}
+  \begin{tikzpicture}
+    \begin{scope}
+% 
+% Cell 0,1
+% 
+\draw[black] (1.1,0.9) -- (1.1,4.1);
+\node[rotate=90, fontscale=0.7, anchor=center] at (-0.2, 2.5) {Litigation rate};
+\draw[black] (1.05,0.9) -- (1.15,0.9);
+\node[fontscale=0.7, anchor=east] at (1.05, 0.9) {0\%};
+\draw[black] (1.05,2.5) -- (1.15,2.5);
+\node[fontscale=0.7, anchor=east] at (1.05, 2.5) {50\%};
+\draw[black] (1.05,4.1) -- (1.15,4.1);
+\node[fontscale=0.7, anchor=east] at (1.05, 4.1) {100\%};
+
+\draw[black] (1.1,0.9) -- (5.95,0.9);
+\node[fontscale=0.7, anchor=center] at (3.525, 0.2) {Party noise};
+\draw[black] (1.9083,0.85) -- (1.9083,0.95);
+\node[fontscale=0.7, anchor=north] at (1.9083, 0.85) {L};
+\draw[black] (3.525,0.85) -- (3.525,0.95);
+\node[fontscale=0.7, anchor=north] at (3.525, 0.85) {M};
+\draw[black] (5.1417,0.85) -- (5.1417,0.95);
+\node[fontscale=0.7, anchor=north] at (5.1417, 0.85) {H};
+
+\draw[orange, opacity=0.50, line width=0.5mm, dashed] (1.9083,0.96596) -- (3.525,1.0973) -- (5.1417,1.1866);
+\draw[blue, opacity=0.50, line width=0.5mm] (1.9083,0.98124) -- (3.525,1.2372) -- (5.1417,1.4784);
+
+  \end{scope}
+  \end{tikzpicture}
+\end{lrbox}
+\newsavebox{\myboxRACC} 
+\begin{lrbox}{\myboxRACC}
+  \begin{tikzpicture}
+    \begin{scope}
+% 
+% Cell 0,2
+% 
+\draw[black] (1.1,0.9) -- (1.1,4.1);
+\node[rotate=90, fontscale=0.7, anchor=center] at (-0.2, 2.5) {Litigation rate};
+\draw[black] (1.05,0.9) -- (1.15,0.9);
+\node[fontscale=0.7, anchor=east] at (1.05, 0.9) {0\%};
+\draw[black] (1.05,2.5) -- (1.15,2.5);
+\node[fontscale=0.7, anchor=east] at (1.05, 2.5) {50\%};
+\draw[black] (1.05,4.1) -- (1.15,4.1);
+\node[fontscale=0.7, anchor=east] at (1.05, 4.1) {100\%};
+
+\draw[black] (1.1,0.9) -- (5.95,0.9);
+\node[fontscale=0.7, anchor=center] at (3.525, 0.2) {Party noise};
+\draw[black] (1.9083,0.85) -- (1.9083,0.95);
+\node[fontscale=0.7, anchor=north] at (1.9083, 0.85) {L};
+\draw[black] (3.525,0.85) -- (3.525,0.95);
+\node[fontscale=0.7, anchor=north] at (3.525, 0.85) {M};
+\draw[black] (5.1417,0.85) -- (5.1417,0.95);
+\node[fontscale=0.7, anchor=north] at (5.1417, 0.85) {H};
+
+\draw[orange, opacity=0.50, line width=0.5mm, dashed] (1.9083,0.98145) -- (3.525,1.1765) -- (5.1417,1.1543);
+\draw[blue, opacity=0.50, line width=0.5mm] (1.9083,1.1516) -- (3.525,1.4439) -- (5.1417,1.5911);
+
+  \end{scope}
+  \end{tikzpicture}
+\end{lrbox}
+\newsavebox{\myboxRBCA} 
+\begin{lrbox}{\myboxRBCA}
+  \begin{tikzpicture}
+    \begin{scope}
+% 
+% Cell 1,0
+% 
+\draw[black] (1.1,0.9) -- (1.1,4.1);
+\node[rotate=90, fontscale=0.7, anchor=center] at (-0.2, 2.5) {Litigation rate};
+\draw[black] (1.05,0.9) -- (1.15,0.9);
+\node[fontscale=0.7, anchor=east] at (1.05, 0.9) {0\%};
+\draw[black] (1.05,2.5) -- (1.15,2.5);
+\node[fontscale=0.7, anchor=east] at (1.05, 2.5) {50\%};
+\draw[black] (1.05,4.1) -- (1.15,4.1);
+\node[fontscale=0.7, anchor=east] at (1.05, 4.1) {100\%};
+
+\draw[black] (1.1,0.9) -- (5.95,0.9);
+\node[fontscale=0.7, anchor=center] at (3.525, 0.2) {Party noise};
+\draw[black] (1.9083,0.85) -- (1.9083,0.95);
+\node[fontscale=0.7, anchor=north] at (1.9083, 0.85) {L};
+\draw[black] (3.525,0.85) -- (3.525,0.95);
+\node[fontscale=0.7, anchor=north] at (3.525, 0.85) {M};
+\draw[black] (5.1417,0.85) -- (5.1417,0.95);
+\node[fontscale=0.7, anchor=north] at (5.1417, 0.85) {H};
+
+\draw[orange, opacity=0.50, line width=0.5mm, dashed] (1.9083,0.90165) -- (3.525,1.0022) -- (5.1417,1.2547);
+\draw[blue, opacity=0.50, line width=0.5mm] (1.9083,0.90165) -- (3.525,1.1767) -- (5.1417,1.4869);
+
+  \end{scope}
+  \end{tikzpicture}
+\end{lrbox}
+\newsavebox{\myboxRBCB} 
+\begin{lrbox}{\myboxRBCB}
+  \begin{tikzpicture}
+    \begin{scope}
+% 
+% Cell 1,1
+% 
+\draw[black] (1.1,0.9) -- (1.1,4.1);
+\node[rotate=90, fontscale=0.7, anchor=center] at (-0.2, 2.5) {Litigation rate};
+\draw[black] (1.05,0.9) -- (1.15,0.9);
+\node[fontscale=0.7, anchor=east] at (1.05, 0.9) {0\%};
+\draw[black] (1.05,2.5) -- (1.15,2.5);
+\node[fontscale=0.7, anchor=east] at (1.05, 2.5) {50\%};
+\draw[black] (1.05,4.1) -- (1.15,4.1);
+\node[fontscale=0.7, anchor=east] at (1.05, 4.1) {100\%};
+
+\draw[black] (1.1,0.9) -- (5.95,0.9);
+\node[fontscale=0.7, anchor=center] at (3.525, 0.2) {Party noise};
+\draw[black] (1.9083,0.85) -- (1.9083,0.95);
+\node[fontscale=0.7, anchor=north] at (1.9083, 0.85) {L};
+\draw[black] (3.525,0.85) -- (3.525,0.95);
+\node[fontscale=0.7, anchor=north] at (3.525, 0.85) {M};
+\draw[black] (5.1417,0.85) -- (5.1417,0.95);
+\node[fontscale=0.7, anchor=north] at (5.1417, 0.85) {H};
+
+\draw[orange, opacity=0.50, line width=0.5mm, dashed] (1.9083,0.95115) -- (3.525,1.0969) -- (5.1417,1.2795);
+\draw[blue, opacity=0.50, line width=0.5mm] (1.9083,1.058) -- (3.525,1.3545) -- (5.1417,1.6416);
+
+  \end{scope}
+  \end{tikzpicture}
+\end{lrbox}
+\newsavebox{\myboxRBCC} 
+\begin{lrbox}{\myboxRBCC}
+  \begin{tikzpicture}
+    \begin{scope}
+% 
+% Cell 1,2
+% 
+\draw[black] (1.1,0.9) -- (1.1,4.1);
+\node[rotate=90, fontscale=0.7, anchor=center] at (-0.2, 2.5) {Litigation rate};
+\draw[black] (1.05,0.9) -- (1.15,0.9);
+\node[fontscale=0.7, anchor=east] at (1.05, 0.9) {0\%};
+\draw[black] (1.05,2.5) -- (1.15,2.5);
+\node[fontscale=0.7, anchor=east] at (1.05, 2.5) {50\%};
+\draw[black] (1.05,4.1) -- (1.15,4.1);
+\node[fontscale=0.7, anchor=east] at (1.05, 4.1) {100\%};
+
+\draw[black] (1.1,0.9) -- (5.95,0.9);
+\node[fontscale=0.7, anchor=center] at (3.525, 0.2) {Party noise};
+\draw[black] (1.9083,0.85) -- (1.9083,0.95);
+\node[fontscale=0.7, anchor=north] at (1.9083, 0.85) {L};
+\draw[black] (3.525,0.85) -- (3.525,0.95);
+\node[fontscale=0.7, anchor=north] at (3.525, 0.85) {M};
+\draw[black] (5.1417,0.85) -- (5.1417,0.95);
+\node[fontscale=0.7, anchor=north] at (5.1417, 0.85) {H};
+
+\draw[orange, opacity=0.50, line width=0.5mm, dashed] (1.9083,1.0298) -- (3.525,1.1826) -- (5.1417,1.2313);
+\draw[blue, opacity=0.50, line width=0.5mm] (1.9083,1.2165) -- (3.525,1.4111) -- (5.1417,1.6929);
+
+  \end{scope}
+  \end{tikzpicture}
+\end{lrbox}
+\newsavebox{\myboxRCCA} 
+\begin{lrbox}{\myboxRCCA}
+  \begin{tikzpicture}
+    \begin{scope}
+% 
+% Cell 2,0
+% 
+\draw[black] (1.1,0.9) -- (1.1,4.1);
+\node[rotate=90, fontscale=0.7, anchor=center] at (-0.2, 2.5) {Litigation rate};
+\draw[black] (1.05,0.9) -- (1.15,0.9);
+\node[fontscale=0.7, anchor=east] at (1.05, 0.9) {0\%};
+\draw[black] (1.05,2.5) -- (1.15,2.5);
+\node[fontscale=0.7, anchor=east] at (1.05, 2.5) {50\%};
+\draw[black] (1.05,4.1) -- (1.15,4.1);
+\node[fontscale=0.7, anchor=east] at (1.05, 4.1) {100\%};
+
+\draw[black] (1.1,0.9) -- (5.95,0.9);
+\node[fontscale=0.7, anchor=center] at (3.525, 0.2) {Party noise};
+\draw[black] (1.9083,0.85) -- (1.9083,0.95);
+\node[fontscale=0.7, anchor=north] at (1.9083, 0.85) {L};
+\draw[black] (3.525,0.85) -- (3.525,0.95);
+\node[fontscale=0.7, anchor=north] at (3.525, 0.85) {M};
+\draw[black] (5.1417,0.85) -- (5.1417,0.95);
+\node[fontscale=0.7, anchor=north] at (5.1417, 0.85) {H};
+
+\draw[orange, opacity=0.50, line width=0.5mm, dashed] (1.9083,0.90165) -- (3.525,1.0333) -- (5.1417,1.1671);
+\draw[blue, opacity=0.50, line width=0.5mm] (1.9083,0.90552) -- (3.525,1.0465) -- (5.1417,1.3807);
+
+  \end{scope}
+  \end{tikzpicture}
+\end{lrbox}
+\newsavebox{\myboxRCCB} 
+\begin{lrbox}{\myboxRCCB}
+  \begin{tikzpicture}
+    \begin{scope}
+% 
+% Cell 2,1
+% 
+\draw[black] (1.1,0.9) -- (1.1,4.1);
+\node[rotate=90, fontscale=0.7, anchor=center] at (-0.2, 2.5) {Litigation rate};
+\draw[black] (1.05,0.9) -- (1.15,0.9);
+\node[fontscale=0.7, anchor=east] at (1.05, 0.9) {0\%};
+\draw[black] (1.05,2.5) -- (1.15,2.5);
+\node[fontscale=0.7, anchor=east] at (1.05, 2.5) {50\%};
+\draw[black] (1.05,4.1) -- (1.15,4.1);
+\node[fontscale=0.7, anchor=east] at (1.05, 4.1) {100\%};
+
+\draw[black] (1.1,0.9) -- (5.95,0.9);
+\node[fontscale=0.7, anchor=center] at (3.525, 0.2) {Party noise};
+\draw[black] (1.9083,0.85) -- (1.9083,0.95);
+\node[fontscale=0.7, anchor=north] at (1.9083, 0.85) {L};
+\draw[black] (3.525,0.85) -- (3.525,0.95);
+\node[fontscale=0.7, anchor=north] at (3.525, 0.85) {M};
+\draw[black] (5.1417,0.85) -- (5.1417,0.95);
+\node[fontscale=0.7, anchor=north] at (5.1417, 0.85) {H};
+
+\draw[orange, opacity=0.50, line width=0.5mm, dashed] (1.9083,0.96596) -- (3.525,1.0973) -- (5.1417,1.1866);
+\draw[blue, opacity=0.50, line width=0.5mm] (1.9083,0.98124) -- (3.525,1.2372) -- (5.1417,1.4784);
+
+  \end{scope}
+  \end{tikzpicture}
+\end{lrbox}
+\newsavebox{\myboxRCCC} 
+\begin{lrbox}{\myboxRCCC}
+  \begin{tikzpicture}
+    \begin{scope}
+% 
+% Cell 2,2
+% 
+\draw[black] (1.1,0.9) -- (1.1,4.1);
+\node[rotate=90, fontscale=0.7, anchor=center] at (-0.2, 2.5) {Litigation rate};
+\draw[black] (1.05,0.9) -- (1.15,0.9);
+\node[fontscale=0.7, anchor=east] at (1.05, 0.9) {0\%};
+\draw[black] (1.05,2.5) -- (1.15,2.5);
+\node[fontscale=0.7, anchor=east] at (1.05, 2.5) {50\%};
+\draw[black] (1.05,4.1) -- (1.15,4.1);
+\node[fontscale=0.7, anchor=east] at (1.05, 4.1) {100\%};
+
+\draw[black] (1.1,0.9) -- (5.95,0.9);
+\node[fontscale=0.7, anchor=center] at (3.525, 0.2) {Party noise};
+\draw[black] (1.9083,0.85) -- (1.9083,0.95);
+\node[fontscale=0.7, anchor=north] at (1.9083, 0.85) {L};
+\draw[black] (3.525,0.85) -- (3.525,0.95);
+\node[fontscale=0.7, anchor=north] at (3.525, 0.85) {M};
+\draw[black] (5.1417,0.85) -- (5.1417,0.95);
+\node[fontscale=0.7, anchor=north] at (5.1417, 0.85) {H};
+
+\draw[orange, opacity=0.50, line width=0.5mm, dashed] (1.9083,0.98145) -- (3.525,1.1765) -- (5.1417,1.1543);
+\draw[blue, opacity=0.50, line width=0.5mm] (1.9083,1.1516) -- (3.525,1.4439) -- (5.1417,1.5911);
+
+  \end{scope}
+  \end{tikzpicture}
+\end{lrbox}
+
+\begin{document}
+\begin{tikzpicture}
+\clip(0, 0) rectangle + (20,14.7); 
+\draw[black] (1.7,1.5) -- (1.7,14.7);
+\node[rotate=90, fontscale=2, anchor=center] at (0.7, 8.55) {Universal noise};
+\draw[black] (1.65,4.15) -- (1.75,4.15);
+\node[fontscale=2, anchor=east] at (1.65, 4.15) {L};
+\draw[black] (1.65,8.55) -- (1.75,8.55);
+\node[fontscale=2, anchor=east] at (1.65, 8.55) {M};
+\draw[black] (1.65,12.95) -- (1.75,12.95);
+\node[fontscale=2, anchor=east] at (1.65, 12.95) {H};
+
+\draw[black] (1.7,1.5) -- (20,1.5);
+\node[fontscale=2, anchor=center] at (11.4, 0.5) {Probability truly liable};
+\draw[black] (5.3,1.45) -- (5.3,1.55);
+\node[fontscale=2, anchor=north] at (5.3, 1.45) {0.25};
+\draw[black] (11.4,1.45) -- (11.4,1.55);
+\node[fontscale=2, anchor=north] at (11.4, 1.45) {0.50};
+\draw[black] (17.5,1.45) -- (17.5,1.55);
+\node[fontscale=2, anchor=north] at (17.5, 1.45) {0.75};
+
+
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (1.75,5.8) { \usebox{\myboxRACA} };
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (7.85,5.8) { \usebox{\myboxRACB} };
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (13.95,5.8) { \usebox{\myboxRACC} };
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (1.75,10.2) { \usebox{\myboxRBCA} };
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (7.85,10.2) { \usebox{\myboxRBCB} };
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (13.95,10.2) { \usebox{\myboxRBCC} };
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (1.75,14.6) { \usebox{\myboxRCCA} };
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (7.85,14.6) { \usebox{\myboxRCCB} };
+\node[anchor=north west,inner sep=0pt,outer sep=0pt] at (13.95,14.6) { \usebox{\myboxRCCC} };
+
+\end{tikzpicture}
+\end{document}
